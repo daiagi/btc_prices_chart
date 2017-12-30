@@ -26,11 +26,11 @@ $('document').ready( function() {
 
 function draw(data){
 
+  var strictIsoParse = d3.utcParse("%Y-%m-%dT%H:%M:%S.%LZ");
 
   var lineFunction = d3.line()
-                             .x(function(d) { return d.time; })
-                             .y(function(d) { return d.global_price; })
-                           .interpolate("linear");
+                             .x(function(d) { return strictIsoParse(d.time); })
+                             .y(function(d) { return d.global_price; });
 
    //The SVG Container
    var svgContainer = d3.select("body").append("svg")

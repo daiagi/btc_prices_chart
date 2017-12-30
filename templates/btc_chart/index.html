@@ -1,8 +1,27 @@
 {% extends "btc_chart/base.html" %}
+{% load static %}
+{% block stylesheet %}
+<link rel="stylesheet" href={% static 'index.css' %}>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="graph-div container">
+
+  <button type="button" id="1h" class="btn btn-primary">1h</button>
+  <button type="button"  id="12h" class="btn btn-primary">12h</button>
+  <button type="button" id="1d" class="btn btn-primary">1d</button>
+
+
+</div>
+
+{% endblock content%}
 
 {% block javascript %}
 
-
+<script src="{% static 'js/basic.js' %}"></script>
+<script src="{% static 'js/render.js' %}"></script>
 
 
 {% endblock javascript %}
