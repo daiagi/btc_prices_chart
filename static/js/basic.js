@@ -1,60 +1,87 @@
-button_1h = document.getElementById("1h");
-button_1h.dataString = 'hours=1';
-button_1h.addEventListener("click", getAjax);
+function AjaxGetRequest(url,successFunc,toUSD) {
 
-button_12h = document.getElementById("12h");
-button_12h.dataString = 'hours=12';
-button_12h.addEventListener("click", getAjax);
+  var USDRate = function() {
+    apiURL = "https://api.fixer.io/latest?base=ILS&symbols=USD"
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        json_obj = JSON.parse(this.responseText);
+        return json_obj.rates.USD;
+      }
+    };
 
-button_1d = document.getElementById("1d");
-button_1d.dataString = 'days=1';
-button_1d.addEventListener("click", getAjax);
+    xhttp.open('get',apiURL,false);
+    xhttp.send();
+    return xhttp.onreadystatechange()
+  };
 
-var jsonUrl = 'http://127.0.0.1:8000/json/'
 
-$(document).ready(function(){
+
+// parse json to object
+  var parseJson=function(string_data,toUSD){
+    if (toUSD === undefined) {toUSD = false }
+    var data = JSON.parse(string_data);
+    data.forEach(function (element){
+        element.time = new Date(element.time)
+    });
+    if (toUSD === true) {
+      var ils_to_usd = USDRate();
+      data.forEach(function(element) {
+        element.bit2c_price = element.bit2c_price*ils_to_usd;
+        element.global_price = element.global_price*ils_to_usd;
+        // console.log(element);
+      });
+    };
+    return data;
+  };
+// ajax call with successFunc
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      var d  = parseJson(this.responseText);
-      onLoad(d);
-
+      var d  = parseJson(this.responseText,toUSD);
+      successFunc(d);
     }
   };
 
-  xhttp.open('get',jsonUrl + '?' + 'days=1');
+  xhttp.open('get',url);
   xhttp.send();
+};
+
+// on document ready event
+$(document).ready(function(){
+  url = jsonUrl + '?' + 'days=1';
+  AjaxGetRequest(url,onLoad);
 
 })
 
+// on range button click event
+function RangeBtnClick(rangeString){
+  toUSD = !$('#currency-toggle').prop('checked')
+  url = jsonUrl + '?' + rangeString;
+   AjaxGetRequest(url,updateData,toUSD);
 
-function getAjax(event) {
+};
 
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      var d  = parseJson(this.responseText);
-      updateData(d);
+var current_range = 'days=1'
 
-    }
-  };
+$('#currency-toggle').change(function() {
+      RangeBtnClick(current_range)
+    });
 
-  xhttp.open('get',jsonUrl + '?' + event.target.dataString);
-  xhttp.send();
+// bind events to range buttons
+document.getElementById("btn_1h")
+            .addEventListener("click",function(){
+              current_range = 'hours=1'
+              RangeBtnClick(current_range)});
 
-}
+document.getElementById("btn_12h")
+        .addEventListener("click",function(){
+          current_range = 'hours=12'
+          RangeBtnClick('hours=12')});
 
+document.getElementById("btn_1d")
+        .addEventListener("click",function(){
+          current_range = 'days=1'
+          RangeBtnClick('days=1')});
 
-
-
-
-function parseJson(string_data){
-  data = JSON.parse(string_data)
-  // for (i=0;i<data.length;i++){
-  //   data[i].time = i
-  // }
-  data.forEach(function (element){
-      element.time = new Date(element.time)
-  });
-  return data
-}
+var jsonUrl = 'http://127.0.0.1:8000/json/'

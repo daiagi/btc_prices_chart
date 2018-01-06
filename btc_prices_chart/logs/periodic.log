@@ -11050,3 +11050,6316 @@ TypeError: global_price_usd = 14668.55, type : <class 'float'>
 
 --------------------------------------
 
+--------------20:05:01----------------
+
+--------------------------------------
+
+--------------20:10:01----------------
+
+--------------------------------------
+
+--------------20:15:01----------------
+
+--------------------------------------
+
+--------------20:20:01----------------
+
+--------------------------------------
+
+--------------20:25:01----------------
+
+--------------------------------------
+
+--------------20:30:01----------------
+
+--------------------------------------
+
+--------------20:35:01----------------
+
+--------------------------------------
+
+--------------20:40:02----------------
+
+--------------------------------------
+
+--------------20:45:01----------------
+
+--------------------------------------
+
+--------------20:50:01----------------
+
+--------------------------------------
+
+--------------20:55:01----------------
+
+--------------------------------------
+
+--------------21:00:01----------------
+
+--------------------------------------
+
+--------------21:05:01----------------
+
+--------------------------------------
+
+--------------21:10:01----------------
+
+--------------------------------------
+
+--------------21:15:02----------------
+
+--------------------------------------
+
+--------------21:20:01----------------
+
+--------------------------------------
+
+--------------21:25:01----------------
+
+--------------------------------------
+
+--------------21:30:01----------------
+
+--------------------------------------
+
+--------------21:35:01----------------
+
+--------------------------------------
+
+--------------21:40:01----------------
+
+--------------------------------------
+
+--------------21:45:01----------------
+
+--------------------------------------
+
+--------------21:50:01----------------
+
+--------------------------------------
+
+--------------21:55:01----------------
+
+--------------------------------------
+
+--------------22:00:02----------------
+
+--------------------------------------
+
+--------------22:05:01----------------
+
+--------------------------------------
+
+--------------22:10:01----------------
+
+--------------------------------------
+
+--------------22:15:01----------------
+
+--------------------------------------
+
+--------------22:20:01----------------
+
+--------------------------------------
+
+--------------22:25:01----------------
+
+--------------------------------------
+
+--------------22:30:01----------------
+
+--------------------------------------
+
+--------------22:35:01----------------
+
+--------------------------------------
+
+--------------22:40:01----------------
+
+--------------------------------------
+
+--------------22:45:01----------------
+
+--------------------------------------
+
+--------------22:50:02----------------
+
+--------------------------------------
+
+--------------22:55:02----------------
+
+--------------------------------------
+
+--------------23:00:01----------------
+
+--------------------------------------
+
+--------------23:05:01----------------
+
+--------------------------------------
+
+--------------23:10:01----------------
+
+--------------------------------------
+
+--------------23:15:01----------------
+
+--------------------------------------
+
+--------------23:20:01----------------
+
+--------------------------------------
+
+--------------23:25:01----------------
+
+--------------------------------------
+
+--------------23:30:01----------------
+
+--------------------------------------
+
+--------------23:35:01----------------
+
+--------------------------------------
+
+--------------23:40:01----------------
+
+--------------------------------------
+
+--------------23:45:02----------------
+
+--------------------------------------
+
+--------------23:50:02----------------
+
+--------------------------------------
+
+--------------23:55:01----------------
+
+--------------------------------------
+
+--------------00:00:01----------------
+
+--------------------------------------
+
+--------------00:05:01----------------
+
+--------------------------------------
+
+--------------00:10:01----------------
+
+--------------------------------------
+
+--------------00:15:01----------------
+
+--------------------------------------
+
+--------------00:20:01----------------
+
+--------------------------------------
+
+--------------00:25:01----------------
+
+--------------------------------------
+
+--------------00:30:01----------------
+
+--------------------------------------
+
+--------------00:35:01----------------
+
+--------------------------------------
+
+--------------00:40:01----------------
+
+--------------------------------------
+
+--------------00:45:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12800.45, type : <class 'float'> 
+
+                            ils_to_usd = 51500.0, type : <class 'float'>
+--------------------------------------
+
+--------------00:50:01----------------
+
+--------------------------------------
+
+--------------00:55:01----------------
+
+--------------------------------------
+
+--------------01:00:01----------------
+
+--------------------------------------
+
+--------------01:05:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12794.9, type : <class 'float'> 
+
+                            ils_to_usd = 52699.99, type : <class 'float'>
+--------------------------------------
+
+--------------01:10:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12689.25, type : <class 'float'> 
+
+                            ils_to_usd = 52798.87, type : <class 'float'>
+--------------------------------------
+
+--------------01:15:01----------------
+
+--------------------------------------
+
+--------------01:20:02----------------
+
+--------------------------------------
+
+--------------01:25:01----------------
+
+--------------------------------------
+
+--------------01:30:01----------------
+
+--------------------------------------
+
+--------------01:35:01----------------
+
+--------------------------------------
+
+--------------01:40:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12716.75, type : <class 'float'> 
+
+                            ils_to_usd = 52798.87, type : <class 'float'>
+--------------------------------------
+
+--------------01:45:01----------------
+
+--------------------------------------
+
+--------------01:50:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12657.0, type : <class 'float'> 
+
+                            ils_to_usd = 52798.87, type : <class 'float'>
+--------------------------------------
+
+--------------01:55:01----------------
+
+--------------------------------------
+
+--------------02:00:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12521.5, type : <class 'float'> 
+
+                            ils_to_usd = 52798.87, type : <class 'float'>
+--------------------------------------
+
+--------------02:05:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12481.2, type : <class 'float'> 
+
+                            ils_to_usd = 51206.0, type : <class 'float'>
+--------------------------------------
+
+--------------02:10:01----------------
+
+--------------------------------------
+
+--------------02:15:01----------------
+
+--------------------------------------
+
+--------------02:20:01----------------
+
+--------------------------------------
+
+--------------02:25:01----------------
+
+--------------------------------------
+
+--------------02:30:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12626.9, type : <class 'float'> 
+
+                            ils_to_usd = 51206.0, type : <class 'float'>
+--------------------------------------
+
+--------------02:35:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12667.0, type : <class 'float'> 
+
+                            ils_to_usd = 51289.97, type : <class 'float'>
+--------------------------------------
+
+--------------02:40:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12709.95, type : <class 'float'> 
+
+                            ils_to_usd = 51289.97, type : <class 'float'>
+--------------------------------------
+
+--------------02:45:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12770.95, type : <class 'float'> 
+
+                            ils_to_usd = 51362.4, type : <class 'float'>
+--------------------------------------
+
+--------------02:50:01----------------
+
+--------------------------------------
+
+--------------02:55:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12806.65, type : <class 'float'> 
+
+                            ils_to_usd = 51362.4, type : <class 'float'>
+--------------------------------------
+
+--------------03:00:01----------------
+
+--------------------------------------
+
+--------------03:05:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13039.8, type : <class 'float'> 
+
+                            ils_to_usd = 51555.0, type : <class 'float'>
+--------------------------------------
+
+--------------03:10:01----------------
+
+--------------------------------------
+
+--------------03:15:01----------------
+
+--------------------------------------
+
+--------------03:20:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12903.75, type : <class 'float'> 
+
+                            ils_to_usd = 52459.97, type : <class 'float'>
+--------------------------------------
+
+--------------03:25:01----------------
+
+--------------------------------------
+
+--------------03:30:01----------------
+
+--------------------------------------
+
+--------------03:35:01----------------
+
+--------------------------------------
+
+--------------03:40:01----------------
+
+--------------------------------------
+
+--------------03:45:01----------------
+
+--------------------------------------
+
+--------------03:50:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13011.0, type : <class 'float'> 
+
+                            ils_to_usd = 52459.98, type : <class 'float'>
+--------------------------------------
+
+--------------03:55:01----------------
+
+--------------------------------------
+
+--------------04:00:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12986.75, type : <class 'float'> 
+
+                            ils_to_usd = 51671.75, type : <class 'float'>
+--------------------------------------
+
+--------------04:05:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12939.55, type : <class 'float'> 
+
+                            ils_to_usd = 51671.75, type : <class 'float'>
+--------------------------------------
+
+--------------04:10:01----------------
+
+--------------------------------------
+
+--------------04:15:01----------------
+
+--------------------------------------
+
+--------------04:20:01----------------
+
+--------------------------------------
+
+--------------04:25:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12977.55, type : <class 'float'> 
+
+                            ils_to_usd = 52798.3, type : <class 'float'>
+--------------------------------------
+
+--------------04:30:01----------------
+
+--------------------------------------
+
+--------------04:35:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13063.0, type : <class 'float'> 
+
+                            ils_to_usd = 52798.3, type : <class 'float'>
+--------------------------------------
+
+--------------04:40:01----------------
+
+--------------------------------------
+
+--------------04:45:01----------------
+
+--------------------------------------
+
+--------------04:50:01----------------
+
+--------------------------------------
+
+--------------04:55:01----------------
+
+--------------------------------------
+
+--------------05:00:01----------------
+
+--------------------------------------
+
+--------------05:05:01----------------
+
+--------------------------------------
+
+--------------05:10:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13152.6, type : <class 'float'> 
+
+                            ils_to_usd = 52225.38, type : <class 'float'>
+--------------------------------------
+
+--------------05:15:01----------------
+
+--------------------------------------
+
+--------------05:20:01----------------
+
+--------------------------------------
+
+--------------05:25:01----------------
+
+--------------------------------------
+
+--------------05:30:01----------------
+
+--------------------------------------
+
+--------------05:35:01----------------
+
+--------------------------------------
+
+--------------05:40:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13235.1, type : <class 'float'> 
+
+                            ils_to_usd = 52397.31, type : <class 'float'>
+--------------------------------------
+
+--------------05:45:01----------------
+
+--------------------------------------
+
+--------------05:50:01----------------
+
+--------------------------------------
+
+--------------05:55:01----------------
+
+--------------------------------------
+
+--------------06:00:01----------------
+
+--------------------------------------
+
+--------------06:05:01----------------
+
+--------------------------------------
+
+--------------06:10:01----------------
+
+--------------------------------------
+
+--------------06:15:01----------------
+
+--------------------------------------
+
+--------------06:20:01----------------
+
+--------------------------------------
+
+--------------06:25:01----------------
+
+--------------------------------------
+
+--------------06:30:01----------------
+
+--------------------------------------
+
+--------------06:35:01----------------
+
+--------------------------------------
+
+--------------06:40:01----------------
+
+--------------------------------------
+
+--------------06:45:01----------------
+
+--------------------------------------
+
+--------------06:50:01----------------
+
+--------------------------------------
+
+--------------06:55:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13031.0, type : <class 'float'> 
+
+                            ils_to_usd = 51555.0, type : <class 'float'>
+--------------------------------------
+
+--------------07:00:01----------------
+
+--------------------------------------
+
+--------------07:05:01----------------
+
+--------------------------------------
+
+--------------07:10:01----------------
+
+--------------------------------------
+
+--------------07:15:01----------------
+
+--------------------------------------
+
+--------------07:20:01----------------
+
+--------------------------------------
+
+--------------07:25:01----------------
+
+--------------------------------------
+
+--------------07:30:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13092.45, type : <class 'float'> 
+
+                            ils_to_usd = 53548.0, type : <class 'float'>
+--------------------------------------
+
+--------------07:35:02----------------
+
+--------------------------------------
+
+--------------07:40:01----------------
+
+--------------------------------------
+
+--------------07:45:01----------------
+
+--------------------------------------
+
+--------------07:50:01----------------
+
+--------------------------------------
+
+--------------07:55:01----------------
+
+--------------------------------------
+
+--------------08:00:01----------------
+
+--------------------------------------
+
+--------------08:05:01----------------
+
+--------------------------------------
+
+--------------08:10:01----------------
+
+--------------------------------------
+
+--------------08:15:01----------------
+
+--------------------------------------
+
+--------------08:20:01----------------
+
+--------------------------------------
+
+--------------08:25:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12722.95, type : <class 'float'> 
+
+                            ils_to_usd = 52319.12, type : <class 'float'>
+--------------------------------------
+
+--------------08:30:01----------------
+
+--------------------------------------
+
+--------------08:35:01----------------
+
+--------------------------------------
+
+--------------08:40:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12672.25, type : <class 'float'> 
+
+                            ils_to_usd = 51850.0, type : <class 'float'>
+--------------------------------------
+
+--------------08:45:01----------------
+
+--------------------------------------
+
+--------------08:50:01----------------
+
+--------------------------------------
+
+--------------08:55:01----------------
+
+--------------------------------------
+
+--------------09:00:01----------------
+
+--------------------------------------
+
+--------------09:05:01----------------
+
+--------------------------------------
+
+--------------09:10:01----------------
+
+--------------------------------------
+
+--------------09:15:01----------------
+
+--------------------------------------
+
+--------------09:20:01----------------
+
+--------------------------------------
+
+--------------09:25:01----------------
+
+--------------------------------------
+
+--------------09:30:01----------------
+
+--------------------------------------
+
+--------------09:35:01----------------
+
+--------------------------------------
+
+--------------09:40:01----------------
+
+--------------------------------------
+
+--------------09:45:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12894.95, type : <class 'float'> 
+
+                            ils_to_usd = 53266.0, type : <class 'float'>
+--------------------------------------
+
+--------------09:50:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12930.9, type : <class 'float'> 
+
+                            ils_to_usd = 53266.0, type : <class 'float'>
+--------------------------------------
+
+--------------09:55:01----------------
+
+--------------------------------------
+
+--------------10:00:01----------------
+
+--------------------------------------
+
+--------------10:05:01----------------
+
+--------------------------------------
+
+--------------10:10:01----------------
+
+--------------------------------------
+
+--------------10:15:01----------------
+
+--------------------------------------
+
+--------------10:20:01----------------
+
+--------------------------------------
+
+--------------10:25:01----------------
+
+--------------------------------------
+
+--------------10:30:01----------------
+
+--------------------------------------
+
+--------------10:35:01----------------
+
+--------------------------------------
+
+--------------10:40:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12799.5, type : <class 'float'> 
+
+                            ils_to_usd = 51000.0, type : <class 'float'>
+--------------------------------------
+
+--------------10:45:01----------------
+
+--------------------------------------
+
+--------------10:50:01----------------
+
+--------------------------------------
+
+--------------10:55:01----------------
+
+--------------------------------------
+
+--------------11:00:01----------------
+
+--------------------------------------
+
+--------------11:05:01----------------
+
+--------------------------------------
+
+--------------11:10:02----------------
+
+--------------------------------------
+
+--------------11:15:01----------------
+
+--------------------------------------
+
+--------------11:20:01----------------
+
+--------------------------------------
+
+--------------11:25:01----------------
+
+--------------------------------------
+
+--------------11:30:01----------------
+
+--------------------------------------
+
+--------------11:35:01----------------
+
+--------------------------------------
+
+--------------11:40:01----------------
+
+--------------------------------------
+
+--------------11:45:01----------------
+
+--------------------------------------
+
+--------------11:50:01----------------
+
+--------------------------------------
+
+--------------11:55:01----------------
+
+--------------------------------------
+
+--------------12:00:01----------------
+
+--------------------------------------
+
+--------------12:05:01----------------
+
+--------------------------------------
+
+--------------12:10:01----------------
+
+--------------------------------------
+
+--------------12:15:01----------------
+
+--------------------------------------
+
+--------------12:20:01----------------
+
+--------------------------------------
+
+--------------12:25:01----------------
+
+--------------------------------------
+
+--------------12:30:01----------------
+
+--------------------------------------
+
+--------------12:35:01----------------
+
+--------------------------------------
+
+--------------12:40:01----------------
+
+--------------------------------------
+
+--------------12:45:01----------------
+
+--------------------------------------
+
+--------------12:50:01----------------
+
+--------------------------------------
+
+--------------12:55:01----------------
+
+--------------------------------------
+
+--------------13:00:01----------------
+
+--------------------------------------
+
+--------------13:05:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 12964.5, type : <class 'float'> 
+
+                            ils_to_usd = 52124.0, type : <class 'float'>
+--------------------------------------
+
+--------------13:10:01----------------
+
+--------------------------------------
+
+--------------13:15:01----------------
+
+--------------------------------------
+
+--------------13:20:01----------------
+
+--------------------------------------
+
+--------------13:25:01----------------
+
+--------------------------------------
+
+--------------13:30:01----------------
+
+--------------------------------------
+
+--------------13:35:01----------------
+
+--------------------------------------
+
+--------------13:40:01----------------
+
+--------------------------------------
+
+--------------13:45:01----------------
+
+--------------------------------------
+
+--------------13:50:01----------------
+
+--------------------------------------
+
+--------------13:55:01----------------
+
+--------------------------------------
+
+--------------14:00:01----------------
+
+--------------------------------------
+
+--------------14:05:01----------------
+
+--------------------------------------
+
+--------------14:10:01----------------
+
+--------------------------------------
+
+--------------14:15:01----------------
+
+--------------------------------------
+
+--------------14:20:01----------------
+
+--------------------------------------
+
+--------------14:25:01----------------
+
+--------------------------------------
+
+--------------14:30:01----------------
+
+--------------------------------------
+
+--------------14:35:01----------------
+
+--------------------------------------
+
+--------------14:40:01----------------
+
+--------------------------------------
+
+--------------14:45:01----------------
+
+--------------------------------------
+
+--------------14:50:01----------------
+
+--------------------------------------
+
+--------------14:55:01----------------
+
+--------------------------------------
+
+--------------15:00:01----------------
+
+--------------------------------------
+
+--------------15:05:01----------------
+
+--------------------------------------
+
+--------------15:10:01----------------
+
+--------------------------------------
+
+--------------15:15:01----------------
+
+--------------------------------------
+
+--------------15:20:01----------------
+
+--------------------------------------
+
+--------------15:25:01----------------
+
+--------------------------------------
+
+--------------15:30:08----------------
+
+--------------------------------------
+
+--------------15:35:01----------------
+
+--------------------------------------
+
+--------------15:40:01----------------
+
+--------------------------------------
+
+--------------15:45:01----------------
+
+--------------------------------------
+
+--------------15:50:01----------------
+
+--------------------------------------
+
+--------------15:55:01----------------
+
+--------------------------------------
+
+--------------16:00:01----------------
+
+--------------------------------------
+
+--------------16:05:01----------------
+
+--------------------------------------
+
+--------------16:10:01----------------
+
+--------------------------------------
+
+--------------16:15:01----------------
+
+--------------------------------------
+
+--------------16:20:02----------------
+
+--------------------------------------
+
+--------------16:25:01----------------
+
+--------------------------------------
+
+--------------16:30:01----------------
+
+--------------------------------------
+
+--------------16:35:01----------------
+
+--------------------------------------
+
+--------------16:40:02----------------
+
+--------------------------------------
+
+--------------16:45:01----------------
+
+--------------------------------------
+
+--------------16:50:01----------------
+
+--------------------------------------
+
+--------------16:55:01----------------
+
+--------------------------------------
+
+--------------17:00:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13368.5, type : <class 'float'> 
+
+                            ils_to_usd = 53000.0, type : <class 'float'>
+--------------------------------------
+
+--------------17:05:01----------------
+
+--------------------------------------
+
+--------------17:10:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13374.85, type : <class 'float'> 
+
+                            ils_to_usd = 53000.0, type : <class 'float'>
+--------------------------------------
+
+--------------17:15:01----------------
+
+--------------------------------------
+
+--------------17:20:01----------------
+
+--------------------------------------
+
+--------------17:25:01----------------
+
+--------------------------------------
+
+--------------17:30:01----------------
+
+--------------------------------------
+
+--------------17:35:01----------------
+
+--------------------------------------
+
+--------------17:40:01----------------
+
+--------------------------------------
+
+--------------17:45:01----------------
+
+--------------------------------------
+
+--------------17:50:01----------------
+
+--------------------------------------
+
+--------------17:55:01----------------
+
+--------------------------------------
+
+--------------18:00:01----------------
+
+--------------------------------------
+
+--------------18:05:01----------------
+
+--------------------------------------
+
+--------------18:10:01----------------
+
+--------------------------------------
+
+--------------18:15:01----------------
+
+--------------------------------------
+
+--------------18:20:01----------------
+
+--------------------------------------
+
+--------------18:25:01----------------
+
+--------------------------------------
+
+--------------18:30:01----------------
+
+--------------------------------------
+
+--------------18:35:01----------------
+
+--------------------------------------
+
+--------------18:40:01----------------
+
+--------------------------------------
+
+--------------18:45:01----------------
+
+--------------------------------------
+
+--------------18:50:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 14049.65, type : <class 'float'> 
+
+                            ils_to_usd = 52990.0, type : <class 'float'>
+--------------------------------------
+
+--------------18:55:01----------------
+
+--------------------------------------
+
+--------------19:00:01----------------
+
+--------------------------------------
+
+--------------19:05:01----------------
+
+--------------------------------------
+
+--------------19:10:01----------------
+
+--------------------------------------
+
+--------------19:15:01----------------
+
+--------------------------------------
+
+--------------19:20:01----------------
+
+--------------------------------------
+
+--------------19:25:01----------------
+
+--------------------------------------
+
+--------------19:30:01----------------
+
+--------------------------------------
+
+--------------19:35:01----------------
+
+--------------------------------------
+
+--------------19:40:01----------------
+
+--------------------------------------
+
+--------------19:45:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 14025.35, type : <class 'float'> 
+
+                            ils_to_usd = 53100.82, type : <class 'float'>
+--------------------------------------
+
+--------------19:50:01----------------
+
+--------------------------------------
+
+--------------19:55:01----------------
+
+--------------------------------------
+
+--------------20:00:01----------------
+
+--------------------------------------
+
+--------------20:05:01----------------
+
+--------------------------------------
+
+--------------20:10:01----------------
+
+--------------------------------------
+
+--------------20:15:01----------------
+
+--------------------------------------
+
+--------------20:20:01----------------
+
+--------------------------------------
+
+--------------20:25:01----------------
+
+--------------------------------------
+
+--------------20:30:01----------------
+
+--------------------------------------
+
+--------------20:35:01----------------
+
+--------------------------------------
+
+--------------20:40:01----------------
+
+--------------------------------------
+
+--------------20:45:01----------------
+
+--------------------------------------
+
+--------------20:50:01----------------
+
+--------------------------------------
+
+--------------20:55:01----------------
+
+--------------------------------------
+
+--------------21:00:01----------------
+
+--------------------------------------
+
+--------------21:05:01----------------
+
+--------------------------------------
+
+--------------21:10:01----------------
+
+--------------------------------------
+
+--------------21:15:01----------------
+
+--------------------------------------
+
+--------------21:20:01----------------
+
+--------------------------------------
+
+--------------21:25:01----------------
+
+--------------------------------------
+
+--------------21:30:01----------------
+
+--------------------------------------
+
+--------------21:35:01----------------
+
+--------------------------------------
+
+--------------21:40:01----------------
+
+--------------------------------------
+
+--------------21:45:01----------------
+
+--------------------------------------
+
+--------------21:50:01----------------
+
+--------------------------------------
+
+--------------21:55:01----------------
+
+--------------------------------------
+
+--------------22:00:01----------------
+
+--------------------------------------
+
+--------------22:05:01----------------
+
+--------------------------------------
+
+--------------22:10:01----------------
+
+--------------------------------------
+
+--------------22:15:02----------------
+
+--------------------------------------
+
+--------------22:20:01----------------
+
+--------------------------------------
+
+--------------22:25:01----------------
+
+--------------------------------------
+
+--------------22:30:01----------------
+
+--------------------------------------
+
+--------------22:35:01----------------
+
+--------------------------------------
+
+--------------22:40:01----------------
+
+--------------------------------------
+
+--------------22:45:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 14111.6, type : <class 'float'> 
+
+                            ils_to_usd = 53897.99, type : <class 'float'>
+--------------------------------------
+
+--------------22:50:01----------------
+
+--------------------------------------
+
+--------------22:55:01----------------
+
+--------------------------------------
+
+--------------23:00:01----------------
+
+--------------------------------------
+
+--------------23:05:01----------------
+
+--------------------------------------
+
+--------------23:10:01----------------
+
+--------------------------------------
+
+--------------23:15:01----------------
+
+--------------------------------------
+
+--------------23:20:01----------------
+
+--------------------------------------
+
+--------------23:25:01----------------
+
+--------------------------------------
+
+--------------23:30:01----------------
+
+--------------------------------------
+
+--------------23:35:01----------------
+
+--------------------------------------
+
+--------------23:40:01----------------
+
+--------------------------------------
+
+--------------23:45:01----------------
+
+--------------------------------------
+
+--------------23:50:01----------------
+
+--------------------------------------
+
+--------------23:55:01----------------
+
+--------------------------------------
+
+--------------00:00:01----------------
+
+--------------------------------------
+
+--------------00:05:01----------------
+
+--------------------------------------
+
+--------------00:10:01----------------
+
+--------------------------------------
+
+--------------00:15:01----------------
+
+--------------------------------------
+
+--------------00:20:01----------------
+
+--------------------------------------
+
+--------------00:25:01----------------
+
+--------------------------------------
+
+--------------00:30:01----------------
+
+--------------------------------------
+
+--------------00:35:01----------------
+
+--------------------------------------
+
+--------------00:40:01----------------
+
+--------------------------------------
+
+--------------00:45:01----------------
+
+--------------------------------------
+
+--------------00:50:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13873.8, type : <class 'float'> 
+
+                            ils_to_usd = 53999.0, type : <class 'float'>
+--------------------------------------
+
+--------------00:55:01----------------
+
+--------------------------------------
+
+--------------01:00:01----------------
+
+--------------------------------------
+
+--------------01:05:01----------------
+
+--------------------------------------
+
+--------------01:10:01----------------
+
+--------------------------------------
+
+--------------01:15:01----------------
+
+--------------------------------------
+
+--------------01:20:01----------------
+
+--------------------------------------
+
+--------------01:25:01----------------
+
+--------------------------------------
+
+--------------01:30:01----------------
+
+--------------------------------------
+
+--------------01:35:01----------------
+
+--------------------------------------
+
+--------------01:40:01----------------
+
+--------------------------------------
+
+--------------01:45:01----------------
+
+--------------------------------------
+
+--------------01:50:01----------------
+
+--------------------------------------
+
+--------------01:55:01----------------
+
+--------------------------------------
+
+--------------02:00:01----------------
+
+--------------------------------------
+
+--------------02:05:01----------------
+
+--------------------------------------
+
+--------------02:10:01----------------
+
+--------------------------------------
+
+--------------02:15:01----------------
+
+--------------------------------------
+
+--------------02:20:01----------------
+
+--------------------------------------
+
+--------------02:25:01----------------
+
+--------------------------------------
+
+--------------02:30:01----------------
+
+--------------------------------------
+
+--------------02:35:01----------------
+
+--------------------------------------
+
+--------------02:40:01----------------
+
+--------------------------------------
+
+--------------02:45:01----------------
+
+--------------------------------------
+
+--------------02:50:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13705.0, type : <class 'float'> 
+
+                            ils_to_usd = 53950.0, type : <class 'float'>
+--------------------------------------
+
+--------------02:55:01----------------
+
+--------------------------------------
+
+--------------03:00:01----------------
+
+--------------------------------------
+
+--------------03:05:01----------------
+
+--------------------------------------
+
+--------------03:10:01----------------
+
+--------------------------------------
+
+--------------03:15:01----------------
+
+--------------------------------------
+
+--------------03:20:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13627.95, type : <class 'float'> 
+
+                            ils_to_usd = 53950.0, type : <class 'float'>
+--------------------------------------
+
+--------------03:25:01----------------
+
+--------------------------------------
+
+--------------03:30:01----------------
+
+--------------------------------------
+
+--------------03:35:01----------------
+
+--------------------------------------
+
+--------------03:40:01----------------
+
+--------------------------------------
+
+--------------03:45:01----------------
+
+--------------------------------------
+
+--------------03:50:01----------------
+
+--------------------------------------
+
+--------------03:55:01----------------
+
+--------------------------------------
+
+--------------04:00:01----------------
+
+--------------------------------------
+
+--------------04:05:01----------------
+
+--------------------------------------
+
+--------------04:10:01----------------
+
+--------------------------------------
+
+--------------04:15:01----------------
+
+--------------------------------------
+
+--------------04:20:01----------------
+
+--------------------------------------
+
+--------------04:25:01----------------
+
+--------------------------------------
+
+--------------04:30:01----------------
+
+--------------------------------------
+
+--------------04:35:01----------------
+
+--------------------------------------
+
+--------------04:40:01----------------
+
+--------------------------------------
+
+--------------04:45:01----------------
+
+--------------------------------------
+
+--------------04:50:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13405.0, type : <class 'float'> 
+
+                            ils_to_usd = 53000.0, type : <class 'float'>
+--------------------------------------
+
+--------------04:55:01----------------
+
+--------------------------------------
+
+--------------05:00:01----------------
+
+--------------------------------------
+
+--------------05:05:01----------------
+
+--------------------------------------
+
+--------------05:10:01----------------
+
+--------------------------------------
+
+--------------05:15:01----------------
+
+--------------------------------------
+
+--------------05:20:01----------------
+
+--------------------------------------
+
+--------------05:25:01----------------
+
+--------------------------------------
+
+--------------05:30:01----------------
+
+--------------------------------------
+
+--------------05:35:01----------------
+
+--------------------------------------
+
+--------------05:40:01----------------
+
+--------------------------------------
+
+--------------05:45:01----------------
+
+--------------------------------------
+
+--------------05:50:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13515.5, type : <class 'float'> 
+
+                            ils_to_usd = 52130.0, type : <class 'float'>
+--------------------------------------
+
+--------------05:55:01----------------
+
+--------------------------------------
+
+--------------06:00:01----------------
+
+--------------------------------------
+
+--------------06:05:01----------------
+
+--------------------------------------
+
+--------------06:10:01----------------
+
+--------------------------------------
+
+--------------06:15:01----------------
+
+--------------------------------------
+
+--------------06:20:01----------------
+
+--------------------------------------
+
+--------------06:25:01----------------
+
+--------------------------------------
+
+--------------06:30:01----------------
+
+--------------------------------------
+
+--------------06:35:01----------------
+
+--------------------------------------
+
+--------------06:40:01----------------
+
+--------------------------------------
+
+--------------06:45:01----------------
+
+--------------------------------------
+
+--------------06:50:01----------------
+
+--------------------------------------
+
+--------------06:55:01----------------
+
+--------------------------------------
+
+--------------07:00:01----------------
+
+--------------------------------------
+
+--------------07:05:01----------------
+
+--------------------------------------
+
+--------------07:10:01----------------
+
+--------------------------------------
+
+--------------07:15:01----------------
+
+--------------------------------------
+
+--------------07:20:01----------------
+
+--------------------------------------
+
+--------------07:25:01----------------
+
+--------------------------------------
+
+--------------07:30:01----------------
+
+--------------------------------------
+
+--------------07:35:01----------------
+
+--------------------------------------
+
+--------------07:40:02----------------
+
+--------------------------------------
+
+--------------07:45:01----------------
+
+--------------------------------------
+
+--------------07:50:01----------------
+
+--------------------------------------
+
+--------------07:55:01----------------
+
+--------------------------------------
+
+--------------08:00:01----------------
+
+--------------------------------------
+
+--------------08:05:01----------------
+
+--------------------------------------
+
+--------------08:10:01----------------
+
+--------------------------------------
+
+--------------08:15:01----------------
+
+--------------------------------------
+
+--------------08:20:01----------------
+
+--------------------------------------
+
+--------------08:25:01----------------
+
+--------------------------------------
+
+--------------08:30:01----------------
+
+--------------------------------------
+
+--------------08:35:02----------------
+
+--------------------------------------
+
+--------------08:40:01----------------
+
+--------------------------------------
+
+--------------08:45:01----------------
+
+--------------------------------------
+
+--------------08:50:01----------------
+
+--------------------------------------
+
+--------------08:55:01----------------
+
+--------------------------------------
+
+--------------09:00:01----------------
+
+--------------------------------------
+
+--------------09:05:01----------------
+
+--------------------------------------
+
+--------------09:10:01----------------
+
+--------------------------------------
+
+--------------09:15:01----------------
+
+--------------------------------------
+
+--------------09:20:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13745.75, type : <class 'float'> 
+
+                            ils_to_usd = 53507.85, type : <class 'float'>
+--------------------------------------
+
+--------------09:25:01----------------
+
+--------------------------------------
+
+--------------09:30:01----------------
+
+--------------------------------------
+
+--------------09:35:01----------------
+
+--------------------------------------
+
+--------------09:40:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13764.3, type : <class 'float'> 
+
+                            ils_to_usd = 53949.0, type : <class 'float'>
+--------------------------------------
+
+--------------09:45:01----------------
+
+--------------------------------------
+
+--------------09:50:01----------------
+
+--------------------------------------
+
+--------------09:55:01----------------
+
+--------------------------------------
+
+--------------10:00:01----------------
+
+--------------------------------------
+
+--------------10:05:01----------------
+
+--------------------------------------
+
+--------------10:10:01----------------
+
+--------------------------------------
+
+--------------10:15:01----------------
+
+--------------------------------------
+
+--------------10:20:01----------------
+
+--------------------------------------
+
+--------------10:25:01----------------
+
+--------------------------------------
+
+--------------10:30:01----------------
+
+--------------------------------------
+
+--------------10:35:01----------------
+
+--------------------------------------
+
+--------------10:40:01----------------
+
+--------------------------------------
+
+--------------10:45:01----------------
+
+--------------------------------------
+
+--------------10:50:01----------------
+
+--------------------------------------
+
+--------------10:55:01----------------
+
+--------------------------------------
+
+--------------11:00:01----------------
+
+--------------------------------------
+
+--------------11:05:01----------------
+
+--------------------------------------
+
+--------------11:10:01----------------
+
+--------------------------------------
+
+--------------11:15:01----------------
+
+--------------------------------------
+
+--------------11:20:01----------------
+
+--------------------------------------
+
+--------------11:25:01----------------
+
+--------------------------------------
+
+--------------11:30:01----------------
+
+--------------------------------------
+
+--------------11:35:01----------------
+
+--------------------------------------
+
+--------------11:40:01----------------
+
+--------------------------------------
+
+--------------11:45:01----------------
+
+--------------------------------------
+
+--------------11:50:01----------------
+
+--------------------------------------
+
+--------------11:55:01----------------
+
+--------------------------------------
+
+--------------12:00:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13600.5, type : <class 'float'> 
+
+                            ils_to_usd = 53940.0, type : <class 'float'>
+--------------------------------------
+
+--------------12:05:01----------------
+
+--------------------------------------
+
+--------------12:10:01----------------
+
+--------------------------------------
+
+--------------12:15:01----------------
+
+--------------------------------------
+
+--------------12:20:01----------------
+
+--------------------------------------
+
+--------------12:25:01----------------
+
+--------------------------------------
+
+--------------12:30:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13554.55, type : <class 'float'> 
+
+                            ils_to_usd = 53761.32, type : <class 'float'>
+--------------------------------------
+
+--------------12:35:01----------------
+
+--------------------------------------
+
+--------------12:40:01----------------
+
+--------------------------------------
+
+--------------12:45:01----------------
+
+--------------------------------------
+
+--------------12:50:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13527.6, type : <class 'float'> 
+
+                            ils_to_usd = 53500.0, type : <class 'float'>
+--------------------------------------
+
+--------------12:55:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13544.95, type : <class 'float'> 
+
+                            ils_to_usd = 53500.0, type : <class 'float'>
+--------------------------------------
+
+--------------13:00:01----------------
+
+--------------------------------------
+
+--------------13:05:01----------------
+
+--------------------------------------
+
+--------------13:10:01----------------
+
+--------------------------------------
+
+--------------13:15:01----------------
+
+--------------------------------------
+
+--------------13:20:01----------------
+
+--------------------------------------
+
+--------------13:25:01----------------
+
+--------------------------------------
+
+--------------13:30:01----------------
+
+--------------------------------------
+
+--------------13:35:01----------------
+
+--------------------------------------
+
+--------------13:40:01----------------
+
+--------------------------------------
+
+--------------13:45:01----------------
+
+--------------------------------------
+
+--------------13:50:01----------------
+
+--------------------------------------
+
+--------------13:55:01----------------
+
+--------------------------------------
+
+--------------14:00:01----------------
+
+--------------------------------------
+
+--------------14:05:01----------------
+
+--------------------------------------
+
+--------------14:10:01----------------
+
+--------------------------------------
+
+--------------14:15:01----------------
+
+--------------------------------------
+
+--------------14:20:01----------------
+
+--------------------------------------
+
+--------------14:25:01----------------
+
+--------------------------------------
+
+--------------14:30:01----------------
+
+--------------------------------------
+
+--------------14:35:01----------------
+
+--------------------------------------
+
+--------------14:40:01----------------
+
+--------------------------------------
+
+--------------14:45:01----------------
+
+--------------------------------------
+
+--------------14:50:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 13267.6, type : <class 'float'> 
+
+                            ils_to_usd = 52500.0, type : <class 'float'>
+--------------------------------------
+
+--------------14:55:01----------------
+
+--------------------------------------
+
+--------------15:25:01----------------
+
+--------------------------------------
+
+--------------15:30:01----------------
+
+--------------------------------------
+
+--------------15:45:02----------------
+
+--------------------------------------
+
+--------------15:50:01----------------
+
+--------------------------------------
+
+--------------15:55:03----------------
+
+--------------------------------------
+
+--------------16:00:02----------------
+
+--------------------------------------
+
+--------------16:05:04----------------
+
+--------------------------------------
+
+--------------16:10:01----------------
+
+--------------------------------------
+
+--------------16:15:01----------------
+
+--------------------------------------
+
+--------------16:20:01----------------
+
+--------------------------------------
+
+--------------16:35:02----------------
+
+--------------------------------------
+
+--------------16:40:02----------------
+
+--------------------------------------
+
+--------------16:45:01----------------
+
+--------------------------------------
+
+--------------16:50:01----------------
+
+--------------------------------------
+
+--------------16:55:02----------------
+
+--------------------------------------
+
+--------------17:00:01----------------
+
+--------------------------------------
+
+--------------17:05:01----------------
+
+--------------------------------------
+
+--------------17:10:01----------------
+
+--------------------------------------
+
+--------------17:15:02----------------
+
+--------------------------------------
+
+--------------21:00:01----------------
+
+--------------------------------------
+
+--------------21:05:01----------------
+
+--------------------------------------
+
+--------------21:10:01----------------
+
+--------------------------------------
+
+--------------21:15:01----------------
+
+--------------------------------------
+
+--------------21:20:01----------------
+
+--------------------------------------
+
+--------------21:25:01----------------
+
+--------------------------------------
+
+--------------21:30:05----------------
+
+--------------------------------------
+
+--------------21:35:01----------------
+
+--------------------------------------
+
+--------------21:40:01----------------
+
+--------------------------------------
+
+--------------21:45:01----------------
+
+--------------------------------------
+
+--------------21:50:01----------------
+
+--------------------------------------
+
+--------------21:55:01----------------
+
+--------------------------------------
+
+--------------22:00:01----------------
+
+--------------------------------------
+
+--------------22:05:01----------------
+
+--------------------------------------
+
+--------------22:10:01----------------
+
+--------------------------------------
+
+--------------22:15:01----------------
+
+--------------------------------------
+
+--------------22:20:01----------------
+
+--------------------------------------
+
+--------------22:25:01----------------
+
+--------------------------------------
+
+--------------22:30:01----------------
+
+--------------------------------------
+
+--------------22:35:01----------------
+
+--------------------------------------
+
+--------------22:40:01----------------
+
+--------------------------------------
+
+--------------22:45:01----------------
+
+--------------------------------------
+
+--------------22:50:01----------------
+
+--------------------------------------
+
+--------------22:55:01----------------
+
+--------------------------------------
+
+--------------23:00:01----------------
+
+--------------------------------------
+
+--------------23:05:01----------------
+
+--------------------------------------
+
+--------------23:10:01----------------
+
+--------------------------------------
+
+--------------23:15:01----------------
+
+--------------------------------------
+
+--------------23:20:01----------------
+
+--------------------------------------
+
+--------------23:25:02----------------
+
+--------------------------------------
+
+--------------23:30:01----------------
+
+--------------------------------------
+
+--------------23:35:02----------------
+
+--------------------------------------
+
+--------------23:40:01----------------
+
+--------------------------------------
+
+--------------23:45:02----------------
+
+--------------------------------------
+
+--------------23:50:01----------------
+
+--------------------------------------
+
+--------------23:55:02----------------
+
+--------------------------------------
+
+--------------00:00:01----------------
+
+--------------------------------------
+
+--------------00:05:02----------------
+
+--------------------------------------
+
+--------------00:10:01----------------
+
+--------------------------------------
+
+--------------00:15:01----------------
+
+--------------------------------------
+
+--------------00:20:01----------------
+
+--------------------------------------
+
+--------------00:25:02----------------
+
+--------------------------------------
+
+--------------00:30:01----------------
+
+--------------------------------------
+
+--------------00:35:03----------------
+
+--------------------------------------
+
+--------------00:40:01----------------
+
+--------------------------------------
+
+--------------00:45:02----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 14967.55, type : <class 'float'> 
+
+                            ils_to_usd = 54100.0, type : <class 'float'>
+--------------------------------------
+
+--------------00:50:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 14987.1, type : <class 'float'> 
+
+                            ils_to_usd = 54100.0, type : <class 'float'>
+--------------------------------------
+
+--------------00:55:01----------------
+
+--------------------------------------
+
+--------------01:00:01----------------
+
+--------------------------------------
+
+--------------01:05:01----------------
+
+--------------------------------------
+
+--------------01:10:01----------------
+
+--------------------------------------
+
+--------------01:15:01----------------
+
+--------------------------------------
+
+--------------01:20:01----------------
+
+--------------------------------------
+
+--------------01:25:01----------------
+
+--------------------------------------
+
+--------------01:30:01----------------
+
+--------------------------------------
+
+--------------01:35:01----------------
+
+--------------------------------------
+
+--------------01:40:01----------------
+
+--------------------------------------
+
+--------------01:45:01----------------
+
+--------------------------------------
+
+--------------01:50:01----------------
+
+--------------------------------------
+
+--------------01:55:01----------------
+
+--------------------------------------
+
+--------------02:00:01----------------
+
+--------------------------------------
+
+--------------02:05:01----------------
+
+--------------------------------------
+
+--------------02:10:01----------------
+
+--------------------------------------
+
+--------------02:15:01----------------
+
+--------------------------------------
+
+--------------02:20:01----------------
+
+--------------------------------------
+
+--------------02:25:01----------------
+
+--------------------------------------
+
+--------------02:30:01----------------
+
+--------------------------------------
+
+--------------02:35:01----------------
+
+--------------------------------------
+
+--------------02:40:01----------------
+
+--------------------------------------
+
+--------------02:45:01----------------
+
+--------------------------------------
+
+--------------02:50:01----------------
+
+--------------------------------------
+
+--------------02:55:01----------------
+
+--------------------------------------
+
+--------------03:00:01----------------
+
+--------------------------------------
+
+--------------03:05:01----------------
+
+--------------------------------------
+
+--------------03:10:01----------------
+
+--------------------------------------
+
+--------------03:15:01----------------
+
+--------------------------------------
+
+--------------03:20:01----------------
+
+--------------------------------------
+
+--------------03:25:01----------------
+
+--------------------------------------
+
+--------------03:30:01----------------
+
+--------------------------------------
+
+--------------03:35:01----------------
+
+--------------------------------------
+
+--------------03:40:01----------------
+
+--------------------------------------
+
+--------------03:45:01----------------
+
+--------------------------------------
+
+--------------03:50:01----------------
+
+--------------------------------------
+
+--------------03:55:01----------------
+
+--------------------------------------
+
+--------------04:00:01----------------
+
+--------------------------------------
+
+--------------04:05:01----------------
+
+--------------------------------------
+
+--------------04:10:01----------------
+
+--------------------------------------
+
+--------------04:15:01----------------
+
+--------------------------------------
+
+--------------04:20:01----------------
+
+--------------------------------------
+
+--------------04:25:01----------------
+
+--------------------------------------
+
+--------------04:30:01----------------
+
+--------------------------------------
+
+--------------04:35:01----------------
+
+--------------------------------------
+
+--------------04:40:01----------------
+
+--------------------------------------
+
+--------------04:45:01----------------
+
+--------------------------------------
+
+--------------04:50:01----------------
+
+--------------------------------------
+
+--------------04:55:02----------------
+
+--------------------------------------
+
+--------------05:00:01----------------
+
+--------------------------------------
+
+--------------05:05:01----------------
+
+--------------------------------------
+
+--------------05:10:01----------------
+
+--------------------------------------
+
+--------------05:15:01----------------
+
+--------------------------------------
+
+--------------05:20:01----------------
+
+--------------------------------------
+
+--------------05:25:01----------------
+
+--------------------------------------
+
+--------------05:30:01----------------
+
+--------------------------------------
+
+--------------05:35:01----------------
+
+--------------------------------------
+
+--------------05:40:01----------------
+
+--------------------------------------
+
+--------------05:45:01----------------
+
+--------------------------------------
+
+--------------05:50:01----------------
+
+--------------------------------------
+
+--------------05:55:01----------------
+
+--------------------------------------
+
+--------------06:00:01----------------
+
+--------------------------------------
+
+--------------06:05:01----------------
+
+--------------------------------------
+
+--------------06:10:01----------------
+
+--------------------------------------
+
+--------------06:15:01----------------
+
+--------------------------------------
+
+--------------06:20:01----------------
+
+--------------------------------------
+
+--------------06:25:01----------------
+
+--------------------------------------
+
+--------------06:30:01----------------
+
+--------------------------------------
+
+--------------06:35:01----------------
+
+--------------------------------------
+
+--------------06:40:01----------------
+
+--------------------------------------
+
+--------------06:45:01----------------
+
+--------------------------------------
+
+--------------06:50:01----------------
+
+--------------------------------------
+
+--------------06:55:01----------------
+
+--------------------------------------
+
+--------------07:00:01----------------
+
+--------------------------------------
+
+--------------07:05:01----------------
+
+--------------------------------------
+
+--------------07:10:01----------------
+
+--------------------------------------
+
+--------------07:15:01----------------
+
+--------------------------------------
+
+--------------07:20:01----------------
+
+--------------------------------------
+
+--------------07:25:01----------------
+
+--------------------------------------
+
+--------------07:30:01----------------
+
+--------------------------------------
+
+--------------07:35:01----------------
+
+--------------------------------------
+
+--------------07:40:01----------------
+
+--------------------------------------
+
+--------------07:45:01----------------
+
+--------------------------------------
+
+--------------07:50:01----------------
+
+--------------------------------------
+
+--------------07:55:01----------------
+
+--------------------------------------
+
+--------------08:00:01----------------
+
+--------------------------------------
+
+--------------08:05:01----------------
+
+--------------------------------------
+
+--------------08:10:01----------------
+
+--------------------------------------
+
+--------------08:15:01----------------
+
+--------------------------------------
+
+--------------08:20:01----------------
+
+--------------------------------------
+
+--------------08:25:01----------------
+
+--------------------------------------
+
+--------------08:30:01----------------
+
+--------------------------------------
+
+--------------08:35:01----------------
+
+--------------------------------------
+
+--------------08:40:01----------------
+
+--------------------------------------
+
+--------------08:45:01----------------
+
+--------------------------------------
+
+--------------08:50:01----------------
+
+--------------------------------------
+
+--------------08:55:01----------------
+
+--------------------------------------
+
+--------------09:00:01----------------
+
+--------------------------------------
+
+--------------09:05:01----------------
+
+--------------------------------------
+
+--------------09:10:01----------------
+
+--------------------------------------
+
+--------------09:15:01----------------
+
+--------------------------------------
+
+--------------09:20:01----------------
+
+--------------------------------------
+
+--------------09:25:01----------------
+
+--------------------------------------
+
+--------------09:30:01----------------
+
+--------------------------------------
+
+--------------09:35:01----------------
+
+--------------------------------------
+
+--------------09:40:01----------------
+
+--------------------------------------
+
+--------------09:45:01----------------
+
+--------------------------------------
+
+--------------09:50:01----------------
+
+--------------------------------------
+
+--------------09:55:01----------------
+
+--------------------------------------
+
+--------------10:00:01----------------
+
+--------------------------------------
+
+--------------10:05:01----------------
+
+--------------------------------------
+
+--------------10:10:01----------------
+
+--------------------------------------
+
+--------------10:15:01----------------
+
+--------------------------------------
+
+--------------10:20:01----------------
+
+--------------------------------------
+
+--------------10:25:01----------------
+
+--------------------------------------
+
+--------------10:30:01----------------
+
+--------------------------------------
+
+--------------10:35:01----------------
+
+--------------------------------------
+
+--------------10:40:01----------------
+
+--------------------------------------
+
+--------------10:45:01----------------
+
+--------------------------------------
+
+--------------10:50:01----------------
+
+--------------------------------------
+
+--------------10:55:01----------------
+
+--------------------------------------
+
+--------------11:00:01----------------
+
+--------------------------------------
+
+--------------11:05:01----------------
+
+--------------------------------------
+
+--------------11:10:01----------------
+
+--------------------------------------
+
+--------------11:15:01----------------
+
+--------------------------------------
+
+--------------11:20:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 14391.85, type : <class 'float'> 
+
+                            ils_to_usd = 54000.0, type : <class 'float'>
+--------------------------------------
+
+--------------11:25:01----------------
+
+--------------------------------------
+
+--------------11:30:01----------------
+
+--------------------------------------
+
+--------------11:35:01----------------
+
+--------------------------------------
+
+--------------11:40:01----------------
+
+--------------------------------------
+
+--------------11:45:01----------------
+
+--------------------------------------
+
+--------------11:50:01----------------
+
+--------------------------------------
+
+--------------11:55:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 14486.55, type : <class 'float'> 
+
+                            ils_to_usd = 54398.92, type : <class 'float'>
+--------------------------------------
+
+--------------12:00:01----------------
+
+--------------------------------------
+
+--------------12:05:01----------------
+
+--------------------------------------
+
+--------------12:10:01----------------
+
+--------------------------------------
+
+--------------12:15:01----------------
+
+--------------------------------------
+
+--------------12:20:01----------------
+
+--------------------------------------
+
+--------------12:25:01----------------
+
+--------------------------------------
+
+--------------12:30:01----------------
+
+--------------------------------------
+
+--------------12:35:01----------------
+
+--------------------------------------
+
+--------------12:40:01----------------
+
+--------------------------------------
+
+--------------12:45:01----------------
+
+--------------------------------------
+
+--------------12:50:01----------------
+
+--------------------------------------
+
+--------------12:55:01----------------
+
+--------------------------------------
+
+--------------13:00:01----------------
+
+--------------------------------------
+
+--------------13:05:01----------------
+
+--------------------------------------
+
+--------------13:10:01----------------
+
+--------------------------------------
+
+--------------13:15:01----------------
+
+--------------------------------------
+
+--------------13:20:01----------------
+
+--------------------------------------
+
+--------------13:25:01----------------
+
+--------------------------------------
+
+--------------13:30:01----------------
+
+--------------------------------------
+
+--------------13:35:01----------------
+
+--------------------------------------
+
+--------------13:40:01----------------
+
+--------------------------------------
+
+--------------13:45:01----------------
+
+--------------------------------------
+
+--------------13:50:01----------------
+
+--------------------------------------
+
+--------------13:55:01----------------
+
+--------------------------------------
+
+--------------14:00:01----------------
+
+--------------------------------------
+
+--------------14:05:01----------------
+
+--------------------------------------
+
+--------------14:10:02----------------
+
+--------------------------------------
+
+--------------14:15:01----------------
+
+--------------------------------------
+
+--------------14:20:01----------------
+
+--------------------------------------
+
+--------------14:25:01----------------
+
+--------------------------------------
+
+--------------14:30:01----------------
+
+--------------------------------------
+
+--------------14:35:01----------------
+
+--------------------------------------
+
+--------------14:40:01----------------
+
+--------------------------------------
+
+--------------14:45:01----------------
+
+--------------------------------------
+
+--------------14:50:01----------------
+
+--------------------------------------
+
+--------------14:55:01----------------
+
+--------------------------------------
+
+--------------15:00:01----------------
+
+--------------------------------------
+
+--------------15:05:01----------------
+
+--------------------------------------
+
+--------------15:10:01----------------
+
+--------------------------------------
+
+--------------15:15:01----------------
+
+--------------------------------------
+
+--------------15:20:01----------------
+
+--------------------------------------
+
+--------------15:25:01----------------
+
+--------------------------------------
+
+--------------15:30:01----------------
+
+--------------------------------------
+
+--------------15:35:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 14598.5, type : <class 'float'> 
+
+                            ils_to_usd = 53990.0, type : <class 'float'>
+--------------------------------------
+
+--------------15:40:01----------------
+
+--------------------------------------
+
+--------------15:45:01----------------
+
+--------------------------------------
+
+--------------15:50:01----------------
+
+--------------------------------------
+
+--------------15:55:01----------------
+
+--------------------------------------
+
+--------------16:00:01----------------
+
+--------------------------------------
+
+--------------16:05:01----------------
+
+--------------------------------------
+
+--------------16:10:01----------------
+
+--------------------------------------
+
+--------------16:15:01----------------
+
+--------------------------------------
+
+--------------16:20:01----------------
+
+--------------------------------------
+
+--------------16:25:01----------------
+
+--------------------------------------
+
+--------------16:30:01----------------
+
+--------------------------------------
+
+--------------16:35:01----------------
+
+--------------------------------------
+
+--------------16:40:01----------------
+
+--------------------------------------
+
+--------------16:45:01----------------
+
+--------------------------------------
+
+--------------16:50:01----------------
+
+--------------------------------------
+
+--------------16:55:01----------------
+
+--------------------------------------
+
+--------------17:00:01----------------
+
+--------------------------------------
+
+--------------17:05:01----------------
+
+--------------------------------------
+
+--------------17:10:01----------------
+
+--------------------------------------
+
+--------------17:15:01----------------
+
+--------------------------------------
+
+--------------17:20:01----------------
+
+--------------------------------------
+
+--------------17:25:01----------------
+
+--------------------------------------
+
+--------------17:30:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 14510.4, type : <class 'float'> 
+
+                            ils_to_usd = 52799.99, type : <class 'float'>
+--------------------------------------
+
+--------------17:35:01----------------
+
+--------------------------------------
+
+--------------17:40:01----------------
+
+--------------------------------------
+
+--------------17:45:01----------------
+
+--------------------------------------
+
+--------------17:50:01----------------
+
+--------------------------------------
+
+--------------17:55:01----------------
+
+--------------------------------------
+
+--------------18:00:01----------------
+
+--------------------------------------
+
+--------------18:05:01----------------
+
+--------------------------------------
+
+--------------18:10:01----------------
+
+--------------------------------------
+
+--------------18:15:01----------------
+
+--------------------------------------
+
+--------------18:20:01----------------
+
+--------------------------------------
+
+--------------18:25:01----------------
+
+--------------------------------------
+
+--------------18:30:01----------------
+
+--------------------------------------
+
+--------------18:35:01----------------
+
+--------------------------------------
+
+--------------18:40:01----------------
+
+--------------------------------------
+
+--------------18:45:01----------------
+
+--------------------------------------
+
+--------------18:50:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 14559.4, type : <class 'float'> 
+
+                            ils_to_usd = 51789.0, type : <class 'float'>
+--------------------------------------
+
+--------------18:55:01----------------
+
+--------------------------------------
+
+--------------19:00:01----------------
+
+--------------------------------------
+
+--------------19:05:01----------------
+
+--------------------------------------
+
+--------------19:10:01----------------
+
+--------------------------------------
+
+--------------19:15:01----------------
+
+--------------------------------------
+
+--------------19:20:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 14690.1, type : <class 'float'> 
+
+                            ils_to_usd = 52699.0, type : <class 'float'>
+--------------------------------------
+
+--------------19:25:01----------------
+
+--------------------------------------
+
+--------------19:30:01----------------
+
+--------------------------------------
+
+--------------19:35:01----------------
+
+--------------------------------------
+
+--------------19:40:01----------------
+
+--------------------------------------
+
+--------------19:45:01----------------
+
+--------------------------------------
+
+--------------19:50:01----------------
+
+--------------------------------------
+
+--------------19:55:01----------------
+
+--------------------------------------
+
+--------------20:00:01----------------
+
+--------------------------------------
+
+--------------20:05:01----------------
+
+--------------------------------------
+
+--------------20:10:01----------------
+
+--------------------------------------
+
+--------------20:15:01----------------
+
+--------------------------------------
+
+--------------20:20:01----------------
+
+--------------------------------------
+
+--------------20:25:01----------------
+
+--------------------------------------
+
+--------------20:30:01----------------
+
+--------------------------------------
+
+--------------20:35:01----------------
+
+--------------------------------------
+
+--------------20:40:01----------------
+
+--------------------------------------
+
+--------------20:45:01----------------
+
+--------------------------------------
+
+--------------20:50:01----------------
+
+--------------------------------------
+
+--------------20:55:01----------------
+
+--------------------------------------
+
+--------------21:00:01----------------
+
+--------------------------------------
+
+--------------21:05:01----------------
+
+--------------------------------------
+
+--------------21:10:01----------------
+
+--------------------------------------
+
+--------------21:15:01----------------
+
+--------------------------------------
+
+--------------21:20:01----------------
+
+--------------------------------------
+
+--------------21:25:01----------------
+
+--------------------------------------
+
+--------------21:30:01----------------
+
+--------------------------------------
+
+--------------21:35:01----------------
+
+--------------------------------------
+
+--------------21:40:01----------------
+
+--------------------------------------
+
+--------------21:45:01----------------
+
+--------------------------------------
+
+--------------21:50:01----------------
+
+--------------------------------------
+
+--------------21:55:01----------------
+
+--------------------------------------
+
+--------------22:00:01----------------
+
+--------------------------------------
+
+--------------22:05:01----------------
+
+--------------------------------------
+
+--------------22:10:01----------------
+
+--------------------------------------
+
+--------------22:15:01----------------
+
+--------------------------------------
+
+--------------22:20:01----------------
+
+--------------------------------------
+
+--------------22:25:01----------------
+
+--------------------------------------
+
+--------------22:30:01----------------
+
+--------------------------------------
+
+--------------22:35:01----------------
+
+--------------------------------------
+
+--------------22:40:01----------------
+
+--------------------------------------
+
+--------------22:45:01----------------
+
+--------------------------------------
+
+--------------22:50:01----------------
+
+--------------------------------------
+
+--------------22:55:01----------------
+
+--------------------------------------
+
+--------------23:00:01----------------
+
+--------------------------------------
+
+--------------23:05:01----------------
+
+--------------------------------------
+
+--------------23:10:01----------------
+
+--------------------------------------
+
+--------------23:15:01----------------
+
+--------------------------------------
+
+--------------23:20:01----------------
+
+--------------------------------------
+
+--------------23:25:01----------------
+
+--------------------------------------
+
+--------------23:30:01----------------
+
+--------------------------------------
+
+--------------23:35:01----------------
+
+--------------------------------------
+
+--------------23:40:01----------------
+
+--------------------------------------
+
+--------------23:45:01----------------
+
+--------------------------------------
+
+--------------23:50:01----------------
+
+--------------------------------------
+
+--------------23:55:01----------------
+
+--------------------------------------
+
+--------------00:00:01----------------
+
+--------------------------------------
+
+--------------00:05:01----------------
+
+--------------------------------------
+
+--------------00:10:01----------------
+
+--------------------------------------
+
+--------------00:15:01----------------
+
+--------------------------------------
+
+--------------00:20:01----------------
+
+--------------------------------------
+
+--------------00:25:01----------------
+
+--------------------------------------
+
+--------------00:30:01----------------
+
+--------------------------------------
+
+--------------00:35:01----------------
+
+--------------------------------------
+
+--------------00:40:01----------------
+
+--------------------------------------
+
+--------------00:45:01----------------
+
+--------------------------------------
+
+--------------00:50:01----------------
+
+--------------------------------------
+
+--------------00:55:01----------------
+
+--------------------------------------
+
+--------------01:00:01----------------
+
+--------------------------------------
+
+--------------01:05:01----------------
+
+--------------------------------------
+
+--------------01:10:01----------------
+
+--------------------------------------
+
+--------------01:15:01----------------
+
+--------------------------------------
+
+--------------01:20:01----------------
+
+--------------------------------------
+
+--------------01:25:01----------------
+
+--------------------------------------
+
+--------------01:30:01----------------
+
+--------------------------------------
+
+--------------01:35:01----------------
+
+--------------------------------------
+
+--------------01:40:01----------------
+
+--------------------------------------
+
+--------------01:45:01----------------
+
+--------------------------------------
+
+--------------01:50:01----------------
+
+--------------------------------------
+
+--------------01:55:01----------------
+
+--------------------------------------
+
+--------------02:00:01----------------
+
+--------------------------------------
+
+--------------02:05:01----------------
+
+--------------------------------------
+
+--------------02:10:01----------------
+
+--------------------------------------
+
+--------------02:15:01----------------
+
+--------------------------------------
+
+--------------02:20:01----------------
+
+--------------------------------------
+
+--------------02:25:01----------------
+
+--------------------------------------
+
+--------------02:30:01----------------
+
+--------------------------------------
+
+--------------02:35:01----------------
+
+--------------------------------------
+
+--------------02:40:01----------------
+
+--------------------------------------
+
+--------------02:45:01----------------
+
+--------------------------------------
+
+--------------02:50:01----------------
+
+--------------------------------------
+
+--------------02:55:01----------------
+
+--------------------------------------
+
+--------------03:00:01----------------
+
+--------------------------------------
+
+--------------03:05:01----------------
+
+--------------------------------------
+
+--------------03:10:01----------------
+
+--------------------------------------
+
+--------------03:15:01----------------
+
+--------------------------------------
+
+--------------03:20:01----------------
+
+--------------------------------------
+
+--------------03:25:01----------------
+
+--------------------------------------
+
+--------------03:30:01----------------
+
+--------------------------------------
+
+--------------03:35:01----------------
+
+--------------------------------------
+
+--------------03:40:01----------------
+
+--------------------------------------
+
+--------------03:45:01----------------
+
+--------------------------------------
+
+--------------03:50:01----------------
+
+--------------------------------------
+
+--------------03:55:01----------------
+
+--------------------------------------
+
+--------------04:00:01----------------
+
+--------------------------------------
+
+--------------04:05:01----------------
+
+--------------------------------------
+
+--------------04:10:01----------------
+
+--------------------------------------
+
+--------------04:15:01----------------
+
+--------------------------------------
+
+--------------04:20:01----------------
+
+--------------------------------------
+
+--------------04:25:01----------------
+
+--------------------------------------
+
+--------------04:30:01----------------
+
+--------------------------------------
+
+--------------04:35:01----------------
+
+--------------------------------------
+
+--------------04:40:01----------------
+
+--------------------------------------
+
+--------------04:45:01----------------
+
+--------------------------------------
+
+--------------04:50:01----------------
+
+--------------------------------------
+
+--------------04:55:01----------------
+
+--------------------------------------
+
+--------------05:00:01----------------
+
+--------------------------------------
+
+--------------05:05:01----------------
+
+--------------------------------------
+
+--------------05:10:01----------------
+
+--------------------------------------
+
+--------------05:15:01----------------
+
+--------------------------------------
+
+--------------05:20:01----------------
+
+--------------------------------------
+
+--------------05:25:01----------------
+
+--------------------------------------
+
+--------------05:30:01----------------
+
+--------------------------------------
+
+--------------05:35:01----------------
+
+--------------------------------------
+
+--------------05:40:01----------------
+
+--------------------------------------
+
+--------------05:45:01----------------
+
+--------------------------------------
+
+--------------05:50:01----------------
+
+--------------------------------------
+
+--------------05:55:01----------------
+
+--------------------------------------
+
+--------------06:00:01----------------
+
+--------------------------------------
+
+--------------06:05:01----------------
+
+--------------------------------------
+
+--------------06:10:01----------------
+
+--------------------------------------
+
+--------------06:15:01----------------
+
+--------------------------------------
+
+--------------06:20:01----------------
+
+--------------------------------------
+
+--------------06:25:01----------------
+
+--------------------------------------
+
+--------------06:30:01----------------
+
+--------------------------------------
+
+--------------06:35:01----------------
+
+--------------------------------------
+
+--------------06:40:01----------------
+
+--------------------------------------
+
+--------------06:45:01----------------
+
+--------------------------------------
+
+--------------06:50:01----------------
+
+--------------------------------------
+
+--------------06:55:01----------------
+
+--------------------------------------
+
+--------------07:00:01----------------
+
+--------------------------------------
+
+--------------07:05:01----------------
+
+--------------------------------------
+
+--------------07:10:01----------------
+
+--------------------------------------
+
+--------------07:15:01----------------
+
+--------------------------------------
+
+--------------07:20:01----------------
+
+--------------------------------------
+
+--------------07:25:01----------------
+
+--------------------------------------
+
+--------------07:30:01----------------
+
+--------------------------------------
+
+--------------07:35:01----------------
+
+--------------------------------------
+
+--------------07:40:01----------------
+
+--------------------------------------
+
+--------------07:45:01----------------
+
+--------------------------------------
+
+--------------07:50:01----------------
+
+--------------------------------------
+
+--------------07:55:01----------------
+
+--------------------------------------
+
+--------------08:00:01----------------
+
+--------------------------------------
+
+--------------08:05:01----------------
+
+--------------------------------------
+
+--------------08:10:01----------------
+
+--------------------------------------
+
+--------------08:15:01----------------
+
+--------------------------------------
+
+--------------08:20:01----------------
+
+--------------------------------------
+
+--------------08:25:01----------------
+
+--------------------------------------
+
+--------------08:30:01----------------
+
+--------------------------------------
+
+--------------08:35:01----------------
+
+--------------------------------------
+
+--------------08:40:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 14919.95, type : <class 'float'> 
+
+                            ils_to_usd = 54500.0, type : <class 'float'>
+--------------------------------------
+
+--------------08:45:01----------------
+
+--------------------------------------
+
+--------------08:50:01----------------
+
+--------------------------------------
+
+--------------08:55:01----------------
+
+--------------------------------------
+
+--------------09:00:01----------------
+
+--------------------------------------
+
+--------------09:05:01----------------
+
+--------------------------------------
+
+--------------09:10:01----------------
+
+--------------------------------------
+
+--------------09:15:01----------------
+
+--------------------------------------
+
+--------------09:20:01----------------
+
+--------------------------------------
+
+--------------09:25:01----------------
+
+--------------------------------------
+
+--------------09:30:01----------------
+
+--------------------------------------
+
+--------------09:35:01----------------
+
+--------------------------------------
+
+--------------09:40:01----------------
+
+--------------------------------------
+
+--------------09:45:01----------------
+
+--------------------------------------
+
+--------------09:50:01----------------
+
+--------------------------------------
+
+--------------09:55:01----------------
+
+--------------------------------------
+
+--------------10:00:01----------------
+
+--------------------------------------
+
+--------------10:05:01----------------
+
+--------------------------------------
+
+--------------10:10:01----------------
+
+--------------------------------------
+
+--------------10:15:01----------------
+
+--------------------------------------
+
+--------------10:20:01----------------
+
+--------------------------------------
+
+--------------10:25:01----------------
+
+--------------------------------------
+
+--------------10:30:01----------------
+
+--------------------------------------
+
+--------------10:35:01----------------
+
+--------------------------------------
+
+--------------10:40:01----------------
+
+--------------------------------------
+
+--------------10:45:01----------------
+
+--------------------------------------
+
+--------------10:50:01----------------
+
+--------------------------------------
+
+--------------10:55:01----------------
+
+--------------------------------------
+
+--------------11:00:01----------------
+
+--------------------------------------
+
+--------------11:05:01----------------
+
+--------------------------------------
+
+--------------11:10:01----------------
+
+--------------------------------------
+
+--------------11:15:01----------------
+
+--------------------------------------
+
+--------------11:20:01----------------
+
+--------------------------------------
+
+--------------11:25:01----------------
+
+--------------------------------------
+
+--------------11:30:01----------------
+
+--------------------------------------
+
+--------------11:35:01----------------
+
+--------------------------------------
+
+--------------11:40:01----------------
+
+--------------------------------------
+
+--------------11:45:01----------------
+
+--------------------------------------
+
+--------------11:50:02----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 15916.4, type : <class 'float'> 
+
+                            ils_to_usd = 56000.0, type : <class 'float'>
+--------------------------------------
+
+--------------11:55:01----------------
+
+--------------------------------------
+
+--------------12:00:01----------------
+
+--------------------------------------
+
+--------------12:05:01----------------
+
+--------------------------------------
+
+--------------12:10:01----------------
+
+--------------------------------------
+
+--------------12:15:01----------------
+
+--------------------------------------
+
+--------------12:20:01----------------
+
+--------------------------------------
+
+--------------12:25:01----------------
+
+--------------------------------------
+
+--------------12:30:01----------------
+
+--------------------------------------
+
+--------------12:35:01----------------
+
+--------------------------------------
+
+--------------12:40:01----------------
+
+--------------------------------------
+
+--------------12:45:01----------------
+
+--------------------------------------
+
+--------------12:50:02----------------
+
+--------------------------------------
+
+--------------12:55:01----------------
+
+--------------------------------------
+
+--------------13:00:01----------------
+
+--------------------------------------
+
+--------------13:05:01----------------
+
+--------------------------------------
+
+--------------13:10:01----------------
+
+--------------------------------------
+
+--------------13:15:01----------------
+
+--------------------------------------
+
+--------------13:20:01----------------
+
+--------------------------------------
+
+--------------13:25:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 15983.5, type : <class 'float'> 
+
+                            ils_to_usd = 56998.98, type : <class 'float'>
+--------------------------------------
+
+--------------13:30:01----------------
+
+--------------------------------------
+
+--------------13:35:01----------------
+
+--------------------------------------
+
+--------------13:40:01----------------
+
+--------------------------------------
+
+--------------13:45:01----------------
+
+--------------------------------------
+
+--------------13:50:01----------------
+
+--------------------------------------
+
+--------------13:55:01----------------
+
+--------------------------------------
+
+--------------14:00:01----------------
+
+--------------------------------------
+
+--------------14:05:01----------------
+
+--------------------------------------
+
+--------------14:10:01----------------
+
+--------------------------------------
+
+--------------14:15:01----------------
+
+--------------------------------------
+
+--------------14:20:01----------------
+
+--------------------------------------
+
+--------------14:25:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 15915.25, type : <class 'float'> 
+
+                            ils_to_usd = 57277.0, type : <class 'float'>
+--------------------------------------
+
+--------------14:30:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 15896.2, type : <class 'float'> 
+
+                            ils_to_usd = 57277.0, type : <class 'float'>
+--------------------------------------
+
+--------------14:35:01----------------
+
+--------------------------------------
+
+--------------14:40:01----------------
+
+--------------------------------------
+
+--------------14:45:01----------------
+
+--------------------------------------
+
+--------------14:50:01----------------
+
+--------------------------------------
+
+--------------14:55:01----------------
+
+--------------------------------------
+
+--------------15:00:01----------------
+
+--------------------------------------
+
+--------------15:05:01----------------
+
+--------------------------------------
+
+--------------15:10:01----------------
+
+--------------------------------------
+
+--------------15:15:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 15911.0, type : <class 'float'> 
+
+                            ils_to_usd = 56400.0, type : <class 'float'>
+--------------------------------------
+
+--------------15:20:01----------------
+
+--------------------------------------
+
+--------------15:25:01----------------
+
+--------------------------------------
+
+--------------15:30:01----------------
+
+--------------------------------------
+
+--------------15:35:01----------------
+
+--------------------------------------
+
+--------------15:40:01----------------
+
+--------------------------------------
+
+--------------15:45:01----------------
+
+--------------------------------------
+
+--------------15:50:01----------------
+
+--------------------------------------
+
+--------------15:55:01----------------
+
+--------------------------------------
+
+--------------16:00:01----------------
+
+--------------------------------------
+
+--------------16:05:01----------------
+
+--------------------------------------
+
+--------------16:10:01----------------
+
+--------------------------------------
+
+--------------16:15:01----------------
+
+--------------------------------------
+
+--------------16:20:01----------------
+
+--------------------------------------
+
+--------------16:25:01----------------
+
+--------------------------------------
+
+--------------16:30:01----------------
+
+--------------------------------------
+
+--------------16:35:01----------------
+
+--------------------------------------
+
+--------------16:40:01----------------
+
+--------------------------------------
+
+--------------16:45:01----------------
+
+--------------------------------------
+
+--------------16:50:01----------------
+
+--------------------------------------
+
+--------------16:55:01----------------
+
+--------------------------------------
+
+--------------17:00:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16032.5, type : <class 'float'> 
+
+                            ils_to_usd = 56011.0, type : <class 'float'>
+--------------------------------------
+
+--------------17:05:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16001.8, type : <class 'float'> 
+
+                            ils_to_usd = 56011.0, type : <class 'float'>
+--------------------------------------
+
+--------------17:10:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 15975.0, type : <class 'float'> 
+
+                            ils_to_usd = 56500.0, type : <class 'float'>
+--------------------------------------
+
+--------------17:15:01----------------
+
+--------------------------------------
+
+--------------17:20:01----------------
+
+--------------------------------------
+
+--------------17:25:01----------------
+
+--------------------------------------
+
+--------------17:30:01----------------
+
+--------------------------------------
+
+--------------17:35:01----------------
+
+--------------------------------------
+
+--------------17:40:01----------------
+
+--------------------------------------
+
+--------------17:45:01----------------
+
+--------------------------------------
+
+--------------17:50:01----------------
+
+--------------------------------------
+
+--------------17:55:01----------------
+
+--------------------------------------
+
+--------------18:00:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16010.8, type : <class 'float'> 
+
+                            ils_to_usd = 57000.0, type : <class 'float'>
+--------------------------------------
+
+--------------18:05:01----------------
+
+--------------------------------------
+
+--------------18:10:01----------------
+
+--------------------------------------
+
+--------------18:15:01----------------
+
+--------------------------------------
+
+--------------18:20:01----------------
+
+--------------------------------------
+
+--------------18:25:01----------------
+
+--------------------------------------
+
+--------------18:30:01----------------
+
+--------------------------------------
+
+--------------18:35:01----------------
+
+--------------------------------------
+
+--------------18:40:01----------------
+
+--------------------------------------
+
+--------------18:45:01----------------
+
+--------------------------------------
+
+--------------18:50:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16204.05, type : <class 'float'> 
+
+                            ils_to_usd = 57149.0, type : <class 'float'>
+--------------------------------------
+
+--------------18:55:01----------------
+
+--------------------------------------
+
+--------------19:00:01----------------
+
+--------------------------------------
+
+--------------19:05:01----------------
+
+--------------------------------------
+
+--------------19:10:01----------------
+
+--------------------------------------
+
+--------------19:15:01----------------
+
+--------------------------------------
+
+--------------19:20:01----------------
+
+--------------------------------------
+
+--------------19:25:01----------------
+
+--------------------------------------
+
+--------------19:30:01----------------
+
+--------------------------------------
+
+--------------19:35:01----------------
+
+--------------------------------------
+
+--------------19:40:01----------------
+
+--------------------------------------
+
+--------------19:45:01----------------
+
+--------------------------------------
+
+--------------19:50:01----------------
+
+--------------------------------------
+
+--------------19:55:01----------------
+
+--------------------------------------
+
+--------------20:00:01----------------
+
+--------------------------------------
+
+--------------20:05:01----------------
+
+--------------------------------------
+
+--------------20:10:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16446.05, type : <class 'float'> 
+
+                            ils_to_usd = 57752.0, type : <class 'float'>
+--------------------------------------
+
+--------------20:15:01----------------
+
+--------------------------------------
+
+--------------20:20:01----------------
+
+--------------------------------------
+
+--------------20:25:01----------------
+
+--------------------------------------
+
+--------------20:30:02----------------
+
+--------------------------------------
+
+--------------20:35:01----------------
+
+--------------------------------------
+
+--------------20:40:01----------------
+
+--------------------------------------
+
+--------------20:45:01----------------
+
+--------------------------------------
+
+--------------20:50:01----------------
+
+--------------------------------------
+
+--------------20:55:01----------------
+
+--------------------------------------
+
+--------------21:00:01----------------
+
+--------------------------------------
+
+--------------21:05:01----------------
+
+--------------------------------------
+
+--------------21:10:01----------------
+
+--------------------------------------
+
+--------------21:15:01----------------
+
+--------------------------------------
+
+--------------21:20:01----------------
+
+--------------------------------------
+
+--------------21:25:01----------------
+
+--------------------------------------
+
+--------------21:30:01----------------
+
+--------------------------------------
+
+--------------21:35:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16365.35, type : <class 'float'> 
+
+                            ils_to_usd = 57770.0, type : <class 'float'>
+--------------------------------------
+
+--------------21:40:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16436.45, type : <class 'float'> 
+
+                            ils_to_usd = 56800.0, type : <class 'float'>
+--------------------------------------
+
+--------------21:45:01----------------
+
+--------------------------------------
+
+--------------21:50:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16431.4, type : <class 'float'> 
+
+                            ils_to_usd = 56524.0, type : <class 'float'>
+--------------------------------------
+
+--------------21:55:01----------------
+
+--------------------------------------
+
+--------------22:00:01----------------
+
+--------------------------------------
+
+--------------22:05:01----------------
+
+--------------------------------------
+
+--------------22:10:01----------------
+
+--------------------------------------
+
+--------------22:15:01----------------
+
+--------------------------------------
+
+--------------22:20:01----------------
+
+--------------------------------------
+
+--------------22:25:01----------------
+
+--------------------------------------
+
+--------------22:30:01----------------
+
+--------------------------------------
+
+--------------22:35:01----------------
+
+--------------------------------------
+
+--------------22:40:01----------------
+
+--------------------------------------
+
+--------------22:45:01----------------
+
+--------------------------------------
+
+--------------22:50:01----------------
+
+--------------------------------------
+
+--------------22:55:01----------------
+
+--------------------------------------
+
+--------------23:00:01----------------
+
+--------------------------------------
+
+--------------23:05:01----------------
+
+--------------------------------------
+
+--------------23:10:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16724.0, type : <class 'float'> 
+
+                            ils_to_usd = 57769.99, type : <class 'float'>
+--------------------------------------
+
+--------------23:15:01----------------
+
+--------------------------------------
+
+--------------23:20:01----------------
+
+--------------------------------------
+
+--------------23:25:01----------------
+
+--------------------------------------
+
+--------------23:30:01----------------
+
+--------------------------------------
+
+--------------23:35:01----------------
+
+--------------------------------------
+
+--------------23:40:01----------------
+
+--------------------------------------
+
+--------------23:45:01----------------
+
+--------------------------------------
+
+--------------23:50:01----------------
+
+--------------------------------------
+
+--------------23:55:01----------------
+
+--------------------------------------
+
+--------------00:00:01----------------
+
+--------------------------------------
+
+--------------00:05:01----------------
+
+--------------------------------------
+
+--------------10:50:01----------------
+
+--------------------------------------
+
+--------------10:55:01----------------
+
+--------------------------------------
+
+--------------11:00:01----------------
+
+--------------------------------------
+
+--------------11:05:01----------------
+
+--------------------------------------
+
+--------------11:10:01----------------
+
+--------------------------------------
+
+--------------11:15:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16533.0, type : <class 'float'> 
+
+                            ils_to_usd = 57000.0, type : <class 'float'>
+--------------------------------------
+
+--------------11:20:01----------------
+
+--------------------------------------
+
+--------------11:25:01----------------
+
+--------------------------------------
+
+--------------11:30:01----------------
+
+--------------------------------------
+
+--------------11:35:01----------------
+
+--------------------------------------
+
+--------------11:40:02----------------
+
+--------------------------------------
+
+--------------11:45:01----------------
+
+--------------------------------------
+
+--------------11:50:01----------------
+
+--------------------------------------
+
+--------------11:55:01----------------
+
+--------------------------------------
+
+--------------12:00:01----------------
+
+--------------------------------------
+
+--------------12:05:01----------------
+
+--------------------------------------
+
+--------------12:10:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16366.5, type : <class 'float'> 
+
+                            ils_to_usd = 57270.07, type : <class 'float'>
+--------------------------------------
+
+--------------12:15:01----------------
+
+--------------------------------------
+
+--------------12:20:01----------------
+
+--------------------------------------
+
+--------------12:25:01----------------
+
+--------------------------------------
+
+--------------12:30:01----------------
+
+--------------------------------------
+
+--------------12:35:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16555.1, type : <class 'float'> 
+
+                            ils_to_usd = 57648.72, type : <class 'float'>
+--------------------------------------
+
+--------------12:40:01----------------
+
+--------------------------------------
+
+--------------12:45:01----------------
+
+--------------------------------------
+
+--------------12:50:01----------------
+
+--------------------------------------
+
+--------------12:55:01----------------
+
+--------------------------------------
+
+--------------13:00:01----------------
+
+--------------------------------------
+
+--------------13:05:01----------------
+
+--------------------------------------
+
+--------------13:10:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16669.85, type : <class 'float'> 
+
+                            ils_to_usd = 58000.0, type : <class 'float'>
+--------------------------------------
+
+--------------13:15:01----------------
+
+--------------------------------------
+
+--------------13:20:01----------------
+
+--------------------------------------
+
+--------------13:25:01----------------
+
+--------------------------------------
+
+--------------13:30:01----------------
+
+--------------------------------------
+
+--------------13:35:01----------------
+
+--------------------------------------
+
+--------------13:40:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16575.9, type : <class 'float'> 
+
+                            ils_to_usd = 57230.01, type : <class 'float'>
+--------------------------------------
+
+--------------13:45:01----------------
+
+--------------------------------------
+
+--------------13:50:01----------------
+
+--------------------------------------
+
+--------------13:55:01----------------
+
+--------------------------------------
+
+--------------14:00:01----------------
+
+--------------------------------------
+
+--------------14:05:01----------------
+
+--------------------------------------
+
+--------------14:10:01----------------
+
+--------------------------------------
+
+--------------14:15:01----------------
+
+--------------------------------------
+
+--------------14:20:01----------------
+
+--------------------------------------
+
+--------------14:25:01----------------
+
+--------------------------------------
+
+--------------14:30:01----------------
+
+--------------------------------------
+
+--------------14:35:01----------------
+
+--------------------------------------
+
+--------------14:40:01----------------
+
+--------------------------------------
+
+--------------14:45:01----------------
+
+--------------------------------------
+
+--------------14:50:01----------------
+
+--------------------------------------
+
+--------------14:55:01----------------
+
+--------------------------------------
+
+--------------15:00:01----------------
+
+--------------------------------------
+
+--------------15:05:01----------------
+
+--------------------------------------
+
+--------------15:10:01----------------
+
+--------------------------------------
+
+--------------15:15:01----------------
+
+--------------------------------------
+
+--------------15:20:01----------------
+
+--------------------------------------
+
+--------------15:25:01----------------
+
+--------------------------------------
+
+--------------15:30:01----------------
+
+--------------------------------------
+
+--------------15:35:01----------------
+
+--------------------------------------
+
+--------------15:40:01----------------
+
+--------------------------------------
+
+--------------15:45:01----------------
+
+--------------------------------------
+
+--------------15:50:01----------------
+
+--------------------------------------
+
+--------------15:55:01----------------
+
+--------------------------------------
+
+--------------16:00:01----------------
+
+--------------------------------------
+
+--------------16:05:01----------------
+
+--------------------------------------
+
+--------------16:10:01----------------
+
+--------------------------------------
+
+--------------16:15:01----------------
+
+--------------------------------------
+
+--------------16:20:01----------------
+
+--------------------------------------
+
+--------------16:25:01----------------
+
+--------------------------------------
+
+--------------16:30:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16463.0, type : <class 'float'> 
+
+                            ils_to_usd = 56440.0, type : <class 'float'>
+--------------------------------------
+
+--------------16:35:01----------------
+
+--------------------------------------
+
+--------------16:40:01----------------
+
+--------------------------------------
+
+--------------16:45:01----------------
+
+--------------------------------------
+
+--------------16:50:01----------------
+
+--------------------------------------
+
+--------------16:55:01----------------
+
+--------------------------------------
+
+--------------17:00:01----------------
+
+--------------------------------------
+
+--------------17:05:01----------------
+
+--------------------------------------
+
+--------------17:10:01----------------
+
+--------------------------------------
+
+--------------17:15:01----------------
+
+--------------------------------------
+
+--------------17:20:01----------------
+
+--------------------------------------
+
+--------------17:25:01----------------
+
+--------------------------------------
+
+--------------17:30:01----------------
+
+--------------------------------------
+
+--------------17:35:01----------------
+
+--------------------------------------
+
+--------------17:40:01----------------
+
+--------------------------------------
+
+--------------17:45:01----------------
+
+--------------------------------------
+
+--------------17:50:01----------------
+
+--------------------------------------
+
+--------------17:55:01----------------
+
+--------------------------------------
+
+--------------18:00:01----------------
+
+--------------------------------------
+
+--------------18:05:01----------------
+
+--------------------------------------
+
+--------------18:10:01----------------
+
+--------------------------------------
+
+--------------18:15:01----------------
+
+--------------------------------------
+
+--------------18:20:01----------------
+
+--------------------------------------
+
+--------------18:25:01----------------
+
+--------------------------------------
+
+--------------18:30:01----------------
+
+--------------------------------------
+
+--------------18:35:01----------------
+
+--------------------------------------
+
+--------------18:40:01----------------
+
+--------------------------------------
+
+--------------18:45:01----------------
+
+--------------------------------------
+
+--------------18:50:01----------------
+
+--------------------------------------
+
+--------------18:55:01----------------
+
+--------------------------------------
+
+--------------19:00:01----------------
+
+--------------------------------------
+
+--------------19:05:01----------------
+
+--------------------------------------
+
+--------------19:10:01----------------
+
+--------------------------------------
+
+--------------19:15:01----------------
+
+--------------------------------------
+
+--------------19:20:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16842.5, type : <class 'float'> 
+
+                            ils_to_usd = 57999.99, type : <class 'float'>
+--------------------------------------
+
+--------------19:25:01----------------
+
+--------------------------------------
+
+--------------19:30:01----------------
+
+--------------------------------------
+
+--------------19:35:01----------------
+
+--------------------------------------
+
+--------------19:40:01----------------
+
+--------------------------------------
+
+--------------19:45:01----------------
+
+--------------------------------------
+
+--------------19:50:01----------------
+
+--------------------------------------
+
+--------------19:55:01----------------
+
+--------------------------------------
+
+--------------20:00:01----------------
+
+--------------------------------------
+
+--------------20:05:01----------------
+
+--------------------------------------
+
+--------------20:10:01----------------
+
+--------------------------------------
+
+--------------20:15:01----------------
+
+--------------------------------------
+
+--------------20:20:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16975.5, type : <class 'float'> 
+
+                            ils_to_usd = 58200.0, type : <class 'float'>
+--------------------------------------
+
+--------------20:25:01----------------
+
+--------------------------------------
+
+--------------20:30:01----------------
+
+Traceback (most recent call last):
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 36, in ils_prices
+    global_price_usd/ils_to_usd
+TypeError: unsupported operand type(s) for /: 'float' and 'NoneType'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "periodic.py", line 5, in <module>
+    current_price = getFromAPI.btcPrice().ils_prices
+  File "/home/baruch/Documents/btc_prices_chart/database/getFromAPI.py", line 41, in ils_prices
+    il_price_ils, type(il_price_ils)
+TypeError: global_price_usd = 16973.0, type : <class 'float'> 
+
+                            ils_to_usd = 58000.0, type : <class 'float'>
+--------------------------------------
+
+--------------20:35:01----------------
+
+--------------------------------------
+
+--------------20:40:01----------------
+
+--------------------------------------
+
+--------------20:45:01----------------
+
+--------------------------------------
+
+--------------20:50:01----------------
+
+--------------------------------------
+
+--------------20:55:01----------------
+
+--------------------------------------
+
+--------------21:00:01----------------
+
+--------------------------------------
+
+--------------21:05:01----------------
+
+--------------------------------------
+
+--------------21:10:01----------------
+
+--------------------------------------
+
+--------------21:15:01----------------
+
+--------------------------------------
+
+--------------21:20:01----------------
+
+--------------------------------------
+
+--------------21:25:01----------------
+
+--------------------------------------
+
+--------------21:30:01----------------
+
+--------------------------------------
+
+--------------21:35:01----------------
+
+--------------------------------------
+
+--------------21:40:01----------------
+
+--------------------------------------
+
+--------------21:45:01----------------
+
+--------------------------------------
+
+--------------21:50:01----------------
+
+--------------------------------------
+
+--------------21:55:01----------------
+
+--------------------------------------
+

@@ -7,11 +7,27 @@
 
 {% block content %}
 
-<div class="graph-div container">
 
-  <button type="button" id="1h" class="btn btn-primary">1h</button>
-  <button type="button"  id="12h" class="btn btn-primary">12h</button>
-  <button type="button" id="1d" class="btn btn-primary">1d</button>
+<div class="graph-div container">
+  <div class="control_btns container">
+    <div class="left">
+      <button  id="btn_1h" class="btn range">1h</button>
+      <button  id="btn_12h" class="btn range">12h</button>
+      <button  id="btn_1d" class="btn range">1d</button>
+    </div>
+    <div class="currency right">
+      <input type="checkbox" id="currency-toggle" checked data-toggle="toggle"
+      data-on="<i class='fas fa-shekel-sign'></i>"
+       data-off="<i class='fas fa-dollar-sign'></i>"
+       data-offstyle="primary"
+        data-style="switch">
+    </div>
+
+
+  </div>
+
+
+
 
 
 </div>
@@ -20,8 +36,9 @@
 
 {% block javascript %}
 
-<script src="{% static 'js/basic.js' %}"></script>
 <script src="{% static 'js/render.js' %}"></script>
+<script src="{% static 'js/basic.js' %}"></script>
+
 
 
 {% endblock javascript %}

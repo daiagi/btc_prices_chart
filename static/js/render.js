@@ -16,10 +16,29 @@ var yLabel = "price"
 const yTicks = 5;
 const xTicks = 5;
 
-//The SVG Container
+//The outer SVG Container
 var svg = d3.select(".graph-div").append("svg")
                                     .attr("width", outerWidth)
                                     .attr("height", outerHeight);
+
+// var outerRect = svg.append("rect")
+//                   .attr("fill",'none')
+//                   .attr('x',0)
+//                   .attr('y',0)
+//                   .attr("width", outerWidth)
+//                   .attr("height", outerHeight);
+//
+// // range buttons
+// var range_btns = outerRect.append('g');
+//
+// range_btns.append('g').attr("transform","translate(66,0)")
+//           .append("rect").attr('fill',"#e6e6e6")
+
+
+
+// d3.select(".graph-div").append('button')
+//           .attr("class", "btn").html('btn')
+
  var g = svg.append('g')
          .attr("transform", "translate(" + margin.left+" , "+ margin.top +")");
 
