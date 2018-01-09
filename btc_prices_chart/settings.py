@@ -29,7 +29,7 @@ SECRET_KEY = 'tra!k@uhs@3nu3#mr&a2##n#d!8+(1y5ugy9xibv&*#0d$hm46'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dry-cliffs-89687.herokuapp.com', ]
 
 
 # Application definition
