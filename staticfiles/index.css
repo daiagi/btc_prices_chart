@@ -1,0 +1,86 @@
+
+      body {
+        margin: 0px;
+      }
+      .domain {
+        display: none;
+      }
+      .tick line {
+        stroke: #C0C0BB;
+      }
+      .tick text {
+        fill: #8E8883;
+        font-size: 10pt;
+        font-family: sans-serif;
+      }
+      .axis-label {
+        fill: #635F5D;
+        font-size: 20pt;
+        font-family: sans-serif;
+      }
+
+      path {
+        stroke: black;
+        stroke-width: 2;
+        fill: none;
+      }
+      .svg-inline { color: #fff;}
+
+
+
+        #global_price {stroke : blue }
+
+        .graph-div{position: absolute;
+                  }
+
+
+
+
+        .left {
+          position: absolute;
+          left :5em;
+          top :1em;
+
+        }
+        .right {
+          float: right;
+          margin-right: 10em;
+          margin-top: 0.5em;
+        }
+
+
+      .range {
+            border-radius: 0;
+            font-family: Arial;
+            color: #03010d;
+            font-size: 10px;
+            background: #cfcfcf;
+            padding: 5px 8px 5px 8px;
+            text-decoration: none;
+            position: absolute;
+
+
+            }
+        .toggle-on, .toggle-off { padding: 6px 12px 6px 12px }
+
+        .toggle.switch, .toggle-on.switch, .toggle-off.switch {
+          border-radius: 5px;
+          padding: 6px 12px 6px 12px;
+          align-content: center;  }
+        .toggle.switch .toggle-handle { border-radius: 5px; fill:white}
+
+      .range:hover {
+        background: #a3a4a5;
+        text-decoration: none;
+      }
+      .range:focus {
+        background: #a3a4a5;
+        font-weight: bold;
+      }
+
+      #btn_12h {position: absolute;
+                    left:32px;
+                  }
+      #btn_1d {position: absolute;
+                left:69.5px;
+              }
