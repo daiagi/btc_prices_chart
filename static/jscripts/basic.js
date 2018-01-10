@@ -1,7 +1,5 @@
 function AjaxGetRequest(url,successFunc,toUSD) {
 
-  var jsonUrl = 'https://dry-cliffs-89687.herokuapp.com/json/'
-
   var USDRate = function() {
     apiURL = "https://api.fixer.io/latest?base=ILS&symbols=USD"
     var xhttp = new XMLHttpRequest();
@@ -85,3 +83,5 @@ document.getElementById("btn_1d")
         .addEventListener("click",function(){
           current_range = 'days=1'
           RangeBtnClick('days=1')});
+
+var jsonUrl = 'https://dry-cliffs-89687.herokuapp.com/json/'
