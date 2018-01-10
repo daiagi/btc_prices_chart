@@ -1,12 +1,15 @@
 import sqlite3
 import datetime
+import os
 
 class priceDB:
-    DB_name = 'prices.db'
+
+    dir_path = os.path.dirname(os.path.realpath(__file__))
+    DB_path = os.path.join(dir_path,'prices.db')
     table_name = 'btc_price'
 
     def _execute(self,sql_command,params = None):
-        with sqlite3.connect(self.DB_name) as conn:
+        with sqlite3.connect(self.DB_path) as conn:
             cursor = conn.cursor()
             if params:
                 cursor.execute(sql_command,params)

@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "748538d53047286f184858573ed03cd5fac47689c756b47a883a1d4485be948f"
+            "sha256": "48749c8462555534be405ec7b3e042c1701c27fc219b5a590f6469f71292b4e9"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -29,6 +29,13 @@
         ]
     },
     "default": {
+        "apscheduler": {
+            "hashes": [
+                "sha256:3b305711f874f643572c6c16799bd11b66dd68c729828c740acfeca03278625a",
+                "sha256:1ce44d5132b7951f4614067c88ca34cfee1ff97f6f0892581d79b636d83eab89"
+            ],
+            "version": "==3.5.0"
+        },
         "certifi": {
             "hashes": [
                 "sha256:244be0d93b71e93fc0a0a479862051414d0e00e16435707e5bf5000f92e04694",
@@ -110,6 +117,19 @@
                 "sha256:e95f107de632ae6effa6915f194f2c282db592b9aa449070a5f9c065c478ec47"
             ],
             "version": "==3.13.2"
+        },
+        "six": {
+            "hashes": [
+                "sha256:832dc0e10feb1aa2c68dcc57dbb658f1c7e65b9b61af69048abc87a2db00a0eb",
+                "sha256:70e8a77beed4562e7f14fe23a786b54f6296e34344c23bc42f07b15018ff98e9"
+            ],
+            "version": "==1.11.0"
+        },
+        "tzlocal": {
+            "hashes": [
+                "sha256:4ebeb848845ac898da6519b9b31879cf13b6626f7184c496037b818e238f2c4e"
+            ],
+            "version": "==1.5.1"
         },
         "urllib3": {
             "hashes": [

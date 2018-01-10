@@ -22235,3 +22235,530 @@ requests.exceptions.ConnectionError: HTTPConnectionPool(host='btcils-server.apph
 
 --------------------------------------
 
+--------------10:35:01----------------
+
+--------------------------------------
+
+--------------10:40:01----------------
+
+--------------------------------------
+
+--------------10:45:01----------------
+
+--------------------------------------
+
+--------------10:50:01----------------
+
+--------------------------------------
+
+--------------10:55:01----------------
+
+--------------------------------------
+
+--------------11:00:01----------------
+
+--------------------------------------
+
+--------------11:05:01----------------
+
+--------------------------------------
+
+--------------11:10:01----------------
+
+--------------------------------------
+
+--------------11:15:01----------------
+
+--------------------------------------
+
+--------------11:20:01----------------
+
+--------------------------------------
+
+--------------11:25:01----------------
+
+--------------------------------------
+
+--------------11:30:01----------------
+
+--------------------------------------
+
+--------------11:35:01----------------
+
+--------------------------------------
+
+--------------11:40:01----------------
+
+--------------------------------------
+
+--------------11:45:01----------------
+
+--------------------------------------
+
+--------------11:50:01----------------
+
+--------------------------------------
+
+--------------11:55:01----------------
+
+--------------------------------------
+
+--------------12:00:01----------------
+
+--------------------------------------
+
+--------------12:05:01----------------
+
+--------------------------------------
+
+--------------12:10:01----------------
+
+--------------------------------------
+
+--------------12:15:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------12:20:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+/home/baruch/Documents/btc_prices_chart/database/run_periodic.sh: line 11: 12550 Terminated              python periodic.py
+--------------------------------------
+
+--------------12:25:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------12:30:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------12:35:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------12:40:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------12:45:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------12:50:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------12:55:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------13:00:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------13:05:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------13:10:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------13:15:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------13:20:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------13:25:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------13:30:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------13:55:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------14:00:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------14:05:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------14:10:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------14:15:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------14:20:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------14:25:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------14:30:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------14:35:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------14:40:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------14:45:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------14:50:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------14:55:02----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------15:00:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------15:05:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------15:14:00----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------15:15:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------15:20:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------15:25:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------15:30:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------15:35:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------15:40:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------15:45:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------15:50:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 2, in <module>
+    import price_db
+  File "/home/baruch/Documents/btc_prices_chart/database/price_db.py", line 5, in <module>
+    class priceDB:
+  File "/home/baruch/Documents/btc_prices_chart/database/price_db.py", line 8, in priceDB
+    DB_path = os.join(dir_path,'prices.db')
+AttributeError: module 'os' has no attribute 'join'
+--------------------------------------
+
+--------------15:55:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------16:00:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------16:05:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------16:10:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------16:15:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------16:20:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------16:25:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------16:30:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------16:35:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------16:40:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------16:45:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------16:50:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------16:55:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------17:00:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
+--------------17:05:01----------------
+
+Traceback (most recent call last):
+  File "periodic.py", line 4, in <module>
+    from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
+ModuleNotFoundError: No module named 'apscheduler'
+--------------------------------------
+
