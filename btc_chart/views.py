@@ -26,7 +26,8 @@ def getBtcPrice_view(request):
     hours = float(data.get('hours',0))
 
 
-    local_time = localize_israel(datetime.now())
+    # local_time = localize_israel(datetime.now())
+    now_utc = datetime.utcnow()
     time_range = timedelta(weeks =weeks,days = days, hours = hours)
 
 

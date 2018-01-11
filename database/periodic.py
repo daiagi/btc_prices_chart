@@ -7,8 +7,10 @@ from apscheduler.schedulers.background import BackgroundScheduler, BlockingSched
 def writeToDB():
     print('writing to db')
     current_price = getFromAPI.btcPrice().ils_prices
+    print (str(current_price)
     DB = price_db.priceDB()
-    DB.insert(datetime.datetime.now(),current_price['il'], current_price['global'])
+    DB.insert(datetime.datetime.utcnow(),current_price['il'], current_price['global'])
+    print('fiished writing')
 
 
 def init():
