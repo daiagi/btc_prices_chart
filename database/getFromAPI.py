@@ -1,5 +1,7 @@
 import requests
-from pprint import pprint
+from requests.adapters import HTTPAdapter
+from requests.packages.urllib3.util.retry import Retry
+
 import simplejson as json
 
 
@@ -12,8 +14,31 @@ class btcPrice:
         self.preev = None
         self.bit2c = None
 
+    def requests_retry_session(
+    retries=3,
+    backoff_factor=0.3,
+    status_forcelist=(500, 502, 504),
+    session=None,
+    ):
+        session = session or requests.Session()
+        retry = Retry(
+            total=retries,
+            read=retries,
+            connect=retries,
+            backoff_factor=backoff_factor,
+            status_forcelist=status_forcelist,
+        )
+        adapter = HTTPAdapter(max_retries=retry)
+        session.mount('http://', adapter)
+        session.mount('https://', adapter)
+        return session
+
     def _update_price_data(self):
-        self.prices_json = requests.get(self.json_url).json()
+        try:
+            prices_get_request = self.requests_retry_session().get(self.json_url)
+        except TypeError as e:
+            raise ConnectionError('failed to connect to API')
+        self.prices_json = prices_get_request.json()
         self.preev = json.loads(self.prices_json['preev'])
         self.bit2c = json.loads(self.prices_json['btc'])
 

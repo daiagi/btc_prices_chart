@@ -1,6 +1,7 @@
 import sqlite3
 import datetime
 import os
+import MySQLdb
 
 class priceDB:
 
@@ -9,12 +10,13 @@ class priceDB:
     table_name = 'btc_price'
 
     def _execute(self,sql_command,params = None):
-        with sqlite3.connect(self.DB_path) as conn:
-            cursor = conn.cursor()
+        with MySQLdb.connect("localhost","root","","test_db") as conn:
+            # print(type(conn))
+            # cursor = conn.cursor()
             if params:
-                cursor.execute(sql_command,params)
+                conn.execute(sql_command,params)
             else:
-                cursor.execute(sql_command)
+                conn.execute(sql_command)
 
 
     def create_btc_table(self):
@@ -26,8 +28,8 @@ class priceDB:
         self._execute(sql_command)
 
     def insert(self,*params):
-        command = """INSERT INTO {TABLE_NAME} (time,bit2c_price,global_price)
-                    VALUES (?,?,?);""".format(TABLE_NAME = self.table_name)
+        command = """INSERT INTO {TABLE_NAME} (time,bit2c_price_ils,global_price_ils,bit2c_price_usd,global_price_usd)
+                    VALUES (%s,%s,%s,%s,%s);""".format(TABLE_NAME = self.table_name)
         self._execute(command,params)
 
     def update(self,time,*params):
