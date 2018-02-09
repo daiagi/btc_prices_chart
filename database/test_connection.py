@@ -19,12 +19,12 @@ command = """INSERT INTO public.btc_price (time,bit2c_price_ils,global_price_ils
 
 with conn.cursor() as cur:
     try:
-	       cur.execute("SELECT * FROM btc_price")
-           row = cur.fetchone()
+	      cur.execute("SELECT * FROM btc_price")
+          row = cur.fetchone()
+          while row is not None:
+              print(row)
+              row = cur.fetchone()
 
-           while row is not None:
-               print(row)
-               row = cur.fetchone()
     except Exception:
             raise Exception
 
