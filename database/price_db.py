@@ -12,7 +12,6 @@ class priceDB:
         try:
             parse.uses_netloc.append("postgres")
             url = parse.urlparse(os.environ["DATABASE_URL"])
-
             return pg.connect(
                 database=url.path[1:],
                 user=url.username,
