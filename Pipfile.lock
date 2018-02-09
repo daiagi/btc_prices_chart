@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "366fb7b6852f2f63dcd806b90dff2ec08de46de72b50ecb2061dac2c553be9d0"
+            "sha256": "0192d003fcc68de17d9d4c2736bd3fce969c1d14009238bc3475e1da52d5ca6d"
         },
         "host-environment-markers": {
             "implementation_name": "cpython",
@@ -68,6 +68,13 @@
                 "sha256:c94a8e77d743abac79ed91f99f5ef594a972a527e05145cbb7aba59beced8a71"
             ],
             "version": "==0.6.6"
+        },
+        "dj-database-url": {
+            "hashes": [
+                "sha256:e16d94c382ea0564c48038fa7fe8d9c890ef1ab1a8ec4cb48e732c124b9482fd",
+                "sha256:a6832d8445ee9d788c5baa48aef8130bf61fdc442f7d9a548424d25cd85c9f08"
+            ],
+            "version": "==0.4.2"
         },
         "django": {
             "hashes": [
@@ -159,7 +166,8 @@
                 "sha256:77a2fc622a1f2d08a707673c9be5769d521f03d867d305f172bb417fa7882754",
                 "sha256:4a4f23a08fbccbe40ecdb5384d807bcb469ea71dd87e6be2e80b036b8e6d47df",
                 "sha256:c8220c521a408b41c4f14036004a621ed0d965941286b978cd2ea2623fabd755",
-                "sha256:465ff1d427ed42c31e456dbbd9edab3552be18a0edaef7450c5b3e6fee745052"
+                "sha256:465ff1d427ed42c31e456dbbd9edab3552be18a0edaef7450c5b3e6fee745052",
+                "sha256:de4f88f823037a71ea5ef3c1041d96b8a68d73343133edda684fd42f575bd9d7"
             ],
             "version": "==2.7.4"
         },
