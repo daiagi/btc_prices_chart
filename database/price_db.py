@@ -3,6 +3,7 @@ import heroku3 as hk3
 class priceDB:
 
     def __init__(self):
+        print ('initing priceDB')
         heroku_conn = hk3.from_key('63d29faf-cd0d-41cc-a737-63171d4bb83c')
         app = heroku_conn.apps()[0]
         self.db_url = app.config()['DATABASE_URL']
@@ -10,6 +11,7 @@ class priceDB:
 
 
     def _execute(self,sql_command,params = None):
+        print('executing')
         conn =  pg.connect(self.db_url)
         with conn:
             with conn.cursor() as cur:

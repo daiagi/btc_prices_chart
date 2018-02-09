@@ -16,13 +16,13 @@ python_version = "3.6"
 
 [packages]
 
-django = "*"
+Django = "*"
 requests = "*"
 simplejson = "*"
 gunicorn = "*"
 whitenoise = "*"
-apscheduler = "*"
+APScheduler = "*"
 configparser = "*"
 mysqlclient = "*"
-"psycopg2" = "*"
 dateutils = "*"
+"psycopg2-binary" = "*"
