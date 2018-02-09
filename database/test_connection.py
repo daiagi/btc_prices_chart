@@ -18,7 +18,7 @@ command = """INSERT INTO btc_price (time,bit2c_price_ils,global_price_ils,bit2c_
                     VALUES (%s,%s,%s,%s,%s);"""
 
 with conn.cursor() as cur:
-	print(cur.execute(""" SELECT * FROM public.btc_price  ORDER BY time ASC"""))
+	print(cur.execute(command,(datetime.utcnow(),1,2,3,4)))
 print (conn)
 
 conn.close()
