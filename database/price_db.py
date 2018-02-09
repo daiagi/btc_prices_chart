@@ -10,9 +10,8 @@ except ImportError:
 class priceDB:
     table_name = 'btc_price'
 
-
     def heroku_postgress_connection(self):
-        print ('initing priceDB')
+
         try:
             parse.uses_netloc.append("postgres")
             url = parse.urlparse(os.environ["DATABASE_URL"])
@@ -24,13 +23,12 @@ class priceDB:
                 port=url.port
             )
 
-        except:
-            raise ConnectionError('unable to connect to heroku')
+        except Exception:
+            raise ConnectionError('unable to connect to heroku postgress')
 
 
 
     def _execute(self,sql_command,params = None):
-        print('executing')
         conn =  self.heroku_postgress_connection()
         with conn:
             with conn.cursor() as cur:
@@ -38,6 +36,7 @@ class priceDB:
                     cur.execute(sql_command,params)
                 else:
                     cur.execute(sql_command)
+                    
         conn.commit()
         conn.close()
 
