@@ -6,6 +6,7 @@ class priceDB:
         heroku_conn = hk3.from_key('63d29faf-cd0d-41cc-a737-63171d4bb83c')
         app = heroku_conn.apps()[0]
         self.db_url = app.config()['DATABASE_URL']
+        self.table_name = 'btc_price'
 
 
     def _execute(self,sql_command,params = None):
