@@ -7,8 +7,8 @@ var innnerWidth = outerWidth -margin.left - margin.right;
 var innerHeight = outerHeight - margin.top - margin.bottom;
 
 var xColumn  = "time"
-var yColumn = "global_price"
-var yColumn2 = "bit2c_price"
+var yColumn = "global_price_ils"
+var yColumn2 = "bit2c_price_ils"
 
 var xLabel = "time"
 var yLabel = "price"
