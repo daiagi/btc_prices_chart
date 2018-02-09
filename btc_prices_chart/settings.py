@@ -95,7 +95,8 @@ DATABASES = {
     },
 
 }
-DATABASES['default'] =  dj_database_url.config()
+DATABASES['price'] =  dj_database_url.config()
+print(DATABASES['price'])
 
 DATABASE_ROUTERS = ['btc_chart.routers.btcChartRouter',]
 
