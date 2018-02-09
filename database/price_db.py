@@ -5,8 +5,12 @@ try:
     import heroku3 as hk3
 except ImportError:
     print(ImportError)
+
+
 class priceDB:
     table_name = 'btc_price'
+
+
     def heroku_postgress_connection(self):
         print ('initing priceDB')
         try:
