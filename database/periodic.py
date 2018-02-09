@@ -6,11 +6,14 @@ from apscheduler.schedulers.background import BackgroundScheduler, BlockingSched
 
 
 def writeToDB():
+    print('getting from api')
     current_price_ils = getFromAPI.btcPrice().ils_prices
     current_price_usd = getFromAPI.btcPrice().usd_prices
     DB = price_db.priceDB()
+    print('inserting to db')
     DB.insert(datetime.datetime.utcnow(),current_price_ils['il'], current_price_ils['global'],
                 current_price_usd['il'], current_price_usd['global'])
+    print('done!')
 
 
 def init():
@@ -20,7 +23,7 @@ def init():
     sched.start()
 
 if __name__ == '__main__':
-    logging.basicConfig(level=logging.WARNING, filename='database/periodic.log',
+    logging.basicConfig(level=logging.DEBUG, filename='database/periodic.log',
                         format = '''#############   %(asctime)s    ############# \n
                                   %(message)s \n
                                  ##################################### \n\n''')
