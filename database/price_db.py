@@ -6,7 +6,7 @@ try:
 except ImportError:
     print(ImportError)
 class priceDB:
-
+    self.table_name = 'btc_price'
     def heroku_postgress_connection(self):
         print ('initing priceDB')
         try:
@@ -22,11 +22,7 @@ class priceDB:
 
         except:
             raise ConnectionError('unable to connect to heroku')
-        app = heroku_conn.apps()[0]
-        print(app)
-        self.db_url = app.config()['DATABASE_URL']
-        print(self.db_url)
-        self.table_name = 'btc_price'
+
 
 
     def _execute(self,sql_command,params = None):
@@ -38,6 +34,7 @@ class priceDB:
                     cur.execute(sql_command,params)
                 else:
                     cur.execute(sql_command)
+        conn.commit()            
         conn.close()
 
 
