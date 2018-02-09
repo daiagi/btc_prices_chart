@@ -1,15 +1,26 @@
 import psycopg2 as pg
+import os
+from urllib import parse
 try:
     import heroku3 as hk3
 except ImportError:
     print(ImportError)
 class priceDB:
 
-    def __init__(self):
+    def heroku_postgress_connection(self):
         print ('initing priceDB')
         try:
-            heroku_conn = hk3.from_key('63d29faf-cd0d-41cc-a737-63171d4bb83c')
-            print(heroku_conn)
+            parse.uses_netloc.append("postgres")
+            url = parse.urlparse(os.environ["DATABASE_URL"])
+
+            return pg.connect(
+                database=url.path[1:],
+                user=url.username,
+                password=url.password,
+                host=url.hostname,
+                port=url.port
+            )
+
         except:
             raise ConnectionError('unable to connect to heroku')
         app = heroku_conn.apps()[0]
@@ -21,7 +32,7 @@ class priceDB:
 
     def _execute(self,sql_command,params = None):
         print('executing')
-        conn =  pg.connect(self.db_url)
+        conn =  heroku_postgress_connection()
         with conn:
             with conn.cursor() as cur:
                 if params:
