@@ -9,6 +9,7 @@ def writeToDB():
     print('getting from api')
     current_price_ils = getFromAPI.btcPrice().ils_prices
     current_price_usd = getFromAPI.btcPrice().usd_prices
+    print(current_price_ils)
     DB = price_db.priceDB()
     print('inserting to db')
     DB.insert(datetime.datetime.utcnow(),current_price_ils['il'], current_price_ils['global'],
@@ -19,7 +20,7 @@ def writeToDB():
 def init():
     sched = BlockingScheduler()
     # seconds can be replaced with minutes, hours, or days
-    sched.add_job(writeToDB, 'cron', minute='*/5', misfire_grace_time = 10 , coalesce = True)
+    sched.add_job(writeToDB, 'cron', minute='*/1', misfire_grace_time = 10 , coalesce = True)
     sched.start()
 
 if __name__ == '__main__':
