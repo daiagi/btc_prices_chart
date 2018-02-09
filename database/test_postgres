@@ -1,0 +1,11 @@
+
+
+from price_db import priceDB
+from datetime import datetime as dt
+
+DB = pricDB()
+ctime = dt.utcnow()
+
+DB.insert(ctime,1,1,1,1)
+
+

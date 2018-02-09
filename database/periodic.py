@@ -16,7 +16,7 @@ def writeToDB():
 def init():
     sched = BlockingScheduler()
     # seconds can be replaced with minutes, hours, or days
-    sched.add_job(writeToDB, 'cron', minute='*/1', misfire_grace_time = 10 , coalesce = True)
+    sched.add_job(writeToDB, 'cron', minute='*/5', misfire_grace_time = 10 , coalesce = True)
     sched.start()
 
 if __name__ == '__main__':
