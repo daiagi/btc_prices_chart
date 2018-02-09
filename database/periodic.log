@@ -1,0 +1,128 @@
+#############   2018-02-09 13:02:08,932    ############# 
+
+                                  Adding job tentatively -- it will be properly scheduled when the scheduler starts 
+
+                                 ##################################### 
+
+
+#############   2018-02-09 13:02:08,933    ############# 
+
+                                  Added job "writeToDB" to job store "default" 
+
+                                 ##################################### 
+
+
+#############   2018-02-09 13:02:08,933    ############# 
+
+                                  Scheduler started 
+
+                                 ##################################### 
+
+
+#############   2018-02-09 13:02:08,933    ############# 
+
+                                  Looking for jobs to run 
+
+                                 ##################################### 
+
+
+#############   2018-02-09 13:02:08,933    ############# 
+
+                                  Next wakeup is due at 2018-02-09 13:03:00+02:00 (in 51.066456 seconds) 
+
+                                 ##################################### 
+
+
+#############   2018-02-09 13:03:00,000    ############# 
+
+                                  Looking for jobs to run 
+
+                                 ##################################### 
+
+
+#############   2018-02-09 13:03:00,002    ############# 
+
+                                  Running job "writeToDB (trigger: cron[minute='*/1'], next run at: 2018-02-09 13:03:00 IST)" (scheduled at 2018-02-09 13:03:00+02:00) 
+
+                                 ##################################### 
+
+
+#############   2018-02-09 13:03:00,003    ############# 
+
+                                  Next wakeup is due at 2018-02-09 13:04:00+02:00 (in 59.999153 seconds) 
+
+                                 ##################################### 
+
+
+#############   2018-02-09 13:03:00,010    ############# 
+
+                                  Starting new HTTP connection (1): btcils-server.apphb.com 
+
+                                 ##################################### 
+
+
+#############   2018-02-09 13:03:00,834    ############# 
+
+                                  http://btcils-server.apphb.com:80 "GET /get-prices HTTP/1.1" 200 453 
+
+                                 ##################################### 
+
+
+#############   2018-02-09 13:03:00,837    ############# 
+
+                                  Starting new HTTP connection (1): btcils-server.apphb.com 
+
+                                 ##################################### 
+
+
+#############   2018-02-09 13:03:01,517    ############# 
+
+                                  http://btcils-server.apphb.com:80 "GET /get-prices HTTP/1.1" 200 453 
+
+                                 ##################################### 
+
+
+#############   2018-02-09 13:03:01,520    ############# 
+
+                                  Starting new HTTPS connection (1): api.heroku.com 
+
+                                 ##################################### 
+
+
+#############   2018-02-09 13:03:02,986    ############# 
+
+                                  https://api.heroku.com:443 "GET /account/rate-limits HTTP/1.1" 200 44 
+
+                                 ##################################### 
+
+
+#############   2018-02-09 13:03:03,214    ############# 
+
+                                  https://api.heroku.com:443 "GET /apps HTTP/1.1" 200 437 
+
+                                 ##################################### 
+
+
+#############   2018-02-09 13:03:03,423    ############# 
+
+                                  https://api.heroku.com:443 "GET /apps/dry-cliffs-89687/config-vars HTTP/1.1" 200 258 
+
+                                 ##################################### 
+
+
+#############   2018-02-09 13:03:03,426    ############# 
+
+                                  Job "writeToDB (trigger: cron[minute='*/1'], next run at: 2018-02-09 13:04:00 IST)" raised an exception 
+
+                                 ##################################### 
+
+Traceback (most recent call last):
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "database/periodic.py", line 16, in writeToDB
+    current_price_usd['il'], current_price_usd['global'])
+  File "/home/baruch/Documents/btc_prices_chart/database/price_db.py", line 39, in insert
+    self._execute(command,params)
+  File "/home/baruch/Documents/btc_prices_chart/database/price_db.py", line 24, in _execute
+    conn =  pg.connect(self.db_url)
+AttributeError: module 'psycopg2' has no attribute 'connect'
