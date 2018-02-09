@@ -2,6 +2,7 @@ import getFromAPI
 import price_db
 import datetime
 import logging
+
 from apscheduler.schedulers.background import BackgroundScheduler, BlockingScheduler
 global DB
 
