@@ -19,7 +19,7 @@ command = """INSERT INTO btc_price (time,bit2c_price_ils,global_price_ils,bit2c_
 
 with conn.cursor() as cur:
 	try:
-	       cur.execute(command,(datetime.utcnow(),1,2,3,4))
+	    cur.execute(command,(datetime.utcnow(),1,2,3,4))
     except Exception:
         raise Exception
 
