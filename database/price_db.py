@@ -2,7 +2,7 @@ import psycopg2 as pg
 try:
     import heroku3 as hk3
 except ImportError:
-    throw ImportError
+    print(ImportError)
 class priceDB:
 
     def __init__(self):
