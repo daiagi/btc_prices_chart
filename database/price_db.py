@@ -31,7 +31,7 @@ class priceDB:
 
     def _execute(self,sql_command,params = None):
         print('executing')
-        conn =  heroku_postgress_connection()
+        conn =  self.heroku_postgress_connection()
         with conn:
             with conn.cursor() as cur:
                 if params:
