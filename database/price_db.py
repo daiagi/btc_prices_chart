@@ -1,5 +1,8 @@
 import psycopg2 as pg
-import heroku3 as hk3
+try:
+    import heroku3 as hk3
+except ImportError:
+    throw ImportError
 class priceDB:
 
     def __init__(self):
