@@ -1,37 +1,14 @@
 function AjaxGetRequest(url,successFunc,toUSD) {
 
-  var USDRate = function() {
-    apiURL = "https://api.fixer.io/latest?base=ILS&symbols=USD"
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        json_obj = JSON.parse(this.responseText);
-        return json_obj.rates.USD;
-      }
-    };
-
-    xhttp.open('get',apiURL,false);
-    xhttp.send();
-    return xhttp.onreadystatechange()
-  };
-
 
 
 // parse json to object
   var parseJson=function(string_data,toUSD){
-    if (toUSD === undefined) {toUSD = false }
     var data = JSON.parse(string_data);
     data.forEach(function (element){
         element.time = new Date(element.time)
     });
-    if (toUSD === true) {
-      var ils_to_usd = USDRate();
-      data.forEach(function(element) {
-        element.bit2c_price = element.bit2c_price*ils_to_usd;
-        element.global_price = element.global_price*ils_to_usd;
-        // console.log(element);
-      });
-    };
+
     return data;
   };
 // ajax call with successFunc
@@ -39,7 +16,9 @@ function AjaxGetRequest(url,successFunc,toUSD) {
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       var d  = parseJson(this.responseText,toUSD);
-      successFunc(d);
+      if (toUSD === undefined) {toUSD = false}
+        successFunc(d,toUSD);
+
     }
   };
 
@@ -84,4 +63,4 @@ document.getElementById("btn_1d")
           current_range = 'days=1'
           RangeBtnClick('days=1')});
 
-var jsonUrl = '/json/'
+var jsonUrl = '/json'

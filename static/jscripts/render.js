@@ -7,9 +7,6 @@ var innnerWidth = outerWidth -margin.left - margin.right;
 var innerHeight = outerHeight - margin.top - margin.bottom;
 
 var xColumn  = "time"
-var yColumn = "global_price_ils"
-var yColumn2 = "bit2c_price_ils"
-
 var xLabel = "time"
 var yLabel = "price"
 
@@ -21,24 +18,6 @@ var svg = d3.select(".graph-div").append("svg")
                                     .attr("width", outerWidth)
                                     .attr("height", outerHeight);
 
-// var outerRect = svg.append("rect")
-//                   .attr("fill",'none')
-//                   .attr('x',0)
-//                   .attr('y',0)
-//                   .attr("width", outerWidth)
-//                   .attr("height", outerHeight);
-//
-// // range buttons
-// var range_btns = outerRect.append('g');
-//
-// range_btns.append('g').attr("transform","translate(66,0)")
-//           .append("rect").attr('fill',"#e6e6e6")
-
-
-
-// d3.select(".graph-div").append('button')
-//           .attr("class", "btn").html('btn')
-
  var g = svg.append('g')
          .attr("transform", "translate(" + margin.left+" , "+ margin.top +")");
 
@@ -48,60 +27,14 @@ var svg = d3.select(".graph-div").append("svg")
              .attr('id','x-axis');
          const yAxisG = g.append('g').attr('id','y-axis');
 
-function onLoad(data){
-
-    var xScale = d3.scaleTime()
-          .range([0, innnerWidth])
-          .domain(d3.extent(data, function(d) {return d[xColumn]; }))
-          .nice(xTicks);
-    var yScale = d3.scaleLinear()
-          .range([innerHeight,0])
-          .domain(d3.extent([].concat(data.map(function(item) {return item[yColumn];}),
-                                      data.map(function(item) {return item[yColumn2];}))))
-          .nice(yTicks);
-
-
-    const xAxis = d3.axisBottom()
-      .scale(xScale)
-      .tickPadding(15)
-      // .ticks(10)
-      // .tickSize(-innerHeight);
-
-
-    const yAxis = d3.axisLeft()
-      .scale(yScale)
-      .ticks(yTicks)
-      .tickPadding(15)
-      .tickSize(-innerWidth);
-
-    xAxisG.call(xAxis);
-    yAxisG.call(yAxis);
-
-    var line_global = d3.line()
-                               .x(function(d) { return xScale(d[xColumn]); })
-                               .y(function(d) { return yScale(d[yColumn]); })
-                               .curve(d3.curveBasis);
-
-
-     var line_bit2c = d3.line()
-                                .x(function(d) { return xScale(d[xColumn]); })
-                                .y(function(d) { return yScale(d[yColumn2]); })
-                                .curve(d3.curveBasis);
-    g.append("path")
-            .attr("d", line_global(data))
-            .attr("id", "global_price")
-
-    g.append("path")
-            .attr("d", line_bit2c(data))
-            .attr("id", "bit2c_price")
-
-
-
-};
-
-
-
-function updateData(data) {
+function set_up_graph(data,toUSD) {
+  if (toUSD === true) {
+     yColumn = "global_price_usd"
+     yColumn2 = "bit2c_price_usd"
+  } else {
+    yColumn = "global_price_ils"
+    yColumn2 = "bit2c_price_ils"
+  }
 
   var xScale = d3.scaleTime()
         .range([0, innnerWidth])
@@ -127,6 +60,8 @@ function updateData(data) {
     .tickPadding(15)
     .tickSize(-innerWidth);
 
+  xAxisG.call(xAxis);
+  yAxisG.call(yAxis);
 
   var line_global = d3.line()
                              .x(function(d) { return xScale(d[xColumn]); })
@@ -139,6 +74,37 @@ function updateData(data) {
                               .y(function(d) { return yScale(d[yColumn2]); })
                               .curve(d3.curveBasis);
 
+  var output = {line_bit2c : line_bit2c,
+                line_global : line_global,
+                xAxis : xAxis,
+                yAxis : yAxis};
+
+  return output
+
+};
+
+
+
+function onLoad(data,toUSD){
+
+    graph_elements = set_up_graph(data,toUSD)
+
+    g.append("path")
+            .attr("d", graph_elements.line_global(data))
+            .attr("id", "global_price")
+
+    g.append("path")
+            .attr("d", graph_elements.line_bit2c(data))
+            .attr("id", "bit2c_price")
+
+
+
+};
+
+
+
+function updateData(data, toUSD) {
+  graph_elements = set_up_graph(data,toUSD)
 
     	// Scale the range of the data again
 
@@ -148,17 +114,17 @@ function updateData(data) {
     // Make the changes
         svg.select("#global_price")   // change the line
             .duration(750)
-            .attr("d",  line_global(data));
+            .attr("d",  graph_elements.line_global(data));
 
     svg.select("#bit2c_price")   // change the line
         .duration(750)
-        .attr("d",  line_bit2c(data));
+        .attr("d",  graph_elements.line_bit2c(data));
 
 
         svg.select("#x-axis") // change the x axis
             .duration(750)
-            .call(xAxis);
+            .call(graph_elements.xAxis);
         svg.select("#y-axis") // change the y axis
             .duration(750)
-            .call(yAxis);
+            .call(graph_elements. yAxis);
 }
