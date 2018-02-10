@@ -84,4 +84,4 @@ document.getElementById("btn_1d")
           current_range = 'days=1'
           RangeBtnClick('days=1')});
 
-var jsonUrl = 'https://dry-cliffs-89687.herokuapp.com/json/'
+var jsonUrl = '/json/'
