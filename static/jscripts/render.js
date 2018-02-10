@@ -1,6 +1,6 @@
 
-var outerWidth = 700;
-var outerHeight = 350;
+var outerWidth = 1200;
+var outerHeight = 500;
 var margin = {left: 120, top: 60, right: 120, bottom: 60}
 
 var innnerWidth = outerWidth -margin.left - margin.right;
