@@ -25,8 +25,8 @@ var locale = d3.timeFormatLocale({
 
   var formatMinute = locale.format("%H:%M"),
       formatHour = locale.format("%H:%M"),
-      formatDay = locale.format("%a %d"),
-      formatWeek = locale.format("%b %d"),
+      formatDay = locale.format("%d/%m"),
+      formatWeek = locale.format("%d/%m"),
       formatMonth = locale.format("%B"),
       formatYear = locale.format("%y");
 
