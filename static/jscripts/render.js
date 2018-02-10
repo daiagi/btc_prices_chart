@@ -12,6 +12,34 @@ var yLabel = "price"
 
 const yTicks = 5;
 const xTicks = 5;
+var locale = d3.timeFormatLocale({
+  "dateTime": "%a %b %e %X %Y",
+  "date": "%d.%m.%y",
+  "time": "%H:%M:%S",
+  "periods": [],
+  "days": ["Sunday", "Monday", "Tuesday", "Wednsday", "Thursday", "Friady", "Saturday"],
+  "shortDays": ["Sun", "Mon", "Tues", "Wed", "Thurs", "Fri", "Sat"],
+  "months": ["January", "Feruary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
+  "shortMonths": ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+});
+
+  var formatMinute = locale.format("%H:%M"),
+      formatHour = locale.format("%H:%M"),
+      formatDay = locale.format("%a %d"),
+      formatWeek = locale.format("%b %d"),
+      formatMonth = locale.format("%B"),
+      formatYear = locale.format("%y");
+
+  function multiFormat(date) {
+
+    return (d3.timeHour(date) < date ? formatMinute
+        : d3.timeDay(date) < date ? formatHour
+        : d3.timeMonth(date) < date ? (d3.timeWeek(date) < date ? formatDay : formatWeek)
+        : d3.timeYear(date) < date ? formatMonth
+        : formatYear)(date);
+  };
+
+
 
 //The outer SVG Container
 var svg = d3.select(".graph-div").append("svg")
@@ -39,6 +67,7 @@ function set_up_graph(data,toUSD) {
   var xScale = d3.scaleTime()
         .range([0, innnerWidth])
         .domain(d3.extent(data, function(d) {return d[xColumn]; }))
+
         .nice(xTicks);
   var yScale = d3.scaleLinear()
         .range([innerHeight,0])
@@ -49,8 +78,8 @@ function set_up_graph(data,toUSD) {
 
   const xAxis = d3.axisBottom()
     .scale(xScale)
-    .tickPadding(15)
-    // .ticks(10)
+    .tickFormat(multiFormat);
+
     // .tickSize(-innerHeight);
 
 

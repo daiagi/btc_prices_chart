@@ -1,12 +1,16 @@
 function AjaxGetRequest(url,successFunc,toUSD) {
 
+  convertUTCDateToLocalDate= function (date) {
+      return new Date(Date.UTC(date.getFullYear(),
+       date.getMonth(), date.getDate(),
+        date.getHours(), date.getMinutes(), date.getSeconds())); };
 
 
 // parse json to object
   var parseJson=function(string_data,toUSD){
     var data = JSON.parse(string_data);
     data.forEach(function (element){
-        element.time = new Date(element.time)
+        element.time = convertUTCDateToLocalDate(new Date(element.time))
     });
 
     return data;
