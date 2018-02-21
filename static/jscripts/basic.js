@@ -3,7 +3,8 @@ function AjaxGetRequest(url,successFunc,toUSD) {
   convertUTCDateToLocalDate= function (date) {
       return new Date(Date.UTC(date.getFullYear(),
        date.getMonth(), date.getDate(),
-        date.getHours(), date.getMinutes(), date.getSeconds())); };
+        date.getHours(), date.getMinutes(), date.getSeconds()));
+       };
 
 
 // parse json to object
@@ -33,7 +34,7 @@ function AjaxGetRequest(url,successFunc,toUSD) {
 // on document ready event
 $(document).ready(function(){
   url = jsonUrl + '?' + 'days=1';
-  AjaxGetRequest(url,onLoad);
+  AjaxGetRequest(url,render);
 
 })
 
@@ -41,7 +42,7 @@ $(document).ready(function(){
 function RangeBtnClick(rangeString){
   toUSD = !$('#currency-toggle').prop('checked')
   url = jsonUrl + '?' + rangeString;
-   AjaxGetRequest(url,updateData,toUSD);
+   AjaxGetRequest(url,render,toUSD);
 
 };
 
