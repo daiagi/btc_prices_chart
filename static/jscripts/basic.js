@@ -6,6 +6,25 @@ function AjaxGetRequest(url,successFunc,toUSD) {
         date.getHours(), date.getMinutes(), date.getSeconds()));
        };
 
+  function jsonToDataArrays(Jsonobj,toUSD) {
+         var labels = Jsonobj.map(function (e) {return e.time});
+         if (toUSD) {
+           bit2c_id = "bit2c_price_usd";
+           global_id = "global_price_usd";
+         } else {
+           bit2c_id = "bit2c_price_ils";
+           global_id = "global_price_ils";
+         }
+
+         var bit2c_data = Jsonobj.map(function(e) {return e[bit2c_id];});
+         var global_data = Jsonobj.map(function(e) {return e[global_id];});
+
+         return {labels : labels,
+                 bit2c : bit2c_data,
+                 global : global_data};
+       }
+
+
 
 // parse json to object
   var parseJson=function(string_data,toUSD){
@@ -14,7 +33,7 @@ function AjaxGetRequest(url,successFunc,toUSD) {
         element.time = convertUTCDateToLocalDate(new Date(element.time))
     });
 
-    return data;
+    return jsonToDataArrays(data,toUSD);
   };
 // ajax call with successFunc
   var xhttp = new XMLHttpRequest();
@@ -29,12 +48,19 @@ function AjaxGetRequest(url,successFunc,toUSD) {
 
   xhttp.open('get',url);
   xhttp.send();
+
 };
+
+
+
+
+
+
 
 // on document ready event
 $(document).ready(function(){
   url = jsonUrl + '?' + 'days=1';
-  AjaxGetRequest(url,render);
+  AjaxGetRequest(url,initialRender);
 
 })
 

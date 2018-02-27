@@ -1,27 +1,11 @@
 
-function render (data,toUSD) {
-
-var labels = data.map(function (e) {return e.time});
-if (toUSD) {
-  bit2c_id = "bit2c_price_usd";
-  global_id = "global_price_usd";
-} else {
-  bit2c_id = "bit2c_price_ils";
-  global_id = "global_price_ils";
-}
-
-var bit2c_data = data.map(function(e) {return e[bit2c_id];});
-var global_data = data.map(function(e) {return e[global_id];});
-// console.log(bit2c_data)
-
-var ctx = document.getElementById("myChart").getContext('2d');
-var myChart = new Chart(ctx, {
+var config = {
     type: 'line',
     data: {
-        labels: labels,
+        labels: [],
         datasets: [{
             label: 'bit2c price',
-            data: bit2c_data,
+            data: [],
             fill : false,
             lineTension: 0,
             borderColor:'blue',
@@ -36,7 +20,7 @@ var myChart = new Chart(ctx, {
 
         },{
           label: 'global price',
-          data: global_data,
+          data: [],
           fill: 'red',
            lineTension: 0,
            borderColor:'red',
@@ -85,12 +69,26 @@ var myChart = new Chart(ctx, {
 
           }
     }
-});
+  }
+function initialRender (data) {
 
-
-
+var ctx = document.getElementById("myChart").getContext('2d');
+config.data.labels = data.labels
+config.data.datasets[0].data = data.bit2c
+config.data.datasets[1].data = data.global
+price_chart = new Chart(ctx,config);
 
 }
+
+function render (data) {
+
+config.data.labels = data.labels
+config.data.datasets[0].data = data.bit2c
+config.data.datasets[1].data = data.global
+price_chart.update();
+
+}
+
 
 
 
