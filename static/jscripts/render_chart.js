@@ -1,6 +1,31 @@
 
+Chart.defaults.LineWithLine = Chart.defaults.line;
+Chart.controllers.LineWithLine = Chart.controllers.line.extend({
+   draw: function(ease) {
+      Chart.controllers.line.prototype.draw.call(this, ease);
+
+      if (this.chart.tooltip._active && this.chart.tooltip._active.length) {
+         var activePoint = this.chart.tooltip._active[0],
+             ctx = this.chart.ctx,
+             x = activePoint.tooltipPosition().x,
+             topY = this.chart.scales['y-axis-0'].top,
+             bottomY = this.chart.scales['y-axis-0'].bottom;
+
+         // draw line
+         ctx.save();
+         ctx.beginPath();
+         ctx.moveTo(x, topY);
+         ctx.lineTo(x, bottomY);
+         ctx.lineWidth = 1;
+         ctx.strokeStyle = '#000000';
+         ctx.stroke();
+         ctx.restore();
+      }
+   }
+});
+
 var config = {
-    type: 'line',
+    type: 'LineWithLine',
     data: {
         labels: [],
         datasets: [{
@@ -62,6 +87,7 @@ var config = {
           },
 
           tooltips : {
+              mode : 'index',
               position : 'nearest',
               intersect	 : false,
               callbacks : { title: function (tooltipItem, data) { return tooltipItem.xLabel;}}
@@ -93,20 +119,20 @@ price_chart.update();
 
 
 // Hook into main event handler
-let parentEventHandler = Chart.Controller.prototype.eventHandler;
-Chart.Controller.prototype.eventHandler = function () {
-    let ret = parentEventHandler.apply(this, arguments);
-
-    let x = arguments[0].x;
-    let y = arguments[0].y;
-    this.clear();
-    this.draw();
-    let yScale = this.scales['y-axis-0'];
-    this.chart.ctx.beginPath();
-    this.chart.ctx.moveTo(x, yScale.getPixelForValue(yScale.max));
-    this.chart.ctx.strokeStyle = "#ff0000";
-    this.chart.ctx.lineTo(x, yScale.getPixelForValue(yScale.min));
-    this.chart.ctx.stroke();
-
-    return ret;
-};
+// let parentEventHandler = Chart.Controller.prototype.eventHandler;
+// Chart.Controller.prototype.eventHandler = function () {
+//     let ret = parentEventHandler.apply(this, arguments);
+//
+//     let x = arguments[0].x;
+//     let y = arguments[0].y;
+//     this.clear();
+//     this.draw();
+//     let yScale = this.scales['y-axis-0'];
+//     this.chart.ctx.beginPath();
+//     this.chart.ctx.moveTo(x, yScale.getPixelForValue(yScale.max));
+//     this.chart.ctx.strokeStyle = "#ff0000";
+//     this.chart.ctx.lineTo(x, yScale.getPixelForValue(yScale.min));
+//     this.chart.ctx.stroke();
+//
+//     return ret;
+// };
