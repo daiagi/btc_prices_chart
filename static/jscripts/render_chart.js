@@ -114,25 +114,3 @@ config.data.datasets[1].data = data.global
 price_chart.update();
 
 }
-
-
-
-
-// Hook into main event handler
-// let parentEventHandler = Chart.Controller.prototype.eventHandler;
-// Chart.Controller.prototype.eventHandler = function () {
-//     let ret = parentEventHandler.apply(this, arguments);
-//
-//     let x = arguments[0].x;
-//     let y = arguments[0].y;
-//     this.clear();
-//     this.draw();
-//     let yScale = this.scales['y-axis-0'];
-//     this.chart.ctx.beginPath();
-//     this.chart.ctx.moveTo(x, yScale.getPixelForValue(yScale.max));
-//     this.chart.ctx.strokeStyle = "#ff0000";
-//     this.chart.ctx.lineTo(x, yScale.getPixelForValue(yScale.min));
-//     this.chart.ctx.stroke();
-//
-//     return ret;
-// };
