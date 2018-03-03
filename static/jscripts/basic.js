@@ -7,17 +7,32 @@ function AjaxGetRequest(url,successFunc,toUSD) {
        };
 
   function jsonToDataArrays(Jsonobj,toUSD) {
-         var labels = Jsonobj.map(function (e) {return e.time});
+         var labels = Jsonobj.map(function (e) {return e.time}),
+         lastPrices = Jsonobj[Jsonobj.length-1],
+         ilsTousd = lastPrices.global_price_usd / lastPrices.global_price_ils ,
+         bit2c_func,
+         global_func;
          if (toUSD) {
-           bit2c_id = "bit2c_price_usd";
-           global_id = "global_price_usd";
-         } else {
-           bit2c_id = "bit2c_price_ils";
-           global_id = "global_price_ils";
+
+          bit2c_func = function(e) {
+             return Number(e.bit2c_price_ils*ilsTousd).toFixed(2);
+           };
+           global_func = function(e) {
+             return Number(e.global_price_usd).toFixed(2);
+           };
+         }
+         else {
+          bit2c_func = function(e) {
+             return Number(e.bit2c_price_ils).toFixed(2);
+           };
+           global_func = function(e) {
+             return Number(e.global_price_usd/ilsTousd).toFixed(2);
+           };
          }
 
-         var bit2c_data = Jsonobj.map(function(e) {return e[bit2c_id];});
-         var global_data = Jsonobj.map(function(e) {return e[global_id];});
+         var bit2c_data = Jsonobj.map(bit2c_func),
+            global_data = Jsonobj.map(global_func);
+
 
          return {labels : labels,
                  bit2c : bit2c_data,
@@ -41,7 +56,7 @@ function AjaxGetRequest(url,successFunc,toUSD) {
     if (this.readyState == 4 && this.status == 200) {
       var d  = parseJson(this.responseText,toUSD);
       if (toUSD === undefined) {toUSD = false}
-        successFunc(d,toUSD);
+        successFunc(d);
 
     }
   };

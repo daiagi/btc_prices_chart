@@ -5,7 +5,7 @@
       .domain {
         display: none;
       }
-      .tick line {
+      /* .tick line {
         stroke: #C0C0BB;
       }
       .tick text {
@@ -17,18 +17,34 @@
         fill: #635F5D;
         font-size: 20pt;
         font-family: sans-serif;
+      } */
+
+
+      /* canvas{
+  			-moz-user-select: none;
+  			-webkit-user-select: none;
+  			-ms-user-select: none;
+  		} */
+
+      #chartjs-tooltip {
+        opacity: 1;
+        position: absolute;
+        background: rgba(0, 0, 0, .7);
+        color: white;
+        border-radius: 3px;
+        -webkit-transition: all .1s ease;
+        transition: all .1s ease;
+        pointer-events: none;
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
       }
 
-      path {
-        stroke: black;
-        stroke-width: 2;
-        fill: none;
+      .chartjs-tooltip-key {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        margin-right: 10px;
       }
-      .svg-inline { color: #fff;}
-
-
-
-        #global_price {stroke : blue }
 
         .graph-div{position: absolute;
                   }

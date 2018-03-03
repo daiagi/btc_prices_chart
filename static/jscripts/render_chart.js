@@ -1,4 +1,6 @@
 
+
+
 Chart.defaults.LineWithLine = Chart.defaults.line;
 Chart.controllers.LineWithLine = Chart.controllers.line.extend({
    draw: function(ease) {
@@ -36,9 +38,7 @@ var config = {
             borderColor:'blue',
             backgroundColor : 'blue' ,
             borderCapStyle: 'butt',
-            pointHoverRadius: 8,
-            pointHoverBackgroundColor: 'blue',
-            pointHoverBorderColor: 'blue',
+            pointHoverRadius: 5,
             pointHoverBorderWidth:0,
             pointRadius: 0,
             pointHitRadius: 5
@@ -46,20 +46,22 @@ var config = {
         },{
           label: 'global price',
           data: [],
-          fill: 'red',
+          fill: false,
            lineTension: 0,
            borderColor:'red',
            backgroundColor : 'red' ,
            borderCapStyle: 'butt',
-           pointHoverRadius: 8,
-           pointHoverBackgroundColor: "red",
-           pointHoverBorderColor: "red",
+           pointHoverRadius: 5,
            pointHoverBorderWidth:0,
            pointRadius: 0,
            pointHitRadius: 5
         }]
     },
     options: {
+
+      hover : {
+            intersect : false
+      },
 
         layout: {
           padding: {left: 50,right: 50,top: 12,bottom: 120}
@@ -87,30 +89,44 @@ var config = {
           },
 
           tooltips : {
+              enabled: false,
               mode : 'index',
               position : 'nearest',
               intersect	 : false,
-              callbacks : { title: function (tooltipItem, data) { return tooltipItem.xLabel;}}
-
+              custom: customTooltips,
 
           }
     }
-  }
-function initialRender (data) {
+  } ,
 
-var ctx = document.getElementById("myChart").getContext('2d');
-config.data.labels = data.labels
-config.data.datasets[0].data = data.bit2c
-config.data.datasets[1].data = data.global
-price_chart = new Chart(ctx,config);
 
-}
+initialRender = function (data) {
 
-function render (data) {
+    var ctx = document.getElementById("myChart").getContext('2d'),
+        chartData = config.data,
+        yaxisTicks = config.options.scales.yAxes[0].ticks;
 
-config.data.labels = data.labels
-config.data.datasets[0].data = data.bit2c
-config.data.datasets[1].data = data.global
-price_chart.update();
+    chartData.labels = data.labels;
+    chartData.datasets[0].data = data.bit2c ;
+    chartData.datasets[1].data = data.global ;
 
-}
+     yaxisTicks.suggestedMin = Math.min.apply(null,data.bit2c.concat(data.global)) - 100 ;
+     yaxisTicks.suggestedMax = Math.max.apply(null,data.bit2c.concat(data.global)) + 100 ;
+     price_chart = new Chart(ctx,config);
+
+} ,
+
+render = function (data) {
+    var chartData = config.data,
+        yaxisTicks = config.options.scales.yAxes[0].ticks;
+
+    chartData.labels = data.labels;
+    chartData.datasets[0].data = data.bit2c ;
+    chartData.datasets[1].data = data.global ;
+
+    yaxisTicks.suggestedMin = Math.min.apply(null,data.bit2c.concat(data.global)) - 100 ;
+    yaxisTicks.suggestedMax = Math.max.apply(null,data.bit2c.concat(data.global)) + 100 ;
+
+    price_chart.update();
+
+};
