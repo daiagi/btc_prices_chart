@@ -37,7 +37,7 @@ ALLOWED_HOSTS = ['dry-cliffs-89687.herokuapp.com',
 # Application definition
 
 INSTALLED_APPS = [
-    'silk',
+
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -51,7 +51,7 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'silk.middleware.SilkyMiddleware',
+    
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',

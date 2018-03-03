@@ -23,5 +23,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.main_view, name = 'home'),
     url(r'^json/$', views.getBtcPrice_view, name = 'btc_price_json'),
-    url(r'^silk/', include('silk.urls', namespace='silk')),
+
 ]
+
+# url(r'^silk/', include('silk.urls', namespace='silk')),
