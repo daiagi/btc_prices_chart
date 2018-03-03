@@ -1,3 +1,3 @@
-web: gunicorn btc_prices_chart.wsgi 
+web: gunicorn btc_prices_chart.wsgi -w 3
 db_write: python database/periodic.py
 
