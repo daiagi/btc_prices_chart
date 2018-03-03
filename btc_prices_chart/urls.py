@@ -16,9 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from btc_chart import views
+from django.conf.urls import include
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.main_view, name = 'home'),
     url(r'^json/$', views.getBtcPrice_view, name = 'btc_price_json'),
+    url(r'^silk/', include('silk.urls', namespace='silk')),
 ]

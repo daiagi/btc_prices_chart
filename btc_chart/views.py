@@ -20,7 +20,7 @@ def main_view(request):
 def getBtcPrice_view(request):
 
     data = request.GET
-    
+
     weeks = float(data.get('weeks',0))
     days = float(data.get('days',0))
     hours = float(data.get('hours',0))
