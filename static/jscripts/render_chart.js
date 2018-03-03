@@ -105,6 +105,7 @@ var config = {
             borderColor:'blue',
             backgroundColor : 'blue' ,
             borderCapStyle: 'butt',
+            borderWidth : 1.2,
             pointHoverRadius: 5,
             pointHoverBorderWidth:0,
             pointRadius: 0,
@@ -116,6 +117,7 @@ var config = {
           fill: false,
            lineTension: 0,
            borderColor:'red',
+           borderWidth : 1.2,
            backgroundColor : 'red' ,
            borderCapStyle: 'butt',
            pointHoverRadius: 5,
@@ -169,7 +171,7 @@ var config = {
 
 initialRender = function (data) {
 
-    var ctx = document.getElementById("myChart").getContext('2d'),
+    var ctx = document.getElementById("priceChart").getContext('2d'),
         chartData = config.data,
         yaxisTicks = config.options.scales.yAxes[0].ticks;
 

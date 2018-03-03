@@ -8,27 +8,26 @@
 {% block content %}
 
 
-<div class="graph-div container">
+
   <div class="control_btns container">
-    <div class="left">
-      <button  id="btn_1h" class="btn range">1h</button>
-      <button  id="btn_12h" class="btn range">12h</button>
-      <button  id="btn_1d" class="btn range">1d</button>
-    </div>
-    <div class="currency right">
-      <input type="checkbox" id="currency-toggle" checked data-toggle="toggle"
-      data-on="<i class='fas fa-shekel-sign'></i>"
-       data-off="<i class='fas fa-dollar-sign'></i>"
-       data-offstyle="primary"
-        data-style="switch">
-    </div>
-
-
+      <div class="left">
+          <button  id="btn_1h" class="btn range">1h</button>
+          <button  id="btn_12h" class="btn range">12h</button>
+          <button  id="btn_1d" autofocus class="btn range">1d</button>
+          <button  id="btn_1w" class="btn range">1w</button>
+          <button  id="btn_1m" class="btn range">1m</button>
+      </div>
+      <div class="currency right">
+          <input type="checkbox" id="currency-toggle" checked data-toggle="toggle"
+          data-on="<i class='fas fa-shekel-sign'></i>"
+          data-off="<i class='fas fa-dollar-sign'></i>"
+          data-offstyle="primary"
+          data-style="switch">
+      </div>
   </div>
 
-
-<canvas id="myChart" width="1200" height="600"></canvas>
-
+<div class="graph-div container">
+  <canvas id="priceChart" ></canvas>
 
 </div>
 

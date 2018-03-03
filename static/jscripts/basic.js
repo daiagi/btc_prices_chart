@@ -93,20 +93,32 @@ $('#currency-toggle').change(function() {
       RangeBtnClick(current_range)
     });
 
+
+var btnGen = function(range) {
+  return function() {current_range = range;
+                      RangeBtnClick(range);};
+};
 // bind events to range buttons
 document.getElementById("btn_1h")
-            .addEventListener("click",function(){
-              current_range = 'hours=1'
-              RangeBtnClick(current_range)});
+            .addEventListener("click",btnGen('hours=1'));
 
 document.getElementById("btn_12h")
-        .addEventListener("click",function(){
-          current_range = 'hours=12'
-          RangeBtnClick('hours=12')});
+        .addEventListener("click",btnGen('hours=12'));
 
 document.getElementById("btn_1d")
-        .addEventListener("click",function(){
-          current_range = 'days=1'
-          RangeBtnClick('days=1')});
+        .addEventListener("click",btnGen('days=1'));
+
+document.getElementById("btn_1w")
+        .addEventListener("click",btnGen('weeks=1'));
+
+document.getElementById("btn_1m")
+        .addEventListener("click",btnGen('weeks=4'));
+
 
 var jsonUrl = '/json'
+
+$( window ).resize(function() {
+
+  $( ".control_btns").width( $( "#priceChart").width()*0.75 );
+  console.log($( ".control_btns").width())
+});
