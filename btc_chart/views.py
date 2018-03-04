@@ -32,8 +32,15 @@ def getBtcPrice_view(request):
 
 
     query = BtcPrice.objects.filter(time__gt = now_utc- time_range ).values(
-        'bit2c_price_ils','global_price_ils','global_price_usd','time')
+        'bit2c_price_ils','global_price_usd','time')
 
+    rates = BtcPrice.objects.all()[:1].values('global_price_ils','global_price_usd')
+    rates = list(rates)[0]
+    ilsTousd = rates['global_price_usd'] / rates['global_price_ils']
+    
+
+    response = {'priceData' : list(query) ,
+                'ilsTousd'  : ilsTousd}
     # def del_time(dict):
     #     del dict['time']
     #     return dict
@@ -48,4 +55,4 @@ def getBtcPrice_view(request):
     #     price_dict['time'].append(price.time)
     # data = serializers.serialize('json', query,fields=('bit2c_price','global_price'))
 
-    return JsonResponse(list(query),safe = False)
+    return JsonResponse(response,safe = False)

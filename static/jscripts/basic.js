@@ -7,9 +7,8 @@ function AjaxGetRequest(url,successFunc,toUSD) {
        };
 
   function jsonToDataArrays(Jsonobj,toUSD) {
-         var labels = Jsonobj.map(function (e) {return e.time}),
-         lastPrices = Jsonobj[Jsonobj.length-1],
-         ilsTousd = lastPrices.global_price_usd / lastPrices.global_price_ils ,
+         var labels = Jsonobj.priceData.map(function (e) {return e.time}),
+         ilsTousd = Jsonobj.ilsTousd ,
          bit2c_func,
          global_func;
 
@@ -31,8 +30,8 @@ function AjaxGetRequest(url,successFunc,toUSD) {
            };
          }
 
-         var bit2c_data = Jsonobj.map(bit2c_func),
-            global_data = Jsonobj.map(global_func);
+         var bit2c_data = Jsonobj.priceData.map(bit2c_func),
+            global_data = Jsonobj.priceData.map(global_func);
 
 
          return {labels : labels,
@@ -45,7 +44,7 @@ function AjaxGetRequest(url,successFunc,toUSD) {
 // parse json to object
   var parseJson=function(string_data,toUSD){
     var data = JSON.parse(string_data);
-    data.forEach(function (element){
+    data.priceData.forEach(function (element){
         element.time = convertUTCDateToLocalDate(new Date(element.time))
     });
 
@@ -121,5 +120,5 @@ var jsonUrl = '/json'
 $( window ).resize(function() {
 
   $( ".control_btns").width( $( "#priceChart").width()*0.75 );
-  
+
 });
