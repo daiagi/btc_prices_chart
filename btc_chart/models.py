@@ -15,7 +15,7 @@ class BtcPrice(models.Model):
     time = models.DateTimeField(unique=True,primary_key=True)
     bit2c_price_ils = models.FloatField()
     global_price_ils = models.FloatField()
-    bit2c_price_usd = models.FloatField()
+    # bit2c_price_usd = models.FloatField()
     global_price_usd = models.FloatField()
 
     def __str__(self):
