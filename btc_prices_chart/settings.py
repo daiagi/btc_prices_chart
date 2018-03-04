@@ -14,6 +14,21 @@ import os
 import dj_database_url
 
 
+# def show_toolbar(request):
+#      return True
+#
+# DEBUG_TOOLBAR_CONFIG = { "SHOW_TOOLBAR_CALLBACK" : show_toolbar, }
+#
+
+INTERNAL_IPS = ['127.0.0.1']
+
+CONFIG_DEFAULTS = {
+    # Toolbar options
+    'RESULTS_CACHE_SIZE': 3,
+    'SHOW_COLLAPSED': True,
+    # Panel options
+    'SQL_WARNING_THRESHOLD': 100,   # milliseconds
+}
 # LOGGING = {
 #     'version': 1,
 #     'disable_existing_loggers': False,
@@ -71,7 +86,7 @@ ALLOWED_HOSTS = ['dry-cliffs-89687.herokuapp.com',
 # Application definition
 
 INSTALLED_APPS = [
-
+    'debug_toolbar',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -82,10 +97,12 @@ INSTALLED_APPS = [
     'btc_chart',
 
 
+
 ]
 
 MIDDLEWARE = [
     'django.middleware.gzip.GZipMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -94,6 +111,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'whitenoise.middleware.WhiteNoiseMiddleware',
+
 ]
 
 ROOT_URLCONF = 'btc_prices_chart.urls'

@@ -14,15 +14,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
+from django.conf import settings
 from django.contrib import admin
 from btc_chart import views
 from django.conf.urls import include
-
+if settings.DEBUG:
+    import debug_toolbar
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$', views.main_view, name = 'home'),
     url(r'^json/$', views.getBtcPrice_view, name = 'btc_price_json'),
+    url(r'^__debug__/', include(debug_toolbar.urls))
 
 ]
 
