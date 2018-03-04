@@ -1,13 +1,14 @@
 function AjaxGetRequest(url,successFunc,toUSD) {
 
-  convertUTCDateToLocalDate= function (date) {
+  convertUTCDateToLocalDate= function (dateString) {
+      var date = new Date(dateString);
       return new Date(Date.UTC(date.getFullYear(),
        date.getMonth(), date.getDate(),
         date.getHours(), date.getMinutes(), date.getSeconds()));
        };
 
   function jsonToDataArrays(Jsonobj,toUSD) {
-         var labels = Jsonobj.priceData.map(function (e) {return e.time}),
+         var labels = Jsonobj.priceData.map(function (e) {return convertUTCDateToLocalDate(e.time)}),
          ilsTousd = Jsonobj.ilsTousd ,
          bit2c_func,
          global_func;
@@ -41,22 +42,20 @@ function AjaxGetRequest(url,successFunc,toUSD) {
 
 
 
-// parse json to object
-  var parseJson=function(string_data,toUSD){
+// parse json to data obkect
+   parseJson=function(string_data,toUSD){
     var data = JSON.parse(string_data);
-    data.priceData.forEach(function (element){
-        element.time = convertUTCDateToLocalDate(new Date(element.time))
-    });
-
     return jsonToDataArrays(data,toUSD);
   };
+
+
 // ajax call with successFunc
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      var d  = parseJson(this.responseText,toUSD);
-      if (toUSD === undefined) {toUSD = false}
-        successFunc(d);
+      latestResponse_string = this.responseText
+      var dataObject  = parseJson(latestResponse_string,toUSD);
+        successFunc(dataObject);
 
     }
   };
@@ -81,7 +80,7 @@ $(document).ready(function(){
 
 // on range button click event
 function RangeBtnClick(rangeString){
-  toUSD = !$('#currency-toggle').prop('checked')
+  var toUSD = !$('#currency-toggle').prop('checked'),
   url = jsonUrl + '?' + rangeString;
    AjaxGetRequest(url,render,toUSD);
 
@@ -90,7 +89,8 @@ function RangeBtnClick(rangeString){
 var current_range = 'days=1'
 
 $('#currency-toggle').change(function() {
-      RangeBtnClick(current_range)
+      var toUSD = !$('#currency-toggle').prop('checked')
+      render(parseJson(latestResponse_string,toUSD))
     });
 
 
