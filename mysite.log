@@ -1,0 +1,265 @@
+[04/Mar/2018 12:03:48] ERROR [django.request:118] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/baruch/Documents/btc_prices_chart/btc_chart/views.py", line 18, in main_view
+    return render(request,'btc_chart/index.html')
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/templatetags/static.py", line 103, in url
+    return self.handle_simple(path)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/templatetags/static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/contrib/staticfiles/storage.py", line 155, in url
+    return self._url(self.stored_name, name, force)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/contrib/staticfiles/storage.py", line 134, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/contrib/staticfiles/storage.py", line 422, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'web-fonts-with-css/css/fontawesome-all.css'
+[04/Mar/2018 12:03:48] ERROR [django.server:124] "GET / HTTP/1.1" 500 27
+[04/Mar/2018 12:09:34] ERROR [django.request:118] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/baruch/Documents/btc_prices_chart/btc_chart/views.py", line 18, in main_view
+    return render(request,'btc_chart/index.html')
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/templatetags/static.py", line 103, in url
+    return self.handle_simple(path)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/templatetags/static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/contrib/staticfiles/storage.py", line 155, in url
+    return self._url(self.stored_name, name, force)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/contrib/staticfiles/storage.py", line 134, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/contrib/staticfiles/storage.py", line 422, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'web-fonts-with-css/css/fontawesome-all.css'
+[04/Mar/2018 12:09:34] ERROR [django.server:124] "GET / HTTP/1.1" 500 27
+[04/Mar/2018 12:09:49] ERROR [django.request:118] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/baruch/Documents/btc_prices_chart/btc_chart/views.py", line 18, in main_view
+    return render(request,'btc_chart/index.html')
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/templatetags/static.py", line 103, in url
+    return self.handle_simple(path)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/templatetags/static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/contrib/staticfiles/storage.py", line 155, in url
+    return self._url(self.stored_name, name, force)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/contrib/staticfiles/storage.py", line 134, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/contrib/staticfiles/storage.py", line 422, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'web-fonts-with-css/css/fontawesome-all.css'
+[04/Mar/2018 12:09:49] ERROR [django.server:124] "GET / HTTP/1.1" 500 27
+[04/Mar/2018 12:12:28] INFO [django.server:124] "GET / HTTP/1.1" 200 837
+[04/Mar/2018 12:12:28] INFO [django.server:124] "GET /static/jscripts/render_chart.js HTTP/1.1" 200 1709
+[04/Mar/2018 12:12:28] INFO [django.server:124] "GET /static/index.css HTTP/1.1" 200 631
+[04/Mar/2018 12:12:28] INFO [django.server:124] "GET /static/jscripts/basic.js HTTP/1.1" 200 1027
+[04/Mar/2018 12:12:28] INFO [django.server:124] "GET /static/web-fonts-with-css/css/fontawesome-all.css HTTP/1.1" 200 7788
+[04/Mar/2018 12:12:29] INFO [django.server:124] "GET /static/web-fonts-with-css/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 36889
+[04/Mar/2018 12:12:29] INFO [django.server:124] "GET /json?days=1 HTTP/1.1" 301 0
+[04/Mar/2018 12:12:33] INFO [django.server:124] "GET /json/?days=1 HTTP/1.1" 200 6955
+[04/Mar/2018 12:15:51] INFO [django.server:124] "GET / HTTP/1.1" 200 837
+[04/Mar/2018 12:15:51] INFO [django.server:124] "GET /static/web-fonts-with-css/css/fontawesome-all.css HTTP/1.1" 200 42092
+[04/Mar/2018 12:15:51] INFO [django.server:124] "GET /static/index.css HTTP/1.1" 200 631
+[04/Mar/2018 12:15:51] INFO [django.server:124] "GET /static/jscripts/render_chart.js HTTP/1.1" 200 1709
+[04/Mar/2018 12:15:51] INFO [django.server:124] "GET /static/jscripts/basic.js HTTP/1.1" 200 1027
+[04/Mar/2018 12:15:52] INFO [django.server:124] "GET /static/web-fonts-with-css/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 36856
+[04/Mar/2018 12:15:52] INFO [django.server:124] "GET /json?days=1 HTTP/1.1" 301 0
+[04/Mar/2018 12:15:56] INFO [django.server:124] "GET /json/?days=1 HTTP/1.1" 200 6956
+[04/Mar/2018 12:16:02] ERROR [django.request:118] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/baruch/Documents/btc_prices_chart/btc_chart/views.py", line 18, in main_view
+    return render(request,'btc_chart/index.html')
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/templatetags/static.py", line 103, in url
+    return self.handle_simple(path)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/templatetags/static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/contrib/staticfiles/storage.py", line 155, in url
+    return self._url(self.stored_name, name, force)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/contrib/staticfiles/storage.py", line 134, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/contrib/staticfiles/storage.py", line 422, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'web-fonts-with-css/css/fontawesome-all.css'
+[04/Mar/2018 12:16:02] ERROR [django.server:124] "GET / HTTP/1.1" 500 27
+[04/Mar/2018 12:16:04] ERROR [django.request:118] Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/core/handlers/exception.py", line 35, in inner
+    response = get_response(request)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/core/handlers/base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/baruch/Documents/btc_prices_chart/btc_chart/views.py", line 18, in main_view
+    return render(request,'btc_chart/index.html')
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 175, in render
+    return self._render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/loader_tags.py", line 155, in render
+    return compiled_parent._render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 167, in _render
+    return self.nodelist.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 943, in render
+    bit = node.render_annotated(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/template/base.py", line 910, in render_annotated
+    return self.render(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/templatetags/static.py", line 106, in render
+    url = self.url(context)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/templatetags/static.py", line 103, in url
+    return self.handle_simple(path)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/templatetags/static.py", line 118, in handle_simple
+    return staticfiles_storage.url(path)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/contrib/staticfiles/storage.py", line 155, in url
+    return self._url(self.stored_name, name, force)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/contrib/staticfiles/storage.py", line 134, in _url
+    hashed_name = hashed_name_func(*args)
+  File "/home/baruch/.local/share/virtualenvs/btc_prices_chart-q2OrtxIZ/lib/python3.6/site-packages/django/contrib/staticfiles/storage.py", line 422, in stored_name
+    raise ValueError("Missing staticfiles manifest entry for '%s'" % clean_name)
+ValueError: Missing staticfiles manifest entry for 'web-fonts-with-css/css/fontawesome-all.css'
+[04/Mar/2018 12:16:04] ERROR [django.server:124] "GET / HTTP/1.1" 500 27
+[04/Mar/2018 12:20:25] DEBUG [django.db.backends:111] (0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None
+[04/Mar/2018 12:20:25] DEBUG [django.db.backends:111] (0.000) SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"; args=()
+[04/Mar/2018 12:20:27] INFO [django.server:124] "GET / HTTP/1.1" 200 837
+[04/Mar/2018 12:20:27] INFO [django.server:124] "GET /static/index.css HTTP/1.1" 200 1554
+[04/Mar/2018 12:20:27] INFO [django.server:124] "GET /static/web-fonts-with-css/css/fontawesome-all.css HTTP/1.1" 200 42092
+[04/Mar/2018 12:20:27] INFO [django.server:124] "GET /static/jscripts/render_chart.js HTTP/1.1" 200 5552
+[04/Mar/2018 12:20:27] INFO [django.server:124] "GET /static/jscripts/basic.js HTTP/1.1" 200 3097
+[04/Mar/2018 12:20:28] INFO [django.server:124] "GET /static/web-fonts-with-css/webfonts/fa-solid-900.woff2 HTTP/1.1" 200 36856
+[04/Mar/2018 12:20:28] INFO [django.server:124] "GET /json?days=1 HTTP/1.1" 301 0
+[04/Mar/2018 12:20:30] DEBUG [django.db.backends:111] (0.406) SELECT "btc_price"."global_price_ils", "btc_price"."global_price_usd" FROM "btc_price" LIMIT 1; args=()
+[04/Mar/2018 12:20:31] DEBUG [django.db.backends:111] (0.694) SELECT "btc_price"."bit2c_price_ils", "btc_price"."global_price_usd", "btc_price"."time" FROM "btc_price" WHERE "btc_price"."time" > '2018-03-03T12:20:28.111966+00:00'::timestamptz; args=(datetime.datetime(2018, 3, 3, 12, 20, 28, 111966, tzinfo=<UTC>),)
+[04/Mar/2018 12:20:31] INFO [django.server:124] "GET /json/?days=1 HTTP/1.1" 200 6949
+[04/Mar/2018 12:20:33] INFO [django.server:124] "GET /json?weeks=4 HTTP/1.1" 301 0
+[04/Mar/2018 12:20:36] DEBUG [django.db.backends:111] (0.407) SELECT "btc_price"."global_price_ils", "btc_price"."global_price_usd" FROM "btc_price" LIMIT 1; args=()
+[04/Mar/2018 12:20:40] DEBUG [django.db.backends:111] (4.095) SELECT "btc_price"."bit2c_price_ils", "btc_price"."global_price_usd", "btc_price"."time" FROM "btc_price" WHERE "btc_price"."time" > '2018-02-04T12:20:33.605844+00:00'::timestamptz; args=(datetime.datetime(2018, 2, 4, 12, 20, 33, 605844, tzinfo=<UTC>),)
+[04/Mar/2018 12:20:40] INFO [django.server:124] "GET /json/?weeks=4 HTTP/1.1" 200 146619

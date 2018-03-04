@@ -31,13 +31,14 @@ def getBtcPrice_view(request):
     time_range = timedelta(weeks =weeks,days = days, hours = hours)
 
 
-    query = BtcPrice.objects.filter(time__gt = now_utc- time_range ).values(
+    query = BtcPrice.objects.filter(time__gt = now_utc- time_range ).defer(
+        'global_price_ils','bit2c_price_usd').values(
         'bit2c_price_ils','global_price_usd','time')
 
     rates = BtcPrice.objects.all()[:1].values('global_price_ils','global_price_usd')
     rates = list(rates)[0]
     ilsTousd = rates['global_price_usd'] / rates['global_price_ils']
-    
+
 
     response = {'priceData' : list(query) ,
                 'ilsTousd'  : ilsTousd}
