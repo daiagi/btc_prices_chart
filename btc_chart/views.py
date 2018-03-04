@@ -46,10 +46,10 @@ def getBtcPrice_view(request):
 
     # method2 - two queries
 
-    query = BtcPrice.objects.filter(time__gt = now_utc- time_range ).values(
-        'time','bit2c_price_ils','global_price_usd')
-
-    last_row = BtcPrice.objects.latest('time')
+    query = BtcPrice.objects.filter(time__gt = now_utc- time_range ).defer(
+        'global_price_ils','bit2c_price_usd').values('time','bit2c_price_ils','global_price_usd')
+    
+    last_row = BtcPrice.objects.order_by('-time')[:1]
     ilsTousd = last_row.global_price_usd / last_row.global_price_ils
 
 
