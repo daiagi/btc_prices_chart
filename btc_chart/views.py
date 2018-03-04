@@ -33,23 +33,16 @@ def getBtcPrice_view(request):
     time_range = timedelta(weeks =weeks,days = days, hours = hours)
 
 
-    # method1 - single query
-    query = BtcPrice.objects.filter(time__gt = now_utc- time_range )
-
-    last_row = query.latest('time')
-    ilsTousd = last_row.global_price_usd / last_row.global_price_ils
-
-    query = query.values('time','bit2c_price_ils','global_price_usd')
-    
 
 
     # method2 - two queries
 
-    # query = BtcPrice.objects.filter(time__gt = now_utc- time_range ).values(
-    #     'time','bit2c_price_ils','global_price_usd')
-    #
-    # last_row = BtcPrice.objects.latest('time')
-    # ilsTousd = last_row.global_price_usd / last_row.global_price_ils
+    query = BtcPrice.objects.filter(time__gt = now_utc- time_range ).defer(
+        'global_price_ils').values(
+        'time','bit2c_price_ils','global_price_usd')
+
+    last_row = BtcPrice.objects.latest('time')
+    ilsTousd = last_row.global_price_usd / last_row.global_price_ils
 
 
 
