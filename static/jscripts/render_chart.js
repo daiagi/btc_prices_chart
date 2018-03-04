@@ -170,7 +170,6 @@ var config = {
 
 
 initialRender = function (data) {
-
     var ctx = document.getElementById("priceChart").getContext('2d'),
         chartData = config.data,
         yaxisTicks = config.options.scales.yAxes[0].ticks;

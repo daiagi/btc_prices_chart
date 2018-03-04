@@ -12,6 +12,7 @@ function AjaxGetRequest(url,successFunc,toUSD) {
          ilsTousd = lastPrices.global_price_usd / lastPrices.global_price_ils ,
          bit2c_func,
          global_func;
+
          if (toUSD) {
 
           bit2c_func = function(e) {
@@ -120,5 +121,5 @@ var jsonUrl = '/json'
 $( window ).resize(function() {
 
   $( ".control_btns").width( $( "#priceChart").width()*0.75 );
-  console.log($( ".control_btns").width())
+  
 });

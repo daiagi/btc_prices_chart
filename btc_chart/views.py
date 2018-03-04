@@ -31,9 +31,8 @@ def getBtcPrice_view(request):
     time_range = timedelta(weeks =weeks,days = days, hours = hours)
 
 
-    query = BtcPrice.objects.filter(time__gt = now_utc- time_range ).only(
-    'bit2c_price_ils','global_price_ils',
-    'global_price_usd').values()
+    query = BtcPrice.objects.filter(time__gt = now_utc- time_range ).values(
+        'bit2c_price_ils','global_price_ils','global_price_usd','time')
 
     # def del_time(dict):
     #     del dict['time']
