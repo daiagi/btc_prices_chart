@@ -115,7 +115,7 @@ document.getElementById("btn_1m")
         .addEventListener("click",btnGen('weeks=4'));
 
 
-var jsonUrl = '/json'
+var jsonUrl = '/json/'
 
 $( window ).resize(function() {
 
