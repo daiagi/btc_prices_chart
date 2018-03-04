@@ -34,27 +34,27 @@ def getBtcPrice_view(request):
 
 
     # method1 - single query
-    start = timer()
-    query = BtcPrice.objects.filter(time__gt = now_utc- time_range ).defer(
-        'global_price_ils','bit2c_price_usd')
-
-    last_row = query.latest('time')
-    ilsTousd = last_row.global_price_usd / last_row.global_price_ils
-
-    query = query.values('time','bit2c_price_ils','global_price_usd')
-    end = timer()
-    print(end-start)
+    # start = timer()
+    # query = BtcPrice.objects.filter(time__gt = now_utc- time_range ).defer(
+    #     'global_price_ils','bit2c_price_usd')
+    #
+    # last_row = query.latest('time')
+    # ilsTousd = last_row.global_price_usd / last_row.global_price_ils
+    #
+    # query = query.values('time','bit2c_price_ils','global_price_usd')
+    # end = timer()
+    # print(end-start)
 
 
     # method2 - two queries
-    # start = timer()
-    # query = BtcPrice.objects.filter(time__gt = now_utc- time_range ).defer(
-    #     'global_price_ils','bit2c_price_usd').values('time','bit2c_price_ils','global_price_usd')
-    #
-    # last_row = BtcPrice.objects.latest('time')
-    # ilsTousd = last_row.global_price_usd / last_row.global_price_ils
-    # end = timer()
-    # print(end-start)
+    start = timer()
+    query = BtcPrice.objects.filter(time__gt = now_utc- time_range ).defer(
+        'global_price_ils','bit2c_price_usd').values('time','bit2c_price_ils','global_price_usd')
+
+    last_row = BtcPrice.objects.latest('time')
+    ilsTousd = last_row.global_price_usd / last_row.global_price_ils
+    end = timer()
+    print(end-start)
 
 
     response = {'priceData' : list(query) ,
