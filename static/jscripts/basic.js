@@ -89,8 +89,9 @@ function RangeBtnClick(rangeString){
 var current_range = 'days=1'
 
 $('#currency-toggle').change(function() {
-      var toUSD = !$('#currency-toggle').prop('checked')
+      var toUSD = !$('#currency-toggle').prop('checked');
       render(parseJson(latestResponse_string,toUSD))
+      return false;
     });
 
 
