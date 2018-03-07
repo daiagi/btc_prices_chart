@@ -28,18 +28,16 @@ def getBtcPrice_view(request):
     hours = float(data.get('hours',0))
 
 
-    # local_time = localize_israel(datetime.now())
     now_utc = datetime.utcnow()
     time_range = timedelta(weeks =weeks,days = days, hours = hours)
-    start = timer()
-    query = list(BtcPrice.objects.filter(time__gt = now_utc- time_range ).defer(
-        'global_price_ils').values(
+
+    query = list(BtcPrice.objects.filter(time__gt = now_utc- time_range ).values(
         'time','bit2c_price_ils','global_price_usd'))
-    end = timer()
     last_row = BtcPrice.objects.latest('time')
     ilsTousd = last_row.global_price_usd / last_row.global_price_ils
+    if weeks > 1:
+        query = query[::5]
 
-    print(end-start)
 
     response = {'priceData' : query ,
                 'ilsTousd'  : ilsTousd}

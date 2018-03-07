@@ -32,6 +32,7 @@ var customTooltips = function(tooltip) {
   if (!tooltipEl) {
     tooltipEl = document.createElement('div');
     tooltipEl.id = 'chartjs-tooltip';
+    tooltipEl.style = 'text-align: center'
     tooltipEl.innerHTML = "<table></table>"
     // document.getElementById("myChart").appendChild(tooltipEl);
     document.body.appendChild(tooltipEl);
@@ -72,6 +73,7 @@ var customTooltips = function(tooltip) {
       var style = 'background:' + colors.backgroundColor;
       style += '; border-color:' + colors.borderColor;
       style += '; border-width: 2px';
+      style += '; margin: auto' ;
       var span = '<span class="chartjs-tooltip-key" style="' + style + '"></span>';
       innerHtml += '<tr><td>' + span + body + '</td></tr>';
     });
