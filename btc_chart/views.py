@@ -35,8 +35,8 @@ def getBtcPrice_view(request):
         'time','bit2c_price_ils','global_price_usd'))
     last_row = BtcPrice.objects.latest('time')
     ilsTousd = last_row.global_price_usd / last_row.global_price_ils
-    
-    prune_factor = int(weeks and weeks*7 or 1)
+
+    prune_factor = int(weeks and weeks*5 or 1)
     query = query[::prune_factor]
 
 
