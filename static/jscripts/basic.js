@@ -120,8 +120,8 @@ var jsonUrl = '/json/'
 
 $( window ).resize(function() {
 
-  setTimout(() => $( ".control_btns").width( $( "#priceChart").width()-300 ),
-            150)
+  setTimeout(() => ($( ".control_btns").width( $( "#priceChart").width()-300 ))
+            ,150)
 
 
 });
