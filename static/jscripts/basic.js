@@ -1,3 +1,7 @@
+
+var jsonUrl = '/json/'
+
+
 function AjaxGetRequest(url,successFunc,toUSD) {
 
   convertUTCDateToLocalDate= function (dateString) {
@@ -68,15 +72,17 @@ function AjaxGetRequest(url,successFunc,toUSD) {
 
 
 
-
-
-
 // on document ready event
 $(document).ready(function(){
   url = jsonUrl + '?' + 'days=1';
   AjaxGetRequest(url,initialRender);
-
-})
+  $( window ).resize(
+    function() {
+      setTimeout(
+        () => ($( ".control_btns").width( $( "#priceChart").width()-300 ))
+        ,150);
+      })
+    });
 
 // on range button click event
 function RangeBtnClick(rangeString){
@@ -114,14 +120,3 @@ document.getElementById("btn_1w")
 
 document.getElementById("btn_1m")
         .addEventListener("click",btnGen('weeks=4'));
-
-
-var jsonUrl = '/json/'
-
-$( window ).resize(function() {
-
-  setTimeout(() => ($( ".control_btns").width( $( "#priceChart").width()-300 ))
-            ,150)
-
-
-});

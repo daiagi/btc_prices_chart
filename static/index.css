@@ -1,9 +1,68 @@
 
-/* body {
-  margin: 0px;
-} */
-/* .domain {
-  display: none; */
+.control_btns {
+  margin: auto;
+  width : 60%;
+  padding-right : 100px;
+  padding-left: 20px ;
+  overflow: hidden;
+}
+
+.left button {
+
+  display: inline-block;
+  float: left;
+  margin-top: 0.5em;
+  border-radius: 0;
+  font-family: Arial;
+  color: #03010d;
+  font-size: 10px;
+  background: #cfcfcf;
+  padding: 5px 8px 5px 8px;
+  text-decoration: none;
+
+}
+
+.range:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+    margin-right :3px;
+
+}
+.range:hover {
+  background: #a3a4a5;
+  text-decoration: none;
+}
+.range:focus {
+  background: #a3a4a5;
+  font-weight: bold;
+}
+
+
+
+.right {
+  display: inline-block;
+  float: right;
+  margin-top: 0.5em;
+}
+
+
+
+.toggle-on, .toggle-off { padding: 6px 12px 6px 12px }
+
+.toggle.switch, .toggle-on.switch, .toggle-off.switch {
+  border-radius: 5px;
+  padding: 6px 12px 6px 12px;
+  align-content: center;  }
+.toggle.switch .toggle-handle { border-radius: 5px; fill:white}
+
+
+
+.graph-div{
+            margin: auto;
+            position: relative;
+          }
+#priceChart {
+  margin: auto;
+}
 
 #chartjs-tooltip {
   opacity: 1;
@@ -24,78 +83,3 @@
   height: 10px;
   margin-right: 10px;
 }
-
-.control_btns {
-  margin: auto;
-  width : 60%;
-  padding-right : 100px;
-  padding-left: 20px ;
-}
-
-.graph-div{
-            margin: auto;
-
-            position: relative;
-          }
-
-#priceChart {
-
-  margin: auto;
-
-}
-
-
-
-
-.left {
-
-  display: inline-block;
-  float: left;
-  margin-top: 0.5em;
-
-}
-.right {
-  display: inline-block;
-  float: right;
-  margin-top: 0.5em;
-}
-
-
-.range {
-      border-radius: 0;
-      font-family: Arial;
-      color: #03010d;
-      font-size: 10px;
-      background: #cfcfcf;
-      padding: 5px 8px 5px 8px;
-      text-decoration: none;
-
-
-
-      }
-.toggle-on, .toggle-off { padding: 6px 12px 6px 12px }
-
-.toggle.switch, .toggle-on.switch, .toggle-off.switch {
-  border-radius: 5px;
-  padding: 6px 12px 6px 12px;
-  align-content: center;  }
-.toggle.switch .toggle-handle { border-radius: 5px; fill:white}
-
-.range:hover {
-  background: #a3a4a5;
-  text-decoration: none;
-}
-.range:focus {
-  background: #a3a4a5;
-  font-weight: bold;
-}
-
-#btn_12h {
-              left:32px;
-            }
-#btn_1d {
-          left:69.5px;
-        }
-#btn_1w {
-          left:144.5px;
-        }
