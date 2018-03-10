@@ -26,9 +26,8 @@
 }
 
 .control_btns {
-  box-sizing: border-box;
   margin: auto;
-  width : 65%;
+  width : 980px;
   padding-right : 100px;
   padding-left: 20px ;
 }

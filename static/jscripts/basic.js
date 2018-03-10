@@ -119,7 +119,7 @@ document.getElementById("btn_1m")
 var jsonUrl = '/json/'
 
 $( window ).resize(function() {
-  setTimeout(() => $( ".control_btns").width( $( "#priceChart").width()-300 ),150)
 
+  $( ".control_btns").width( $( "#priceChart").width()*0.75 );
 
 });
