@@ -175,6 +175,7 @@ initialRender = function (data) {
     var ctx = document.getElementById("priceChart").getContext('2d'),
         chartData = config.data,
         yaxisTicks = config.options.scales.yAxes[0].ticks;
+        // ctx.canvas.width  = window.innerWidth;
 
     chartData.labels = data.labels;
     chartData.datasets[0].data = data.bit2c ;
