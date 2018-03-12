@@ -29,6 +29,10 @@ Chart.controllers.LineWithLine = Chart.controllers.line.extend({
 
 var customTooltips = function(tooltip) {
 
+    // return cursor to default
+
+
+
     var parseDate = function(date) {
         date = date[0];
         // output format : dd.mm.yy , HH:MM local time
@@ -123,7 +127,7 @@ var customTooltips = function(tooltip) {
       style += '; border-width: 2px';
       style += '; margin: auto' ;
       var span = '<span class="chartjs-tooltip-key" style="' + style + '"></span>';
-      innerHtml += '<tr><td class="text-left">' + span + body + '</td></tr>';
+      innerHtml += '<tr><td class="text-left">' + span +'&nbsp;&nbsp;'+ body + '</td></tr>';
     });
       innerHtml += '<tr><td>' + getRatioLine(prices) + '</td></tr>';
     innerHtml += '</tbody>';
@@ -180,7 +184,10 @@ var config = {
     options: {
 
       hover : {
-            intersect : false
+            intersect : false,
+            onHover: function(e) {
+                  $("#priceChart").css("cursor", "auto");
+              }
       },
 
         layout: {
@@ -194,17 +201,27 @@ var config = {
 
             },
             position : 'right',
+            onHover : function(event, legendItem) {
+                document.getElementById("priceChart").style.cursor = 'pointer';
+            }
 
-          },
+        },
 
         scales: {
             yAxes: [{
                 ticks: {
-                    beginAtZero:false
+                    beginAtZero:false,
+                    fontSize: 16
                   }
               }],
             xAxes: [{
-                type : 'time'
+                type : 'time',
+                ticks: {fontSize: 16},
+                gridLines : {
+                    offsetGridLines: false
+
+                }
+
               }]
           },
 
@@ -250,3 +267,4 @@ render = function (data) {
     price_chart.update();
 
 };
+

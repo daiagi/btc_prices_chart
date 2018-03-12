@@ -1,4 +1,19 @@
+body {
+  background-color: #f5f6fd;
+}
 
+h1 {
+  margin : auto;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  font-family: 'Limelight', cursive;
+
+  max-width: 15em;
+  font-size: 3em;
+  align-content: center;
+  /*line-height: 1.05;*/
+
+}
 .control_btns {
   margin: auto;
   width : 60%;
@@ -15,16 +30,17 @@
   border-radius: 0;
   font-family: Arial;
   color: #03010d;
-  font-size: 10px;
+  font-size: 14px;
   background: #cfcfcf;
   padding: 5px 8px 5px 8px;
   text-decoration: none;
+  
 
 }
 
 .range:not(:last-child) {
     border-right: none; /* Prevent double borders */
-    margin-right :3px;
+    margin-right :0.3em;
 
 }
 .range:hover {
@@ -59,6 +75,7 @@
 .graph-div{
             margin: auto;
             position: relative;
+            /*border: 1px solid #000000;*/
           }
 #priceChart {
   margin: auto;
@@ -67,8 +84,8 @@
 #chartjs-tooltip {
   opacity: 1;
   position: absolute;
-  background: rgba(0, 0, 0, .7);
-  color: white;
+  background: rgba(153, 179, 255, .7);
+  color: #000000;
   border-radius: 3px;
   -webkit-transition: all .1s ease;
   transition: all .1s ease;
