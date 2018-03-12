@@ -1,5 +1,5 @@
 
-var jsonUrl = '/json/'
+var jsonUrl = '/json/';
 
 
 function AjaxGetRequest(url,successFunc,toUSD) {
@@ -8,7 +8,7 @@ function AjaxGetRequest(url,successFunc,toUSD) {
       var date = new Date(dateString);
       return new Date(Date.UTC(date.getFullYear(),
        date.getMonth(), date.getDate(),
-        date.getHours(), date.getMinutes(), date.getSeconds()));
+        date.getHours(), date.getMinutes()));
        };
 
   function jsonToDataArrays(Jsonobj,toUSD) {
@@ -46,7 +46,7 @@ function AjaxGetRequest(url,successFunc,toUSD) {
 
 
 
-// parse json to data obkect
+// parse json to data object
    parseJson=function(string_data,toUSD){
     var data = JSON.parse(string_data);
     return jsonToDataArrays(data,toUSD);
@@ -57,8 +57,11 @@ function AjaxGetRequest(url,successFunc,toUSD) {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      latestResponse_string = this.responseText
+      latestResponse_string = this.responseText;
       var dataObject  = parseJson(latestResponse_string,toUSD);
+        document.getElementsByClassName("ball-loader")[0].style.display = "none";
+        document.getElementById("wrapper").style.display = "block";
+        document.getElementById("priceChart").style.display = "block";
         successFunc(dataObject);
 
     }
@@ -67,7 +70,7 @@ function AjaxGetRequest(url,successFunc,toUSD) {
   xhttp.open('get',url);
   xhttp.send();
 
-};
+}
 
 
 
@@ -76,6 +79,7 @@ function AjaxGetRequest(url,successFunc,toUSD) {
 $(document).ready(function(){
   url = jsonUrl + '?' + 'days=1';
   AjaxGetRequest(url,initialRender);
+
   $( window ).resize(
     function() {
       setTimeout(
@@ -86,6 +90,8 @@ $(document).ready(function(){
 
 // on range button click event
 function RangeBtnClick(rangeString){
+    document.getElementsByClassName("ball-loader")[0].style.display = "block";
+    document.getElementById("priceChart").style.display = "none";
   var toUSD = !$('#currency-toggle').prop('checked'),
   url = jsonUrl + '?' + rangeString;
    AjaxGetRequest(url,render,toUSD);

@@ -25,16 +25,43 @@ Chart.controllers.LineWithLine = Chart.controllers.line.extend({
       }
    }
 });
+
+
 var customTooltips = function(tooltip) {
+
+    var parseDate = function(date) {
+        date = date[0];
+        // output format : dd.mm.yy , HH:MM local time
+        if (typeof date === "string") {
+            date = new Date(date)
+        }
+        var dayOfWeekAsString=function(dayIndex) {
+            return ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"][dayIndex];
+        };
+
+        const year = date.getFullYear().toString().slice(2);
+        const month = date.getMonth() + 1;
+        const day = date.getDate();
+        const shortDay = dayOfWeekAsString(date.getDay());
+        const hour = (date.getHours()<10?'0':'') + date.getHours() ;
+        const minutes = (date.getMinutes()<10?'0':'') + date.getMinutes() ;
+
+        const dateString = day+"/"+month+"/"+year;
+        const timeString = hour+":"+minutes;
+
+
+
+        return [shortDay+", "+dateString+", "+timeString];
+
+    };
   // Tooltip Element
   var tooltipEl = document.getElementById('chartjs-tooltip');
 
   if (!tooltipEl) {
     tooltipEl = document.createElement('div');
     tooltipEl.id = 'chartjs-tooltip';
-    tooltipEl.style = 'text-align: center'
-    tooltipEl.innerHTML = "<table></table>"
-    // document.getElementById("myChart").appendChild(tooltipEl);
+    tooltipEl.style = 'text-align: center';
+    tooltipEl.innerHTML = "<table></table>";
     document.body.appendChild(tooltipEl);
   }
 
@@ -56,10 +83,31 @@ var customTooltips = function(tooltip) {
     return bodyItem.lines;
   }
 
+  function getNumericPrices(bodyLine) {
+      return parseFloat(bodyLine[0].split(": ")[1]);
+  }
+  function getRatioLine(prices) {
+      var ratio = prices.length > 1 ? (((prices[0] / prices[1])-1)*100).toFixed(2) : '';
+      const color = ratio > 0 ? 'green' : 'red';
+      const sign = ratio > 0 ? '+' : '';
+      if (ratio !== '') {ratio += "\%";}
+      const style = 'color:' + color + '; font-size: medium; font-weight: bold;';
+
+      return '<span style = "' +style+ '">' + sign + ratio +'</span>';
+  }
+
   // Set Text
   if (tooltip.body) {
-    var titleLines = tooltip.title || [];
+    var titleLines = parseDate(tooltip.title) || [];
     var bodyLines = tooltip.body.map(getBody);
+    var prices = bodyLines.map(getNumericPrices);
+    bodyLines.map(function(line) {
+        const price= line[0].split(': ')[1];
+        const origin = line[0].split(' ')[0];
+        return origin +': '+price;
+
+    });
+
 
     var innerHtml = '<thead>';
 
@@ -77,6 +125,7 @@ var customTooltips = function(tooltip) {
       var span = '<span class="chartjs-tooltip-key" style="' + style + '"></span>';
       innerHtml += '<tr><td>' + span + body + '</td></tr>';
     });
+      innerHtml += '<tr><td>' + getRatioLine(prices) + '</td></tr>';
     innerHtml += '</tbody>';
 
     var tableRoot = tooltipEl.querySelector('table');
@@ -87,8 +136,8 @@ var customTooltips = function(tooltip) {
 
   // Display, position, and set styles for font
   tooltipEl.style.opacity = 1;
-  tooltipEl.style.left = position.left + tooltip.caretX-150 + 'px';
-  tooltipEl.style.top = position.top + tooltip.caretY-80 + 'px';
+  tooltipEl.style.left = position.left + tooltip.caretX-80 + 'px';
+  tooltipEl.style.top = position.top + tooltip.caretY-100 + 'px';
   tooltipEl.style.fontFamily = tooltip._fontFamily;
   tooltipEl.style.fontSize = tooltip.fontSize;
   tooltipEl.style.fontStyle = tooltip._fontStyle;
