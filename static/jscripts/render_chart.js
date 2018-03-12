@@ -109,10 +109,10 @@ var customTooltips = function(tooltip) {
     });
 
 
-    var innerHtml = '<thead>';
+    var innerHtml = '<thead >';
 
     titleLines.forEach(function(title) {
-      innerHtml += '<tr><th>' + title + '</th></tr>';
+      innerHtml += '<tr><th class="text-center" style="font-weight: bold">' + title + '</th></tr>';
     });
     innerHtml += '</thead><tbody>';
 
@@ -123,7 +123,7 @@ var customTooltips = function(tooltip) {
       style += '; border-width: 2px';
       style += '; margin: auto' ;
       var span = '<span class="chartjs-tooltip-key" style="' + style + '"></span>';
-      innerHtml += '<tr><td>' + span + body + '</td></tr>';
+      innerHtml += '<tr><td class="text-left">' + span + body + '</td></tr>';
     });
       innerHtml += '<tr><td>' + getRatioLine(prices) + '</td></tr>';
     innerHtml += '</tbody>';
@@ -136,8 +136,8 @@ var customTooltips = function(tooltip) {
 
   // Display, position, and set styles for font
   tooltipEl.style.opacity = 1;
-  tooltipEl.style.left = position.left + tooltip.caretX-80 + 'px';
-  tooltipEl.style.top = position.top + tooltip.caretY-100 + 'px';
+  tooltipEl.style.left = position.left + tooltip.caretX-85 + 'px';
+  tooltipEl.style.top = position.top + tooltip.caretY-110 + 'px';
   tooltipEl.style.fontFamily = tooltip._fontFamily;
   tooltipEl.style.fontSize = tooltip.fontSize;
   tooltipEl.style.fontStyle = tooltip._fontStyle;
