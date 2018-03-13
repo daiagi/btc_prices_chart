@@ -4,14 +4,13 @@ body {
 
 h1 {
   margin : auto;
-  margin-top: 1.5em;
-  margin-bottom: 1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.75em;
   font-family: 'Limelight', cursive;
 
   max-width: 15em;
   font-size: 3em;
   align-content: center;
-  /*line-height: 1.05;*/
 
 }
 .control_btns {
@@ -34,7 +33,7 @@ h1 {
   background: #cfcfcf;
   padding: 5px 8px 5px 8px;
   text-decoration: none;
-  
+
 
 }
 
