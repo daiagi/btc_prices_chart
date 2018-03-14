@@ -81,12 +81,12 @@ $(document).ready(function(){
   url = jsonUrl + '?' + 'days=1';
   AjaxGetRequest(url,initialRender);
 
-  $( window ).resize(
-    function() {
-      setTimeout(
-        () => ($( ".control_btns").width( $( "#priceChart").width()-300 ))
-        ,150);
-      })
+  // $( window ).resize(
+  //   function() {
+  //     setTimeout(
+  //       () => ($( ".control_btns").width( $( "#priceChart").width()-300 ))
+  //       ,150);
+  //     })
     });
 
 // on range button click event
