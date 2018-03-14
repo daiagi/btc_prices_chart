@@ -16,9 +16,9 @@ h1 {
 }
 .control_btns {
   margin: auto;
-  width : 60%;
-  padding-right : 100px;
-  padding-left: 20px ;
+  width : 55%;
+  padding-right : 0em;
+  padding-left: 0px ;
   overflow: hidden;
 }
 
@@ -107,8 +107,6 @@ h1 {
     border-top: 1px solid #BBB;
     max-width: 50%;
     margin: 0 auto;
-    margin-top: 1.5em;
-    /*font-size:1.5em;*/
 
 }
 .thumbnail {

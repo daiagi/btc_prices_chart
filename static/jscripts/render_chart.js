@@ -182,7 +182,6 @@ var config = {
         }]
     },
     options: {
-
       hover : {
             intersect : false,
             onHover: function(e) {
@@ -191,7 +190,7 @@ var config = {
       },
 
         layout: {
-          padding: {left: 50,right: 50,top: 12,bottom: 120}
+          padding: {left: 50,right: 0,top: 12,bottom: 60}
         },
 
         legend: {
