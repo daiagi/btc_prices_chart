@@ -66,6 +66,7 @@ SECRET_KEY = 'tra!k@uhs@3nu3#mr&a2##n#d!8+(1y5ugy9xibv&*#0d$hm46'
 DEBUG = True
 
 ALLOWED_HOSTS = ['dry-cliffs-89687.herokuapp.com',
+                 'www.btc-il.com',
                 '127.0.0.1',
                 'localhost']
 

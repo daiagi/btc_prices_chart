@@ -217,7 +217,7 @@ var config = {
                 type : 'time',
                 ticks: {fontSize: 16},
                 gridLines : {
-                    offsetGridLines: false
+                    offsetGridLines: true
 
                 }
 
