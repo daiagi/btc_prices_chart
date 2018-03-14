@@ -60,7 +60,7 @@ STATIC_DIR = os.path.join(BASE_DIR,'static')
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'tra!k@uhs@3nu3#mr&a2##n#d!8+(1y5ugy9xibv&*#0d$hm46'
+SECRET_KEY = os.environ['SECRET_KEY']
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -129,13 +129,10 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     },
-    'price': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(DATABASE_DIR, 'prices.db'),
-    },
+    'price': dj_database_url.config()
 
 }
-DATABASES['price'] =  dj_database_url.config()
+# DATABASES['price'] =
 
 
 DATABASE_ROUTERS = ['btc_chart.routers.btcChartRouter',]
