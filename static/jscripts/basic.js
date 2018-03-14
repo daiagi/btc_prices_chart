@@ -59,9 +59,10 @@ function AjaxGetRequest(url,successFunc,toUSD) {
     if (this.readyState == 4 && this.status == 200) {
       latestResponse_string = this.responseText;
       var dataObject  = parseJson(latestResponse_string,toUSD);
-        document.getElementsByClassName("ball-loader")[0].style.display = "none";
-        document.getElementById("wrapper").style.display = "block";
-        document.getElementById("priceChart").style.display = "block";
+        document.querySelector(".ball-loader").style.visibility = "hidden";
+        document.querySelector("#wrapper").style.visibility = "visible";
+        document.querySelector("#priceChart").style.visibility = "visible";
+
         successFunc(dataObject);
 
     }
@@ -90,13 +91,13 @@ $(document).ready(function(){
 
 // on range button click event
 function RangeBtnClick(rangeString){
-    document.getElementsByClassName("ball-loader")[0].style.display = "block";
-    document.getElementById("priceChart").style.display = "none";
+    document.querySelector(".ball-loader").style.visibility = "visible";
+    document.querySelector("#priceChart").style.visibility = "hidden";
   var toUSD = !$('#currency-toggle').prop('checked'),
   url = jsonUrl + '?' + rangeString;
    AjaxGetRequest(url,render,toUSD);
 
-};
+}
 
 var current_range = 'days=1'
 

@@ -1,56 +1,85 @@
-{% extends "btc_chart/base.html" %}
+<!doctype html>
 {% load static %}
-{% block stylesheet %}
-<link rel="stylesheet" href={% static 'index.css' %}>
-<link rel="stylesheet" href={% static 'loader.css' %}>
-<link href="https://fonts.googleapis.com/css?family=Limelight|Rozha+One" rel="stylesheet">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content ="width=device-width,initial-scale=1,user-scalable=yes" />
+        <link rel="shortcut icon" href={% static 'favicon'%} type="image/png">
+        <title>Bitcoin price chart israel</title>
 
-{% endblock %}
+        <!-- Latest compiled and minified CSS -->
 
-{% block content %}
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Limelight|Rozha+One" rel="stylesheet">
+        <link href={% static "web-fonts-with-css/css/fontawesome-all.css" %} rel="stylesheet">
+        <link rel="stylesheet" href={% static 'index.css' %}>
+        <link rel="stylesheet" href={% static 'loader.css' %}>
 
-
-
-<div class="ball-loader">
-    <div class="ball-loader-ball ball1"></div>
-    <div class="ball-loader-ball ball2"></div>
-    <div class="ball-loader-ball ball3"></div>
-</div>
-
-
-<div id="wrapper" style="display:none;">
-    <h1 align="center" >Bitcoin price chart in ILS</h1>
-      <div class="control_btns container">
-          <div class="left">
-              <button  id="btn_1h" class="btn range">1h</button>
-              <button  id="btn_12h" class="btn range">12h</button>
-              <button  id="btn_1d" autofocus class="btn range">1d</button>
-              <button  id="btn_1w" class="btn range">1w</button>
-              <button  id="btn_1m" class="btn range">1m</button>
-          </div>
-          <div class="currency right">
-              <input type="checkbox" id="currency-toggle" checked data-toggle="toggle"
-              data-on="<i class='fas fa-shekel-sign'></i>"
-              data-off="<i class='fas fa-dollar-sign'></i>"
-              data-offstyle="primary"
-              data-style="switch">
-          </div>
-      </div>
-
-    <div class="graph-div container">
-      <canvas id="priceChart" ></canvas>
-
-    </div>
-</div>
-
-{% endblock content%}
-
-{% block javascript %}
-
-<script src="{% static 'jscripts/render_chart.js' %}"></script>
-<script src="{% static 'jscripts/basic.js' %}"></script>
+    </head>
+    <body>
+        <main>
 
 
+            <div class="ball-loader">
+                <div class="ball-loader-ball ball1"></div>
+                <div class="ball-loader-ball ball2"></div>
+                <div class="ball-loader-ball ball3"></div>
+            </div>
 
 
-{% endblock javascript %}
+            <div id="wrapper" style="visibility: hidden">
+                <h1 align="center" >Bitcoin price chart in ILS</h1>
+                  <div class="control_btns container">
+                      <div class="left">
+                          <button  id="btn_1h" class="btn range">1h</button>
+                          <button  id="btn_12h" class="btn range">12h</button>
+                          <button  id="btn_1d" autofocus class="btn range">1d</button>
+                          <button  id="btn_1w" class="btn range">1w</button>
+                          <button  id="btn_1m" class="btn range">1m</button>
+                      </div>
+                      <div class="currency right">
+                          <input type="checkbox" id="currency-toggle" checked data-toggle="toggle"
+                          data-on="<i class='fas fa-shekel-sign'></i>"
+                          data-off="<i class='fas fa-dollar-sign'></i>"
+                          data-offstyle="primary"
+                          data-style="switch">
+                      </div>
+                  </div>
+
+                <div class="graph-div container">
+                  <canvas id="priceChart" ></canvas>
+
+                </div>
+
+                <div class="footnotes">
+
+                        Buy me a coffee &nbsp;
+                        <img height="35" src={% static 'coffee' %} />
+                        <br><br>
+                        <span class="address">
+                            <img height="20" src={% static 'btc_symb.png' %}/>  &nbsp;
+                            3CEBEFNqyGMvptTZ13wkaumFqJPGTx7iV5 &nbsp;
+                        </span>
+                            <span>
+                                <img  class="qr thumbnail" height="50" src={% static 'qr.png' %}/>
+                            </span>
+                </div>
+
+            </div>
+        </main>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.bundle.min.js"></script>
+
+        <script src="{% static 'jscripts/render_chart.js' %}"></script>
+        <script src="{% static 'jscripts/basic.js' %}"></script>
+
+
+    </body>
+</html>
