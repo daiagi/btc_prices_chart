@@ -2,7 +2,6 @@
     width: 100px;
     height: 23.33333px;
     position: absolute;
-    top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
@@ -31,5 +30,19 @@
 @keyframes grow {
     to {
         transform: translateX(-50%) scale(0);
+    }
+}
+
+@media screen and (orientation: landscape) {
+
+    .ball-loader{
+        top : 40%;
+    }
+}
+
+@media screen and (orientation: portrait) {
+
+    .ball-loader{
+        top : 20%;
     }
 }
